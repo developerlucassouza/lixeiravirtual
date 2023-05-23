@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+:root {
+    --bpreto: rgb(30, 30, 30);
+}
+
 @media all {
 
     * {
@@ -9,14 +13,120 @@
 
     /* Tags */
 
-    /* id e class */
+    body {
+        background-color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    header {
+        background-color: var(--bpreto);
+        margin-bottom: 100px;
+        min-height: 50px;
+    }
+
+    main > h1 {
+        font-size: 4em;
+    }
+
+    /* Id */
+
+    form#pesquisa {
+        margin: 30px;
+        text-align: center;
+    }
+
+    input#bpesquisa {
+        background-color: rgb(0, 170, 0);
+        border: none;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
+        height: 40px;
+        width: 100px;
+    }
+
+    input#bpesquisa:hover {
+        background-color: rgb(0, 150, 0);
+    }
+
+    input#tpesquisa {
+        border: none;
+        border-bottom-left-radius: 100px;
+        border-top-left-radius: 100px;
+        height: 40px;
+        text-indent: 20px;
+        width: 50vw;
+        max-width: 400px;
+    }
+
+    input#tpesquisa:focus {
+        box-shadow: 0 0 0 0;
+        border: none;
+        outline: 0;
+    }
+
+    /* Class */
+
+    div.tech {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    div.tech a {
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        display: block;
+        font-size: 1.4em;
+        margin: 20px auto;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        width: 300px;
+    }
+
+    div.tech a:hover {
+        text-decoration: underline;
+    }
+
+    div.tech img {
+        display: block;
+        margin: auto;
+        width: 40vw;
+    }
 
 }
 
 @media screen and (orientation: portrait) {
 
+    /* Tags */
+
+    /* Id */
+
+    /* Class */
+
+    div.tech img {
+        width: 40vw;
+    }
 }
 
 @media screen and (orientation: landscape) {
 
+    /* Tags */
+
+    /* Id */
+
+    /* Class */
+
+    div.tech img {
+        width: 15vw;
+    }
 }
