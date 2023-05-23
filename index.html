@@ -7,11 +7,20 @@
     <title>Lixeira Virtual</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="scripts/pesquisa.js"></script>
+
 </head>
 <body>
 
+    <!-- <input onblur="teste()"> quando perder o foco -->
+
     <header>
-        
+        <nav>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+        </nav>
     </header>
 
     <main>
@@ -20,7 +29,7 @@
 
         <form action="pesquisa.php" id="pesquisa">
             <input type="text" id="tpesquisa" placeholder="Pesquisar">
-            <input type="submit" id="bpesquisa" value="_">
+            <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
         </form>
 
         <div class="tech">
