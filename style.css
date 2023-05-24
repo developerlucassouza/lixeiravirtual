@@ -4,7 +4,7 @@
     --bazul: #0000FF;
     --bciano: #00FFFF;
     --blaranja: #FF4500;
-    --bpreto: #1E1E1E;
+    --bpreto: #202020;
     --broxo: #FF4500;
     --bverde: #00FF00;
     --bvermelho: #FF0000;
@@ -31,22 +31,26 @@
 
     header {
         background-color: var(--bpreto);
-        margin-bottom: 100px;
     }
 
-    header nav a {
+    header img {
+        width: 15px;
+    }
+
+    header a, span#burguer {
         color: white;
         display: inline-block;
         padding: 20px;
         text-decoration: none;
     }
 
-    header nav a:hover {
+    header a:hover {
         background-color: blueviolet;
     }
 
     main > h1 {
         font-size: 4em;
+        text-align: center;
     }
 
     /* Id */
@@ -85,6 +89,34 @@
         outline: 0;
     }
 
+    div#itens {
+        background-color: aquamarine;
+        height: 90vh;
+        position: absolute;
+        overflow-y: auto;
+        width: 400px;
+    }
+
+    div#itens a {
+        color: black;
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    div#itens a:hover {
+        background-color: brown;
+    }
+
+    main#tech {
+        background-color: aqua;
+    }
+
+    span#burguer {
+        cursor: pointer;
+        padding: 11px;
+    }
+
     /* Class */
 
     div.tech {
@@ -117,11 +149,22 @@
 
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 1000px) {
 
     /* Tags */
 
     /* Id */
+
+    div#itens {
+        display: none;
+        z-index: 9999;
+    }
+
+    main#tech {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
 
     /* Class */
 
@@ -130,11 +173,22 @@
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 1001px) {
 
     /* Tags */
 
     /* Id */
+
+    div#itens {
+        display: block;
+        z-index: none;
+    }
+
+    main#tech {
+        display: inline-block;
+        margin: auto;
+        width: 80%;
+    }
 
     /* Class */
 
