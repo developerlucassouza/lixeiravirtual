@@ -131,8 +131,8 @@
 
     div.code {
         background-color: var(--bpreto);
-        border-radius: 10px;
-        border-left-color: green;
+        border-radius: 2px;
+        border-left: 10px solid green;
         color: cyan;
         display: block;
         margin: auto;
@@ -179,6 +179,7 @@
     div#itens {
         display: none;
         position: absolute;
+        width: 90vw;
         z-index: 9999;
     }
 
