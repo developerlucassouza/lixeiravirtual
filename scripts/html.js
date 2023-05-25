@@ -4,12 +4,12 @@ var pages = document.querySelector('div#itens')
 pages.innerHTML += '<a href="index.html">HTML Home</a>'
 
 // A
-pages.innerHTML += '<a href="a.html                   ">HTML &lta&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltabbr&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltaddress&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltarticle&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltaside&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltaudio&gt</a>'
+pages.innerHTML += '<a href="a.html">HTML &lta&gt</a>'
+pages.innerHTML += '<a href="abbr.html">HTML &ltabbr&gt</a>'
+pages.innerHTML += '<a href="address.html                   ">HTML &ltaddress&gt</a>'
+pages.innerHTML += '<a href="article.html                   ">HTML &ltarticle&gt</a>'
+pages.innerHTML += '<a href="aside.html                   ">HTML &ltaside&gt</a>'
+pages.innerHTML += '<a href="audio.html                   ">HTML &ltaudio&gt</a>'
 
 // B
 pages.innerHTML += '<a href="                   ">HTML &ltb&gt</a>'

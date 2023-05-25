@@ -29,6 +29,10 @@
         text-align: center;
     }
 
+    h2 {
+        margin: 20px;
+    }
+
     header {
         background-color: var(--bpreto);
     }
@@ -134,7 +138,7 @@
         border-left: 10px solid green;
         color: cyan;
         display: block;
-        margin: auto;
+        margin: 10px auto;
         overflow-x: auto;
         padding: 20px;
         width: 80%;
