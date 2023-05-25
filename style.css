@@ -40,7 +40,7 @@
     header a, span#burguer {
         color: white;
         display: inline-block;
-        padding: 20px;
+        padding: 20px 10px;
         text-decoration: none;
     }
 
@@ -108,7 +108,17 @@
     }
 
     main#tech {
-        background-color: aqua;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    main#tech p {
+        margin: 15px;
+    }
+
+    main#tech span#burguer {
+        color: black;
     }
 
     span#burguer {
@@ -117,6 +127,12 @@
     }
 
     /* Class */
+
+    div.code {
+        background-color: black;
+        border-radius: 10px;
+        width: 90%;
+    }
 
     div.tech {
         padding-bottom: 50px;
