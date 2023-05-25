@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 :root {
-    --bazul: #0000FF;
-    --bciano: #00FFFF;
+    --bazul: #0000CC;
+    --bciano: #00CED1;
     --blaranja: #FF4500;
     --bpreto: #202020;
     --broxo: #FF4500;
-    --bverde: #00FF00;
+    --bverde: #32CD32;
     --bvermelho: #FF0000;
 }
 
@@ -20,7 +20,7 @@
     /* Tags */
 
     body {
-        background-color: blue;
+        background-color: var(--bciano);
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -45,7 +45,7 @@
     }
 
     header a:hover {
-        background-color: blueviolet;
+        background-color: var(--bazul);
     }
 
     main > h1 {
@@ -56,7 +56,7 @@
     /* Id */
 
     div#itens {
-        background-color: aquamarine;
+        background-color: var(--bverde);
         height: 90vh;
         overflow-y: auto;
         width: 400px;
@@ -70,7 +70,7 @@
     }
 
     div#itens a:hover {
-        background-color: brown;
+        background-color: yellow;
     }
 
     form#pesquisa {
