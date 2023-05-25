@@ -136,6 +136,7 @@
         color: cyan;
         display: block;
         margin: auto;
+        overflow-x: auto;
         padding: 20px;
         width: 80%;
     }
@@ -212,7 +213,6 @@
         margin: auto;
         /*margin-left: 450px;*/
         width: 70%;
-        z-index: 9999;
     }
 
     /* Class */
