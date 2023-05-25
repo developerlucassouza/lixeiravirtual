@@ -49,7 +49,6 @@
     }
 
     main > h1 {
-        font-size: 4em;
         text-align: center;
     }
 
@@ -70,7 +69,7 @@
     }
 
     div#itens a:hover {
-        background-color: yellow;
+        background-color: rgb(219, 219, 0);
     }
 
     form#pesquisa {

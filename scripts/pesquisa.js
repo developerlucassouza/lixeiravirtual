@@ -14,3 +14,11 @@ function pesquisar() {
     }
 
 }
+
+// Pesquisa
+/*
+<form id="pesquisa" autocomplete="off">
+    <input type="text" id="tpesquisa" placeholder="Pesquisar">
+    <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+</form> 
+*/

@@ -1,10 +1,10 @@
 var pages = document.querySelector('div#itens')
 
 // Home
-pages.innerHTML += '<a href="">HTML Home</a>'
+pages.innerHTML += '<a href="index.html">HTML Home</a>'
 
 // A
-pages.innerHTML += '<a href="                   ">HTML &lta&gt</a>'
+pages.innerHTML += '<a href="a.html                   ">HTML &lta&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltabbr&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltaddress&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltarticle&gt</a>'
