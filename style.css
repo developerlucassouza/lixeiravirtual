@@ -130,9 +130,14 @@
     /* Class */
 
     div.code {
-        background-color: black;
+        background-color: var(--bpreto);
         border-radius: 10px;
-        width: 90%;
+        border-left-color: green;
+        color: cyan;
+        display: block;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
     }
 
     div.tech {
