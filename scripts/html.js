@@ -6,13 +6,11 @@ pages.innerHTML += '<a href="index.html">HTML Home</a>'
 // A
 pages.innerHTML += '<a href="a.html">HTML &lta&gt</a>'
 pages.innerHTML += '<a href="abbr.html">HTML &ltabbr&gt</a>'
-pages.innerHTML += '<a href="address.html                   ">HTML &ltaddress&gt</a>'
-pages.innerHTML += '<a href="article.html                   ">HTML &ltarticle&gt</a>'
-pages.innerHTML += '<a href="aside.html                   ">HTML &ltaside&gt</a>'
+pages.innerHTML += '<a href="address.html">HTML &ltaddress&gt</a>'
+pages.innerHTML += '<a href="article.html">HTML &ltarticle&gt</a>'
 pages.innerHTML += '<a href="audio.html                   ">HTML &ltaudio&gt</a>'
 
 // B
-pages.innerHTML += '<a href="                   ">HTML &ltb&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltblockquote&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltbody&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltbr&gt</a>'
@@ -41,19 +39,12 @@ pages.innerHTML += '<a href="                   ">HTML &ltfooter&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltform&gt</a>'
 
 // H
-pages.innerHTML += '<a href="                   ">HTML &lth1&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lth2&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lth3&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lth4&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lth5&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lth6&gt</a>'
+pages.innerHTML += '<a href="                   ">HTML &lth1&gt - &lth6&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &lthead&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltheader&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lthtml&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lthr&gt</a>' 
+pages.innerHTML += '<a href="                   ">HTML &lthtml&gt</a>' 
 
 // I
-pages.innerHTML += '<a href="                   ">HTML &lti&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltiframe&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltimg&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltinput&gt</a>'
@@ -67,7 +58,6 @@ pages.innerHTML += '<a href="                   ">HTML &ltlink&gt</a>'
 
 // M
 pages.innerHTML += '<a href="                   ">HTML &ltmain&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltmark&gt</a>'
 
 // N
 pages.innerHTML += '<a href="                   ">HTML &ltnav&gt</a>'
@@ -107,7 +97,6 @@ pages.innerHTML += '<a href="                   ">HTML &lttitle&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &lttr&gt</a>'
 
 // U
-pages.innerHTML += '<a href="                   ">HTML &ltu&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltul&gt</a>'
 
 // V

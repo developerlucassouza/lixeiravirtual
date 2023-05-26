@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-    --bazul: #0000CC;
+    --bazul: #0000aac0;
     --bciano: #00CED1;
     --blaranja: #FF4500;
     --bpreto: #202020;
@@ -20,12 +20,13 @@
     /* Tags */
 
     body {
-        background-color: var(--bciano);
+        background-color: var(--bazul);
         font-family: Arial, Helvetica, sans-serif;
     }
 
     h1 {
         font-size: 3em;
+        margin: 10px 50px;
         text-align: center;
     }
 
