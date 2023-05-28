@@ -5,6 +5,9 @@ var principal = document.querySelector('main')
 var menuburguer = document.querySelector('span#burguer')
 var itens = document.querySelector('div#itens')
 
+// Adicionando link para voltar ao menu
+itens.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
+
 // Icone de menu hamburguer
 //<span class="material-symbols-outlined" id="burguer">menu</span>
 
