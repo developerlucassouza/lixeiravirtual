@@ -33,7 +33,7 @@ Ctrl + k + c
 Ctrl + k + u -> Descomentar
 
 =================================================================================
-Atalhos
+Atalhos Visual Studio
 F5 -> Inicia o código
 Ctrl + k + c -> Comenta
 Ctrl + k + u -> Descomenta
