@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltblockquote&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltblockquote&gt HTML</h1>
+        <p>A tag <code>blockquote</code> cria uma citação em bloco, usado para citações grandes e extensas. Para citações menores usa-se a tag <code><a href="q.html">&ltq&gt</a></code>. Ainda usamos o <code>cite</code> para relacionar a citação a um link externo.</p>
+
+        <div class="code">
+            <pre>
+&ltblockquote cite="https://developerlucassouza.github.io/paixoes.filosoficas/autor/socrates/socrates(7).html"&gt   
+    O mundo está repleto de palavras 
+    e discursos vazios que 
+    não ressoam em vidas concretas
+    A hipocrisia e a incoerência 
+    são sinais de uma vida 
+    que não reflete aquilo que é dito.
+    Palavras , lições de moral e 
+    exigências vão muito 
+    bem para a vida dos outros, mas para 
+    si próprios todas as desculpas são válidas.
+&lt/blockquote&gt</pre>
+        </div>
+
+        <blockquote cite="https://developerlucassouza.github.io/paixoes.filosoficas/autor/socrates/socrates(7).html">
+            <p>
+                O mundo está repleto de palavras e discursos vazios que não ressoam em vidas concretas
+                A hipocrisia e a incoerência são sinais de uma vida que não reflete aquilo que é dito.
+                Palavras , lições de moral e exigências vão muito bem para a vida dos outros, mas para si próprios todas as desculpas são válidas.
+            </p>
+        </blockquote>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>

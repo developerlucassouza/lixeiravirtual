@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag &ltaudio&gt HTML</title>
+    <title>Tag &ltbr&gt HTML</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -21,15 +21,32 @@
     </form> 
 
     <main id="tech">
-        <h1>Tag &ltaudio&gt HTML</h1>
-        <p>A tag <code>audio</code> serve para adicionar um áudio ao seu site. Utilize o parâmetro <code>src</code> para indicar o caminho do áudio, e adicione na tag a propriedade <code>controls</code> para mostrar os controle do audio.</p>
+        <h1>Tag &ltbr&gt HTML</h1>
+        <p>A tag <code>br</code> cria uma quebra de linha dentro de uma tag de texto.</p>
 
         <div class="code">
             <pre>
-&ltaudio src="windows_xp_startup.mp3" controls&gt&lt/audio&gt   </pre>
+&ltp&gtAprendendo a utlizar &ltbr&gt quebras de linha.&lt/p&gt   </pre>
         </div>
 
-        <audio src="../../audios/Microsoft Windows XP Startup Sound(MP3_160K).mp3" controls style="margin-left:20px;"></audio>
+        <p>Aprendendo a utlizar <br> quebras de linha.</p>
+
+        <p>O <code>br</code> também serve para pular linhas entre uma tag e outra. Mas não se deve usar <code>br</code> para criar espaçamentos. Para isso usa-se CSS</p>
+
+        <div class="code">
+            <pre>
+&ltp&gtParágrafo 1&lt/p&gt
+&ltbr&gt &ltbr&gt &ltbr&gt
+&ltp&gtParágrafo 2&lt/p&gt   
+&ltbr&gt
+&ltp&gtParágrafo 3&lt/p&gt</pre>
+        </div>
+
+        <p>Parágrafo 1</p>
+        <br> <br> <br>
+        <p>Parágrafo 2</p>
+        <br>
+        <p>Parágrafo 3</p>
     </main>
     
 </body>

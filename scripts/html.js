@@ -8,12 +8,12 @@ pages.innerHTML += '<a href="a.html">HTML &lta&gt</a>'
 pages.innerHTML += '<a href="abbr.html">HTML &ltabbr&gt</a>'
 pages.innerHTML += '<a href="address.html">HTML &ltaddress&gt</a>'
 pages.innerHTML += '<a href="article.html">HTML &ltarticle&gt</a>'
-pages.innerHTML += '<a href="audio.html                   ">HTML &ltaudio&gt</a>'
+pages.innerHTML += '<a href="audio.html">HTML &ltaudio&gt</a>'
 
 // B
-pages.innerHTML += '<a href="                   ">HTML &ltblockquote&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltbody&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltbr&gt</a>'
+pages.innerHTML += '<a href="blockquote.html">HTML &ltblockquote&gt</a>'
+pages.innerHTML += '<a href="body.html">HTML &ltbody&gt</a>'
+pages.innerHTML += '<a href="br.html">HTML &ltbr&gt</a>'
 
 // C
 pages.innerHTML += '<a href="                   ">HTML &ltcaption&gt</a>'
