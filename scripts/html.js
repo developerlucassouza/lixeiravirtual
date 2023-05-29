@@ -1,6 +1,7 @@
 var pages = document.querySelector('div#itens')
 
 // Home
+pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
 pages.innerHTML += '<a href="index.html">HTML Home</a>'
 
 // A
