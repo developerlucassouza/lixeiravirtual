@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tag &ltcolgroup&gt HTML</title>
     <link rel="stylesheet" href="../../style.css">
 
     <style>
@@ -34,9 +34,8 @@
     </form> 
 
     <main id="tech">
-        <h1>Tag &ltcol&gt HTML</h1>
-        <p>A tag <code>col</code> é usada junto da tag <code><a href="colgroup.html">colgroup</a></code> em tabelas, a fim de agrupar cada coluna e atribuir uma class para a mesma. Tal tag não possui nenhum estilo em particular.
-        </p>
+        <h1>Tag &ltcolgroup&gt HTML</h1>
+        <p>A tag <code>colgroup</code> é utilizada para representar grupos de colunas em tabelas. Dentro de um <code>colgroup</code> haverá várias tags <code><a href="col.html">&ltcol&gt</a></code>, onde cada tag irá representar uma coluna. <code>colgroup</code> não possui nenhum estilo padrão.</p>
 
         <div class="code">
             <pre>
@@ -76,58 +75,7 @@
             </tr>
         </table>
 
-        <p>Com as colunas agrupadas e classes atribuidas, pode-se estilizar cada coluna individualmente utilizando <a href="../css/index.html">CSS</a>.</p>
-
-        <div class="code">
-            <pre>
-&ltstyle&gt
-    col.coluna1 {
-        background-color: red; 
-    }
-
-    col.coluna2 {
-        background-color: green;
-    }
-
-    col.coluna3 {
-        background-color: blue;
-    }
-&lt/style&gt</pre>
-        </div>
-
-        <style>
-            col.coluna1 {
-                background-color: rgb(200, 0, 0); 
-            }
-
-            col.coluna2 {
-                background-color: rgb(0, 200, 0);
-            }
-
-            col.coluna3 {
-                background-color: rgb(0, 0, 200);
-            }
-        </style>
-
-        <table style="margin-left:20px;">
-            <colgroup>
-                <col class="coluna1">
-                <col class="coluna2">
-                <col class="coluna3">
-            </colgroup>
-
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-        </table>
+        <p>Para explorar melhor o <code>colgroup</code>, veja também a tag <code><a href="col.html">&ltcol&gt</a></code>.</p>
     </main>
     
 </body>

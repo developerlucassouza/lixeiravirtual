@@ -17,19 +17,19 @@ pages.innerHTML += '<a href="body.html">HTML &ltbody&gt</a>'
 pages.innerHTML += '<a href="br.html">HTML &ltbr&gt</a>'
 
 // C
-pages.innerHTML += '<a href="caption.html                   ">HTML &ltcaption&gt</a>'
-pages.innerHTML += '<a href="code.html                   ">HTML &ltcode&gt</a>'
-pages.innerHTML += '<a href="col.html                   ">HTML &ltcol&gt</a>'
-pages.innerHTML += '<a href="colgroup.html                   ">HTML &ltcolgroup&gt</a>'
+pages.innerHTML += '<a href="caption.html">HTML &ltcaption&gt</a>'
+pages.innerHTML += '<a href="code.html">HTML &ltcode&gt</a>'
+pages.innerHTML += '<a href="col.html">HTML &ltcol&gt</a>'
+pages.innerHTML += '<a href="colgroup.html">HTML &ltcolgroup&gt</a>'
 
 // D
-pages.innerHTML += '<a href="                   ">HTML &ltdatalist&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltdd&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltdel&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltdetails&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltdiv&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltdl&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltdt&gt</a>'
+pages.innerHTML += '<a href="datalist.html                   ">HTML &ltdatalist&gt</a>'
+pages.innerHTML += '<a href="dd.html                   ">HTML &ltdd&gt</a>'
+pages.innerHTML += '<a href="del.html                   ">HTML &ltdel&gt</a>'
+pages.innerHTML += '<a href="details.html                   ">HTML &ltdetails&gt</a>'
+pages.innerHTML += '<a href="div.html                   ">HTML &ltdiv&gt</a>'
+pages.innerHTML += '<a href="dl.html                   ">HTML &ltdl&gt</a>'
+pages.innerHTML += '<a href="dt.html                   ">HTML &ltdt&gt</a>'
 
 // E
 pages.innerHTML += '<a href="                   ">HTML &ltem&gt</a>'
