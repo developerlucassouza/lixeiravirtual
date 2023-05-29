@@ -1,5 +1,7 @@
 var pages = document.querySelector('div#itens')
 
+// pages.innerHTML += '<a href="">HTML &lt &gt</a>'
+
 // Home
 pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
 pages.innerHTML += '<a href="index.html">HTML Home</a>'
@@ -23,13 +25,13 @@ pages.innerHTML += '<a href="col.html">HTML &ltcol&gt</a>'
 pages.innerHTML += '<a href="colgroup.html">HTML &ltcolgroup&gt</a>'
 
 // D
-pages.innerHTML += '<a href="datalist.html                   ">HTML &ltdatalist&gt</a>'
-pages.innerHTML += '<a href="dd.html                   ">HTML &ltdd&gt</a>'
-pages.innerHTML += '<a href="del.html                   ">HTML &ltdel&gt</a>'
-pages.innerHTML += '<a href="details.html                   ">HTML &ltdetails&gt</a>'
-pages.innerHTML += '<a href="div.html                   ">HTML &ltdiv&gt</a>'
-pages.innerHTML += '<a href="dl.html                   ">HTML &ltdl&gt</a>'
-pages.innerHTML += '<a href="dt.html                   ">HTML &ltdt&gt</a>'
+pages.innerHTML += '<a href="datalist.html">HTML &ltdatalist&gt</a>'
+pages.innerHTML += '<a href="dd.html">HTML &ltdd&gt</a>'
+pages.innerHTML += '<a href="del.html">HTML &ltdel&gt</a>'
+pages.innerHTML += '<a href="details.html">HTML &ltdetails&gt</a>'
+pages.innerHTML += '<a href="div.html">HTML &ltdiv&gt</a>'
+pages.innerHTML += '<a href="dl.html">HTML &ltdl&gt</a>'
+pages.innerHTML += '<a href="dt.html">HTML &ltdt&gt</a>'
 
 // E
 pages.innerHTML += '<a href="                   ">HTML &ltem&gt</a>'
