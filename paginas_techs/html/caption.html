@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltcaption&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-left: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltcaption&gt HTML</h1>
+        <p>A tag <code>caption</code> é usado em tabelas para criar um título (ou legenda) para a tabela, trazendo informações adicionais para se guiar a tabela. Ela deve ser colocada logo após a abertura do <code>table</code>.</p>
+
+        <div class="code">
+            <pre>
+&lttable>
+    &ltcaption>Exemplo de caption&lt/caption>
+    &lttr>
+        &lttd>1&lt/td>
+        &lttd>2&lt/td>
+        &lttd>3&lt/td>
+    &lt/tr>
+
+    &lttr>
+        &lttd>4&lt/td>
+        &lttd>5&lt/td>
+        &lttd>6&lt/td>
+    &lt/tr>
+
+    &lttr>
+        &lttd>7&lt/td>
+        &lttd>8&lt/td>
+        &lttd>9&lt/td>
+    &lt/tr>
+&lt/table>
+            </pre>
+        </div>
+
+        <table>
+            <caption>Exemplo de caption</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>

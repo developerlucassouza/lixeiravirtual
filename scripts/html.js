@@ -16,10 +16,10 @@ pages.innerHTML += '<a href="body.html">HTML &ltbody&gt</a>'
 pages.innerHTML += '<a href="br.html">HTML &ltbr&gt</a>'
 
 // C
-pages.innerHTML += '<a href="                   ">HTML &ltcaption&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltcode&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltcol&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltcolgroup&gt</a>'
+pages.innerHTML += '<a href="caption.html                   ">HTML &ltcaption&gt</a>'
+pages.innerHTML += '<a href="code.html                   ">HTML &ltcode&gt</a>'
+pages.innerHTML += '<a href="col.html                   ">HTML &ltcol&gt</a>'
+pages.innerHTML += '<a href="colgroup.html                   ">HTML &ltcolgroup&gt</a>'
 
 // D
 pages.innerHTML += '<a href="                   ">HTML &ltdatalist&gt</a>'
