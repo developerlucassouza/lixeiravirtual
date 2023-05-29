@@ -5,11 +5,11 @@ function pesquisar() {
     
     switch (search) {
         case "html":
-            alert('html')
+            open('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/index.html', '_self')
             break
         
         default:
-            open('https://youtube.com', '_self')
+            open('https://www.youtube.com/', '_self')
             break
     }
 
