@@ -15,7 +15,7 @@ var itens = document.querySelector('div#itens')
 cabeça.innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />'
 
 // --- Criando cabeçalho
-cabeçalho.innerHTML += '<a href="#">Python</a> <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>'
+cabeçalho.innerHTML += '<a href="#">Python</a> <a href="https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/index.html">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>'
 
 // --- Abrir e fechar menu hamburguer
 menuburguer.addEventListener('onclick', clickHamb)
