@@ -34,12 +34,12 @@ pages.innerHTML += '<a href="dl.html">HTML &ltdl&gt</a>'
 pages.innerHTML += '<a href="dt.html">HTML &ltdt&gt</a>'
 
 // E
-pages.innerHTML += '<a href="                   ">HTML &ltem&gt</a>'
+pages.innerHTML += '<a href="em.html">HTML &ltem&gt</a>'
 
 // F
-pages.innerHTML += '<a href="                   ">HTML &ltfieldset&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltfooter&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltform&gt</a>'
+pages.innerHTML += '<a href="fieldset.html                   ">HTML &ltfieldset&gt</a>'
+pages.innerHTML += '<a href="footer.html                   ">HTML &ltfooter&gt</a>'
+pages.innerHTML += '<a href="form.html                   ">HTML &ltform&gt</a>'
 
 // H
 pages.innerHTML += '<a href="                   ">HTML &lth1&gt - &lth6&gt</a>'
