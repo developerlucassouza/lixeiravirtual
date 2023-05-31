@@ -1,0 +1,97 @@
+Ao criar o projeto, escolha Aplicativo Windows Forms com C#
+
+Ao abrir o projeto, clique em Exibir e escolha Caixa de Ferramentas. Fixe essa aba no lado esquerdo.
+
+No formulário, clique com o botão direito e em Propriedades e coloque a janela em ordem A a Z.
+
+=============================================================================
+Ferramentas > Controles Comuns 
+
+Button
+
+CheckBox
+
+Combo Box	Selecionar entre alguns valores
+		Para impedir digitar valores novos no Combo Box
+		é preciso colocar, em suas Propriedades, o DropDownStyle como DropDownList
+
+DateTimePicker	Escolher uma data
+	
+Label		Texto normal
+
+MaskedTextBox	Texto de inserção com máscara
+
+PictureBox	Colocar uma imagem
+
+RadioButton
+
+TextBox
+
+=============================================================================
+Para abrir a função de um elemento, basta dar dois cliques no elemento
+
+Adicionar itens no ComboBox (ou ListBox):
+comboBox1.Items.AddRange(new string[] {"Item 4", "Item 5", "Item 6"});
+
+Pegar valor String de um campo de formulário:
+string itemComboBox = comboBox1.SelectedItem.ToString;
+
+Mudar texto de um Label:
+lblComboBox.Text = "Selecionado: " + itemComboBox;
+
+Pegar data de um DateTimePicker e transformar em string:
+string data = dateTimePicker1.Value.ToString("dd/MM/yyyy");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
