@@ -36,11 +36,38 @@ comboBox1.Items.AddRange(new string[] {"Item 4", "Item 5", "Item 6"});
 Pegar valor String de um campo de formulário:
 string itemComboBox = comboBox1.SelectedItem.ToString;
 
+Pegar Valor de um TextBox:
+string nome = textBox1.Text;
+
 Mudar texto de um Label:
 lblComboBox.Text = "Selecionado: " + itemComboBox;
 
 Pegar data de um DateTimePicker e transformar em string:
 string data = dateTimePicker1.Value.ToString("dd/MM/yyyy");
+
+Ver se um CheckBox está ou não selecionado:
+if (checkBox1.Checked)
+{
+   lblCheck.Text = "Opção Selecionada";
+} else {
+   lblCheck.Text = "Opção não Selecionada"; 
+}
+
+Atributos do PictureBox:
+pictureBox1.Image = Properties.Resources.smurf;
+pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
