@@ -57,6 +57,9 @@ Atributos do PictureBox:
 pictureBox1.Image = Properties.Resources.smurf;
 pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
 
+Tentar atribuir valor a uma variável:
+double celsius;
+double.TryParse(txbCelsius.Text, out celsius);
 
 
 
