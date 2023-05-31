@@ -61,6 +61,12 @@ Tentar atribuir valor a uma variável:
 double celsius;
 double.TryParse(txbCelsius.Text, out celsius);
 
+Tentar fazer uma atribuição:
+if (double.TryParse(txbCm.Text, out cm))
+{
+
+}
+
 
 
 
