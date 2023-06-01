@@ -86,6 +86,16 @@ Segundo o titulo da caixa
 Terceiro o botão que aparecerá
 Quarto o icone da caixa
 
+Gerar senha aleatória:
+for (int i = 0; i < comprimento; i++)
+{
+   int index = random.Next(caracteres.Lenght);
+   senha.Append(caracteres[index]);
+}
+
+Colocar foco do mouse em uma caixa:
+txbComprimento.Focus();
+
 
 
 
