@@ -69,8 +69,22 @@ if (double.TryParse(txbCm.Text, out cm))
 {
    // Bloco
 }
+
 Deixar CheckBox ativo:
 chkNumeros.Checked = true;
+
+Ver se CheckBox está ativo:
+if (chkNumeros.Checked) {}
+
+Ver se CheckBox NÃO está ativado:
+if (!chkNumeros.Checked) {}
+
+Mostrar uma caixa de aviso:
+MessageBox.Show("ATENÇÃO!!!\nSelecione uma opção para gerar a senha!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+Primeiro a mensagem
+Segundo o titulo da caixa
+Terceiro o botão que aparecerá
+Quarto o icone da caixa
 
 
 
