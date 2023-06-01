@@ -1,4 +1,4 @@
-Ao criar o projeto, escolha Aplicativo Windows Forms com C#
+Ao criar o projeto, escolha Aplicativo Windows Forms (.NET Framework) com C#
 
 Ao abrir o projeto, clique em Exibir e escolha Caixa de Ferramentas. Fixe essa aba no lado esquerdo.
 
