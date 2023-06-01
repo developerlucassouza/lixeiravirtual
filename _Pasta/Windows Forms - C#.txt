@@ -28,6 +28,9 @@ RadioButton
 TextBox
 
 =============================================================================
+Para desabilitar um TextBox, basta ir nas Propriedades e mudar o Enable para False
+
+=============================================================================
 Para abrir a função de um elemento, basta dar dois cliques no elemento
 
 Adicionar itens no ComboBox (ou ListBox):
@@ -66,6 +69,8 @@ if (double.TryParse(txbCm.Text, out cm))
 {
    // Bloco
 }
+Deixar CheckBox ativo:
+chkNumeros.Checked = true;
 
 
 
