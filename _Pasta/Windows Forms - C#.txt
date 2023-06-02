@@ -135,9 +135,20 @@ OpenFileDialog janela = new OpenFileDialog();
                 txbArquivo.Text = janela.FileName;
             }
 
+=============================================================================
+Janela de seleção de diretório
 
+FolderBrowserDialog pastas = new FolderBrowserDialog();
 
-
+            // Define as propriedades do controle FolderBrowserDialog
+            pastas.Description = "Selecione o diretório de destino";
+            pastas.RootFolder = Environment.SpecialFolder.MyComputer;
+            //pastas.ShowNewFolderButton = true;
+            if (pastas.ShowDialog() == DialogResult.OK)
+            {
+                // Atribuir o caminho da pasta selecionada ao TextBox
+                txbDiretorio.Text = pastas.SelectedPath;
+            }
 
 
 
