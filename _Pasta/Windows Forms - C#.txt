@@ -32,6 +32,8 @@ Para desabilitar um TextBox, basta ir nas Propriedades e mudar o Enable para Fal
 
 Para deixar um item visivel ou invisivel, nas Propriedades mude o Visible.
 
+Para mudar o tamanho de um TextBox, é preciso ir em Font e mudar o tamanho (Size) da fonte.
+
 =============================================================================
 Para abrir a função de um elemento, basta dar dois cliques no elemento
 
@@ -107,73 +109,6 @@ string.IsNUllOrEmply(txbSenha.Text);
 Copiar texto para área de transferencia:
 Clipboard.SetText(txbSenha.Text));
 
-=============================================================================
-Janela de seleção de arquivo:
-// Instanciar o OpenFileDialog() (Janela de selecionar arquivo)
-OpenFileDialog janela = new OpenFileDialog();
-
-
-
-            // --- Configurar a janela
-
-            // Selecionar mais de um arquivo (true ou false)
-            janela.Multiselect = false;
-
-            // Testar se arquivo e caminho existem
-            janela.CheckFileExists = true;
-            janela.CheckPathExists = true;
-            janela.FilterIndex = 1;
-
-            // Quando abrir a janela, abrir no ultimo caminho aberto
-            janela.RestoreDirectory = true;
-
-            // Verificar se é somente leitura
-            janela.ReadOnlyChecked = true;
-
-            // Pegar arquivo selecionado e atribuir a uma variável
-            DialogResult resultado = janela.ShowDialog();
-            if (resultado == DialogResult.OK)
-            {
-                // Atribuir nome do arquivo ao teste box
-                txbArquivo.Text = janela.FileName;
-            }
-
-Pegar nome do arquivo em um caminho:
-string origem = txbArquivo.Text;
-string arquivo = Path.GetFileName(origem);
-
-Criar local de destino:
-string destino = Path.Combine(txbDiretorio.Text, arquivo);
-
-Copiar arquivo:
-File.Copy(origem, destino, true);
-
-=============================================================================
-Janela de seleção de diretório
-
-FolderBrowserDialog pastas = new FolderBrowserDialog();
-
-            // Define as propriedades do controle FolderBrowserDialog
-            pastas.Description = "Selecione o diretório de destino";
-            pastas.RootFolder = Environment.SpecialFolder.MyComputer;
-            //pastas.ShowNewFolderButton = true;
-            if (pastas.ShowDialog() == DialogResult.OK)
-            {
-                // Atribuir o caminho da pasta selecionada ao TextBox
-                txbDiretorio.Text = pastas.SelectedPath;
-            }
-
-Verificar se arquivo existe e perguntar se quer sobreescrever:
-if (File.Exists(destino))
-{
-   if (MessageBox.Show("O arquivo já existe! \nQuer substituir o arquivo?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-   {
-
-   }
-}
-
-Apagar um arquivo:
-File.Delete(caminho);
 
 
 
