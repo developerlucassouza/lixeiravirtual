@@ -61,6 +61,7 @@ pages.innerHTML += '<a href="                   ">HTML &ltlink&gt</a>'
 
 // M
 pages.innerHTML += '<a href="                   ">HTML &ltmain&gt</a>'
+pages.innerHTML += '<a href="                   ">HTML &ltmeta&gt</a>'
 
 // N
 pages.innerHTML += '<a href="                   ">HTML &ltnav&gt</a>'

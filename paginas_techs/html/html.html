@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &lthtml&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &lthtml&gt HTML</h1>
+        <p>A tag <code>html</code> é a raiz de todo o documento HTML, todas as demais tags estão dentro dela (exceto a tag <code>&lt!DOCTYPE&gt).</code></p>
+
+        <div class="code">
+            <pre>
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtTag &lthtml&gt&lt/title&gt
+    &lt/head&gt
+
+    &ltbody&gt
+        &lth1&gtOlá, Mundo!&lt/h1&gt
+        &ltp&gtAprendendo sobre a tag &ltHTML&gt&lt/p&gt   
+    &lt/body&gt
+&lt/html&gt</pre>
+        </div>
+
+        <p>Na tag <code>html</code> incluimos o atributo <code>lang</code>, que indicará o idioma do documento HTML.</p>
+
+        <div class="code">
+            <pre>
+&lthtml lang="pt-br"&gt   </pre>
+        </div>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>
