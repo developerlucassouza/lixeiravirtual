@@ -37,15 +37,15 @@ pages.innerHTML += '<a href="dt.html">HTML &ltdt&gt</a>'
 pages.innerHTML += '<a href="em.html">HTML &ltem&gt</a>'
 
 // F
-pages.innerHTML += '<a href="fieldset.html                   ">HTML &ltfieldset&gt</a>'
-pages.innerHTML += '<a href="footer.html                   ">HTML &ltfooter&gt</a>'
-pages.innerHTML += '<a href="form.html                   ">HTML &ltform&gt</a>'
+pages.innerHTML += '<a href="fieldset.html">HTML &ltfieldset&gt</a>'
+pages.innerHTML += '<a href="footer.html">HTML &ltfooter&gt</a>'
+pages.innerHTML += '<a href="form.html">HTML &ltform&gt</a>'
 
 // H
-pages.innerHTML += '<a href="                   ">HTML &lth1&gt - &lth6&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lthead&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltheader&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lthtml&gt</a>' 
+pages.innerHTML += '<a href="h1-h6.html                   ">HTML &lth1&gt - &lth6&gt</a>'
+pages.innerHTML += '<a href="head.html                   ">HTML &lthead&gt</a>'
+pages.innerHTML += '<a href="header.html                   ">HTML &ltheader&gt</a>'
+pages.innerHTML += '<a href="html.html                   ">HTML &lthtml&gt</a>' 
 
 // I
 pages.innerHTML += '<a href="                   ">HTML &ltiframe&gt</a>'
