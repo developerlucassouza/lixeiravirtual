@@ -74,7 +74,7 @@
     }
 
     div#itens a:hover {
-        background-color: rgba(216, 216, 0, .9);
+        background-color: var(--bpreto);
     }
 
     form#pesquisa {

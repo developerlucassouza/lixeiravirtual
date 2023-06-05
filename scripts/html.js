@@ -42,16 +42,16 @@ pages.innerHTML += '<a href="footer.html">HTML &ltfooter&gt</a>'
 pages.innerHTML += '<a href="form.html">HTML &ltform&gt</a>'
 
 // H
-pages.innerHTML += '<a href="h1-h6.html                   ">HTML &lth1&gt - &lth6&gt</a>'
-pages.innerHTML += '<a href="head.html                   ">HTML &lthead&gt</a>'
-pages.innerHTML += '<a href="header.html                   ">HTML &ltheader&gt</a>'
-pages.innerHTML += '<a href="html.html                   ">HTML &lthtml&gt</a>' 
+pages.innerHTML += '<a href="h1-h6.html">HTML &lth1&gt - &lth6&gt</a>'
+pages.innerHTML += '<a href="head.html">HTML &lthead&gt</a>'
+pages.innerHTML += '<a href="header.html">HTML &ltheader&gt</a>'
+pages.innerHTML += '<a href="html.html">HTML &lthtml&gt</a>' 
 
 // I
-pages.innerHTML += '<a href="                   ">HTML &ltiframe&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltimg&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltinput&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltins&gt</a>'
+pages.innerHTML += '<a href="iframe.html">HTML &ltiframe&gt</a>'
+pages.innerHTML += '<a href="img.html">HTML &ltimg&gt</a>'
+pages.innerHTML += '<a href="input.html                   ">HTML &ltinput&gt</a>'
+pages.innerHTML += '<a href="ins.html                   ">HTML &ltins&gt</a>'
 
 // L
 pages.innerHTML += '<a href="                   ">HTML &ltlabel&gt</a>'

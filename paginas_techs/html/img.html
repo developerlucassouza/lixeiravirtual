@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltimg&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        img {
+            margin: 50px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltimg&gt HTML</h1>
+        <p>A tag <code>img</code> serve para introduzir uma imagem ao seu site.</p>
+        <p>Por padrão a tag <code>img</code> irá pedir dois parâmetros. <code>src</code>, que é o caminho para a imagem. E <code>alt</code>, que é uma descrição da imagem que será mostrado caso a imagem não seja carregada.</p>
+
+        <div class="code">
+            <pre>
+&ltimg src="c#.png" alt="Logo do C#"&gt   </pre>
+        </div>
+
+        <img src="../../techs/logo_csharp.png" alt="" style="margin-left:20px;">
+
+        <div class="code">
+            <pre>
+&ltimg src="SEM IMAGEM" alt="Logo do C#"&gt   </pre>
+        </div>
+
+        <img src="" alt="Logo do C#" style="margin:0px; margin-left:20px;">
+
+        <p>Com o uso de <code><a href="../css/index.html">CSS</a></code>, podemos centralizar uma imagem, utilizando as propriedades <code>display</code> e <code>margin</code>.</p>
+
+        <div class="code">
+            <pre>
+&ltstyle&gt
+    img {
+        display: block;   
+        margin: auto;
+    }
+&lt/style&gt</pre>
+        </div>
+
+        <img src="../../techs/logo_csharp.png" alt="" style="display: block; margin:50px auto;">
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>
