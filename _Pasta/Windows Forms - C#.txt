@@ -43,6 +43,12 @@ if (txbNome.Text == string.Empty) {}
 Adicionar itens no ComboBox (ou ListBox):
 comboBox1.Items.AddRange(new string[] {"Item 4", "Item 5", "Item 6"});
 
+Adicionar itens ao ListBox:
+lstResultado.Items.Add("Novo Item");
+
+Limpar um ListBox:
+lstResultado.Items.Clear();
+
 Pegar valor String de um campo de formulário:
 string itemComboBox = comboBox1.SelectedItem.ToString;
 
