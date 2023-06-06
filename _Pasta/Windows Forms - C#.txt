@@ -37,6 +37,9 @@ Para mudar o tamanho de um TextBox, é preciso ir em Font e mudar o tamanho (Siz
 =============================================================================
 Para abrir a função de um elemento, basta dar dois cliques no elemento
 
+Ver se caixa está vazia:
+if (txbNome.Text == string.Empty) {}
+
 Adicionar itens no ComboBox (ou ListBox):
 comboBox1.Items.AddRange(new string[] {"Item 4", "Item 5", "Item 6"});
 
