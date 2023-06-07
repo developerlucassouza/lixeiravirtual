@@ -405,7 +405,6 @@ Console.ResetColor();
 Sortear cor de um Array tipo String:
 Console.ForegroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), cores[random.Next(0, cores.Length)]);
 
-14:06 28/04/2023
 - Cores do C#
 Black
 Blue
