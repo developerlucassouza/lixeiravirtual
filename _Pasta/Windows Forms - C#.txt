@@ -145,6 +145,17 @@ if (e.KeyChar == ',')
    }
 }
 
+=============================================================================
+Mudar tamanho da tela
+
+Definir um tamanho para a tela:
+this.Size = new Size(546, 820);
+
+Definir tamanho e recolocar no centro da tela:
+int newX = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
+int newY = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
+this.Location = new Point(newX, newY);
+
 
 
 
