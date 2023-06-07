@@ -126,6 +126,13 @@ Programa com multiplos formulários
 Abrir outro formulário:
 Application.Run(new Form1());
 
+Adicionar formulário a uma variável:
+Telas.frmJogo jogo = new Telas.frmJogo();
+(Sendo Telas a pasta que está os formulários)
+
+Fazer tela aparecer, mas sem poder ser sobressaida por outra tela:
+jogo.ShowDialog();
+
 =============================================================================
 Fazer TextBox só poder digitar números e vírgula:
 (Esse código deve ser colocado dentro do Evento KeyPress)
@@ -164,9 +171,11 @@ int newX = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
 int newY = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
 this.Location = new Point(newX, newY);
 
+=============================================================================
+Evento MouseMove do Form
 
-
-
+Fazer objeto acompanhar o mouse:
+picRaquete.Top = e.Y - (picRaquete.Height / 2);
 
 
 
