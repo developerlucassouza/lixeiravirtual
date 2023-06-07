@@ -34,6 +34,8 @@ Para deixar um item visivel ou invisivel, nas Propriedades mude o Visible.
 
 Para mudar o tamanho de um TextBox, é preciso ir em Font e mudar o tamanho (Size) da fonte.
 
+Desabilitando o AutoSize de um Label, você poderá alterar o tamanho dele, e utilizar o TextAlign para mudar seu alinhamento.
+
 =============================================================================
 Para abrir a função de um elemento, basta dar dois cliques no elemento
 
@@ -117,6 +119,12 @@ string.IsNUllOrEmply(txbSenha.Text);
 
 Copiar texto para área de transferencia:
 Clipboard.SetText(txbSenha.Text));
+
+=============================================================================
+Programa com multiplos formulários
+
+Abrir outro formulário:
+Application.Run(new Form1());
 
 =============================================================================
 Fazer TextBox só poder digitar números e vírgula:
