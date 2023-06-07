@@ -120,6 +120,7 @@ Clipboard.SetText(txbSenha.Text));
 
 =============================================================================
 Fazer TextBox só poder digitar números e vírgula:
+(Esse código deve ser colocado dentro do Evento KeyPress)
 
 // Troca ponto por vírgula
 if (e.KeyChar == '.')
