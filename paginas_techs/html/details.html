@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltdetails&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltdetails&gt HTML</h1>
+        <p>A tag <code>details</code> cria detalhes que podem ser abertos e fechados pelo usuário. Por padrão ele irá aparecer como um botão de Saiba mais.</p>
+
+        <div class="code">
+            <pre>
+&ltdetails&gt
+    &ltp&gtDetalhes escondidos&lt/p&gt   
+&lt/details&gt</pre>
+        </div>
+
+        <details style="margin-left:20px;">
+            <p>Detalhes escondidos</p>
+        </details>
+
+        <p>Há também a adição da tag <code><a href="summary.html">&ltsummary&gt</a></code> que altera o que estará escrito no indicador no lugar de Saiba mais.</p>
+
+        <div class="code">
+            <pre>
+&ltdetails&gt
+    &ltsummary&gtClique aqui para mais detalhes&lt/summary&gt   
+    &ltp&gtDetalhes escondidos&lt/p&gt   
+&lt/details&gt</pre>
+        </div>
+
+        <details style="margin-left:20px;">
+            <summary>Clique aqui para mais detalhes</summary>
+            <p>Detalhes escondidos</p>
+        </details>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>

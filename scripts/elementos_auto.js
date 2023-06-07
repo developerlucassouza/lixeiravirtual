@@ -9,7 +9,7 @@ var itens = document.querySelector('div#itens')
 // itens.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
 
 // Icone de menu hamburguer
-//<span class="material-symbols-outlined" id="burguer">menu</span>
+// <span class="material-symbols-outlined" id="burguer">menu</span>
 
 // --- Importar icons do Google
 cabeça.innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />'

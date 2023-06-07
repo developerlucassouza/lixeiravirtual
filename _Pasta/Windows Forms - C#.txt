@@ -1,0 +1,173 @@
+Ao criar o projeto, escolha Aplicativo Windows Forms (.NET Framework) com C#
+
+Ao abrir o projeto, clique em Exibir e escolha Caixa de Ferramentas. Fixe essa aba no lado esquerdo.
+
+No formulário, clique com o botão direito e em Propriedades e coloque a janela em ordem A a Z.
+
+=============================================================================
+Ferramentas > Controles Comuns 
+
+Button
+
+CheckBox
+
+Combo Box	Selecionar entre alguns valores
+		Para impedir digitar valores novos no Combo Box
+		é preciso colocar, em suas Propriedades, o DropDownStyle como DropDownList
+
+DateTimePicker	Escolher uma data
+	
+Label		Texto normal
+
+MaskedTextBox	Texto de inserção com máscara
+
+PictureBox	Colocar uma imagem
+
+RadioButton
+
+TextBox
+
+=============================================================================
+Para desabilitar um TextBox, basta ir nas Propriedades e mudar o Enable para False
+
+Para deixar um item visivel ou invisivel, nas Propriedades mude o Visible.
+
+Para mudar o tamanho de um TextBox, é preciso ir em Font e mudar o tamanho (Size) da fonte.
+
+=============================================================================
+Para abrir a função de um elemento, basta dar dois cliques no elemento
+
+Ver se caixa está vazia:
+if (txbNome.Text == string.Empty) {}
+
+Adicionar itens no ComboBox (ou ListBox):
+comboBox1.Items.AddRange(new string[] {"Item 4", "Item 5", "Item 6"});
+
+Adicionar itens ao ListBox:
+lstResultado.Items.Add("Novo Item");
+
+Limpar um ListBox:
+lstResultado.Items.Clear();
+
+Pegar valor String de um campo de formulário:
+string itemComboBox = comboBox1.SelectedItem.ToString;
+
+Pegar Valor de um TextBox:
+string nome = textBox1.Text;
+
+Mudar texto de um Label:
+lblComboBox.Text = "Selecionado: " + itemComboBox;
+
+Pegar data de um DateTimePicker e transformar em string:
+string data = dateTimePicker1.Value.ToString("dd/MM/yyyy");
+
+Ver se um CheckBox está ou não selecionado:
+if (checkBox1.Checked)
+{
+   lblCheck.Text = "Opção Selecionada";
+} else {
+   lblCheck.Text = "Opção não Selecionada"; 
+}
+
+Ver se RadioButton está selecionado:
+tbdCopiar.Checked;
+
+Atributos do PictureBox:
+pictureBox1.Image = Properties.Resources.smurf;
+pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
+Tentar atribuir valor a uma variável:
+double celsius;
+double.TryParse(txbCelsius.Text, out celsius);
+
+Tentar fazer uma atribuição:
+if (double.TryParse(txbCm.Text, out cm))
+{
+   // Bloco
+}
+
+Deixar CheckBox ativo:
+chkNumeros.Checked = true;
+
+Ver se CheckBox está ativo:
+if (chkNumeros.Checked) {}
+
+Ver se CheckBox NÃO está ativado:
+if (!chkNumeros.Checked) {}
+
+Mostrar uma caixa de aviso:
+MessageBox.Show("ATENÇÃO!!!\nSelecione uma opção para gerar a senha!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+Primeiro a mensagem
+Segundo o titulo da caixa
+Terceiro o botão que aparecerá
+Quarto o icone da caixa
+
+Gerar senha aleatória:
+for (int i = 0; i < comprimento; i++)
+{
+   int index = random.Next(caracteres.Lenght);
+   senha.Append(caracteres[index]);
+}
+
+Colocar foco do mouse em uma caixa:
+txbComprimento.Focus();
+
+Testar se campo está vazio:
+string.IsNUllOrEmply(txbSenha.Text);
+
+Copiar texto para área de transferencia:
+Clipboard.SetText(txbSenha.Text));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
