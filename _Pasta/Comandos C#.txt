@@ -47,7 +47,7 @@ Tipos Primitivos
 - bool		(Valores Booleanos)	true / false
 
 Atribuir valor char com Console.ReadLine():
-char letra;
+char letra; 
 char.TryParse(Console.ReadLine(), out letra); 
 
 Trnasformar string (dt1) em data:
