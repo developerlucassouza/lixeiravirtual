@@ -118,7 +118,31 @@ string.IsNUllOrEmply(txbSenha.Text);
 Copiar texto para área de transferencia:
 Clipboard.SetText(txbSenha.Text));
 
+=============================================================================
+Fazer TextBox só poder digitar números e vírgula:
 
+// Troca ponto por vírgula
+if (e.KeyChar == '.')
+{
+   e.KeyChar = ',';
+}
+
+// Impede digitar outros caracters sem ser nums, vírgula e backspace
+if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != 8)
+{   
+   // Cancela evento keypress
+   e.Handled = true;
+}
+
+// Verifica se vírgula já foi digitada
+if (e.KeyChar == ',')
+{
+   if (txbPeso.Text.Contains(","))
+   {
+      // Cancela evento keypress
+      e.Handled = true;
+   }
+}
 
 
 
