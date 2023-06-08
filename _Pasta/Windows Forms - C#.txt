@@ -120,6 +120,12 @@ string.IsNUllOrEmply(txbSenha.Text);
 Copiar texto para área de transferencia:
 Clipboard.SetText(txbSenha.Text));
 
+Pegar valor de um Message do tipo YesNo:
+if (MessageBox.Show("Tem certeza que deseja apagar toda a lista de tarefas?", "Aviso", MessageBoxButtons.YesNo) == DialogResult.Yes)
+{
+   // Bloco
+}
+
 =============================================================================
 Programa com multiplos formulários
 
