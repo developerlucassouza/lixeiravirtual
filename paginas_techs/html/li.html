@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltli&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltli&gt HTML</h1>
+        <p>A tag <code>li</code> é um item de lista, utilizado para adicionar itens as listas ordenadas (<code><a href="ol.html">&ltol&gt</a></code>) e nas listas não ordenadas (<code><a href="ul.html">&ltul&gt</a></code>)</p>
+
+        <div class="code">
+            <pre>
+&ltol>
+    &ltli>Item 1&lt/li>
+    &ltli>Item 2&lt/li>
+    &ltli>Item 3&lt/li>
+    &ltli>Item 4&lt/li>
+    &ltli>Item 5&lt/li>
+&lt/ol>
+
+&ltul>
+    &ltli>Item 1&lt/li>
+    &ltli>Item 2&lt/li>   
+    &ltli>Item 3&lt/li>
+    &ltli>Item 4&lt/li>
+    &ltli>Item 5&lt/li>
+&lt/ul></pre>
+        </div>
+
+        <div style="margin:40px;">
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+
+            <br>
+
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </div>
+
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>

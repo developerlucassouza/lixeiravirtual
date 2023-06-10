@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltlink&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltlink&gt HTML</h1>
+        <p>A tag <code>link</code> é colocada dentro da tag <code><a href="head.html">&lthead&gt</a></code>, portanto não irá aparecer no documento, e irá relacionar o documento HTML atual a algum recurso externo.</p>
+        <p>Costuma-se utilizar <code>link</code> para importar folhas de estilo <code><a href="../css/index.html">CSS</a></code> e também para adicionar favicons. Em ambos os casos, devemos usar o atributo <code>href</code> para indicar o caminho do arquivo <code><a href="../css/index.html">CSS</a></code> ou a imagem do favicon.</p>
+
+        <p>Importar folha de estilo CSS:</p>
+        <div class="code">
+            <pre>
+&ltlink rel="stylesheet" href="style.css"&gt   </pre>
+        </div>
+
+        <p>Adicionar favicon:</p>
+        <div class="code">
+            <pre>
+&ltlink rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt   </pre>
+        </div>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>

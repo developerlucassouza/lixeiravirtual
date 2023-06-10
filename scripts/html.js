@@ -50,18 +50,18 @@ pages.innerHTML += '<a href="html.html">HTML &lthtml&gt</a>'
 // I
 pages.innerHTML += '<a href="iframe.html">HTML &ltiframe&gt</a>'
 pages.innerHTML += '<a href="img.html">HTML &ltimg&gt</a>'
-pages.innerHTML += '<a href="input.html                   ">HTML &ltinput&gt</a>'
-pages.innerHTML += '<a href="ins.html                   ">HTML &ltins&gt</a>'
+pages.innerHTML += '<a href="input.html">HTML &ltinput&gt</a>'
+pages.innerHTML += '<a href="ins.html">HTML &ltins&gt</a>'
 
 // L
-pages.innerHTML += '<a href="                   ">HTML &ltlabel&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltlegend&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltli&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltlink&gt</a>'
+pages.innerHTML += '<a href="label.html">HTML &ltlabel&gt</a>'
+pages.innerHTML += '<a href="legend.html">HTML &ltlegend&gt</a>'
+pages.innerHTML += '<a href="li.html">HTML &ltli&gt</a>'
+pages.innerHTML += '<a href="link.html">HTML &ltlink&gt</a>'
 
 // M
-pages.innerHTML += '<a href="                   ">HTML &ltmain&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltmeta&gt</a>'
+pages.innerHTML += '<a href="main.html">HTML &ltmain&gt</a>'
+pages.innerHTML += '<a href="meta.html">HTML &ltmeta&gt</a>'
 
 // N
 pages.innerHTML += '<a href="                   ">HTML &ltnav&gt</a>'
@@ -80,11 +80,13 @@ pages.innerHTML += '<a href="                   ">HTML &ltpre&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltq&gt</a>'
 
 // S
+pages.innerHTML += '<a href="                   ">HTML &ltscript&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltsection&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltselect&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltsmall&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltspan&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltstrong&gt</a>'
+pages.innerHTML += '<a href="                   ">HTML &ltstyle&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltsub&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltsummary&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltsup&gt</a>'

@@ -2,6 +2,8 @@ function pesquisar() {
 
     var tpesquisa = document.getElementById('tpesquisa')
     var search = tpesquisa.value
+    search = search.trim()
+    search = search.toLowerCase()
     
     switch (search) {
         case "html":
