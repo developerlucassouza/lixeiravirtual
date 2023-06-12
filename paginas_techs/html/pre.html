@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltpre&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltpre&gt HTML</h1>
+        <p>A tag <code>pre</code> irá fazer com que o texto no site fique igual ao texto no código, como quebras e espaçamentos.</p>
+
+        <div class="code">
+            <pre>
+&lt!-- Sem &ltpre&gt --&gt
+&ltp&gtOlá,            Mundo!&lt/p&gt
+&lt!-- Com &ltpre&gt --&gt
+&ltpre&gt&ltp&gtOlá,            Mundo!&lt/p&gt&lt/pre&gt   </pre>
+        </div>
+
+        <p>Olá,            Mundo!</p>
+        <pre><p>Olá,            Mundo!</p></pre>
+
+        <div class="code">
+            <pre>
+&lt!-- Sem &ltpre&gt --&gt
+&ltp&gt
+    Minha
+    Vizinha
+    Tem
+    Muitas
+    Jóias
+&lt/p&gt
+&lt!-- Com &ltpre&gt --&gt
+&ltpre&gt
+    &ltp&gt
+Minha
+Vizinha
+Tem
+Muitas
+Jóias
+    &lt/p&gt
+&lt/pre&gt
+            </pre>
+        </div>
+
+        <p>
+            Minha
+            Vizinha
+            Tem
+            Muitas
+            Jóias
+        </p>
+
+        <pre><p>Minha
+Vizinha
+Tem
+Muitas
+Jóias</p></pre>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>

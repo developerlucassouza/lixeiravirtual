@@ -67,17 +67,16 @@ pages.innerHTML += '<a href="meta.html">HTML &ltmeta&gt</a>'
 pages.innerHTML += '<a href="nav.html">HTML &ltnav&gt</a>'
 
 // O
-pages.innerHTML += '<a href="ol.html                   ">HTML &ltol&gt</a>'
-pages.innerHTML += '<a href="optgroup.html                   ">HTML &ltoptgroup&gt</a>'
-pages.innerHTML += '<a href="option.html                   ">HTML &ltoption&gt</a>'
-pages.innerHTML += '<a href="output.html                   ">HTML &ltoutput&gt</a>'
+pages.innerHTML += '<a href="ol.html">HTML &ltol&gt</a>'
+pages.innerHTML += '<a href="optgroup.html">HTML &ltoptgroup&gt</a>'
+pages.innerHTML += '<a href="option.html">HTML &ltoption&gt</a>'
 
 // P
-pages.innerHTML += '<a href="                   ">HTML &ltp&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltpre&gt</a>'
+pages.innerHTML += '<a href="p.html">HTML &ltp&gt</a>'
+pages.innerHTML += '<a href="pre.html">HTML &ltpre&gt</a>'
 
 // Q
-pages.innerHTML += '<a href="                   ">HTML &ltq&gt</a>'
+pages.innerHTML += '<a href="q.html">HTML &ltq&gt</a>'
 
 // S
 pages.innerHTML += '<a href="                   ">HTML &ltscript&gt</a>'
