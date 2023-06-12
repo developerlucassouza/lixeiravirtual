@@ -36,6 +36,12 @@
 
     header {
         background-color: var(--bpreto);
+        height: 60px;
+        overflow-x: auto;
+    }
+
+    header::-webkit-scrollbar {
+        height: 1px;
     }
 
     header img {
@@ -44,13 +50,13 @@
 
     header a, span#burguer {
         color: white;
-        display: inline-block;
+        display: table-cell;
         padding: 20px 10px;
         text-decoration: none;
     }
 
     header a:hover {
-        background-color: var(--bazul);
+        background-color: var(--bvermelho);
     }
 
     main > h1 {
