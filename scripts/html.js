@@ -64,13 +64,13 @@ pages.innerHTML += '<a href="main.html">HTML &ltmain&gt</a>'
 pages.innerHTML += '<a href="meta.html">HTML &ltmeta&gt</a>'
 
 // N
-pages.innerHTML += '<a href="                   ">HTML &ltnav&gt</a>'
+pages.innerHTML += '<a href="nav.html">HTML &ltnav&gt</a>'
 
 // O
-pages.innerHTML += '<a href="                   ">HTML &ltol&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltoptgroup&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltoption&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltoutput&gt</a>'
+pages.innerHTML += '<a href="ol.html                   ">HTML &ltol&gt</a>'
+pages.innerHTML += '<a href="optgroup.html                   ">HTML &ltoptgroup&gt</a>'
+pages.innerHTML += '<a href="option.html                   ">HTML &ltoption&gt</a>'
+pages.innerHTML += '<a href="output.html                   ">HTML &ltoutput&gt</a>'
 
 // P
 pages.innerHTML += '<a href="                   ">HTML &ltp&gt</a>'

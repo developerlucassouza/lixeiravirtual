@@ -22,6 +22,7 @@
     body {
         background-color: var(--bazul);
         font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 20px;
     }
 
     h1 {
@@ -48,9 +49,10 @@
         width: 15px;
     }
 
-    header a, span#burguer {
+    header a {
         color: white;
         display: table-cell;
+        height: 60px;
         padding: 20px 10px;
         text-decoration: none;
     }
@@ -61,6 +63,12 @@
 
     main > h1 {
         text-align: center;
+    }
+
+    header span#burguer {
+        color: white;
+        display: table-cell;
+        text-decoration: none;
     }
 
     /* Id */
@@ -119,7 +127,7 @@
 
     main#tech {
         background-color: white;
-        border-radius: 10px;
+        /*border-radius: 10px;*/
         margin: 50px;
         padding: 10px 0px;
     }
