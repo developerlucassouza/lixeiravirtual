@@ -270,9 +270,13 @@ class Aluno
         // =================================================================================
     }
 
+=================================================================================
+Fazer DataGridView receber o SELECT do Banco de Dados: 
 
-
-
+private void frmAlunos_Load(object sender, EventArgs e)
+{
+   dgvAlunos.DataSource = Aluno.MostraAlunos();
+}
 
 
 
