@@ -579,8 +579,16 @@ if (Console.KeyAvailable)
     }
 }
 
+=================================================================================
+Region
 
+Um region serve para organizar menor o seu código, podendo ocultar um region quando necessário
 
+Abrir region:
+#region "Nome da region"
+
+Fechar region:
+#endregion
 
 
 
