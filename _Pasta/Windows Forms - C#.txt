@@ -36,7 +36,7 @@ Para mudar o tamanho de um TextBox, é preciso ir em Font e mudar o tamanho (Siz
 
 Desabilitando o AutoSize de um Label, você poderá alterar o tamanho dele, e utilizar o TextAlign para mudar seu alinhamento.
 
-Podemos usar um WebBrowser para
+Para criar um menu em cima do programa, dentro de Caixa de Ferramentas, na aba Menus e Barra de Ferramentas, dê dois clique em ToolStrip para adiciona-lo a janela
 
 =============================================================================
 Para abrir a função de um elemento, basta dar dois cliques no elemento
