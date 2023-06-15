@@ -109,16 +109,6 @@ pages.innerHTML += '<a href="                   ">HTML &ltvideo&gt</a>'
 
 // pages.innerHTML += '<a href="">HTML &lt &gt</a>'
 
-/*
-for (var ancora of document.querySelectorAll('div#itens a')) {
-    var href = ancora.getAttribute('href')
-    if (href === 'a.html') {
-        ancora.className = 'ativo';
-    }
-}
-*/
-
-
 var url = location.href;
 var prefixo1 = 'file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/';
 var prefixo2 = 'https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/';
