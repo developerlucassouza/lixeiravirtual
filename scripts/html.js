@@ -127,11 +127,11 @@ if (url.indexOf('file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_t
 
 } else if (url.indexOf('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/') != -1) {
     alert('entrou no segundo if')
-    url = ur.replace('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
+    url = url.replace('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
 
 } else if (url.indexOf('developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/') != -1) {
     alert('entrou no terceiro if')
-    url = ur.replace('developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
+    url = url.replace('developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
 
 }
 alert(url)
