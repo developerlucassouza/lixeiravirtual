@@ -323,3 +323,16 @@
 .bvermelho {
     background-color: var(--bvermelho);
 }
+
+
+
+
+
+
+
+
+
+
+a.ativo {
+    background-color: aqua;
+}

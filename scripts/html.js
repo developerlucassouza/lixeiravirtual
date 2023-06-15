@@ -108,3 +108,35 @@ pages.innerHTML += '<a href="                   ">HTML &ltul&gt</a>'
 pages.innerHTML += '<a href="                   ">HTML &ltvideo&gt</a>'
 
 // pages.innerHTML += '<a href="">HTML &lt &gt</a>'
+
+/*
+for (var ancora of document.querySelectorAll('div#itens a')) {
+    var href = ancora.getAttribute('href')
+    if (href === 'a.html') {
+        ancora.className = 'ativo';
+    }
+}
+*/
+
+var url = location.href
+
+if (url.indexOf('file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/') != -1) {
+    url = url.replace('file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/', '')
+
+} else if (url.indexOf('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/') != -1) {
+    url = ur.replace('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
+
+} else if (url.indexOf('developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/') != -1) {
+    url = ur.replace('developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
+
+}
+alert(url)
+
+
+for (var ancora of document.querySelectorAll('div#itens a')) {
+    var href = ancora.getAttribute('href')
+    if (href === 'a.html') {
+        ancora.className = 'ativo';
+    }
+}
+alert('não houve erros')
