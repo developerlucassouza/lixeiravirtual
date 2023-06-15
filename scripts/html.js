@@ -118,26 +118,22 @@ for (var ancora of document.querySelectorAll('div#itens a')) {
 }
 */
 
-var url = location.href;
-alert('colocou a url na variavel');
 
+var url = location.href;
 var prefixo1 = 'file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/';
 var prefixo2 = 'https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/';
 var prefixo3 = 'developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/';
+var prefixo4 = 'http://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/'
 
 if (url.indexOf(prefixo1) !== -1) {
-    alert('entrou no primeiro if');
-     url = url.replace(prefixo1, '');
+    url = url.replace(prefixo1, '');
 } else if (url.indexOf(prefixo2) !== -1) {
-     alert('entrou no segundo if');
-     url = url.replace(prefixo2, '');
+    url = url.replace(prefixo2, '');
 } else if (url.indexOf(prefixo3) !== -1) {
-     alert('entrou no terceiro if');
-     url = url.replace(prefixo3, '');
+    url = url.replace(prefixo3, '');
+} else if (url.indexOf(prefixo4) !== -1) {
+    url = url.replace(prefixo4, '');
 }
-
-alert(url);
-
 
 for (var ancora of document.querySelectorAll('div#itens a')) {
     var href = ancora.getAttribute('href')
@@ -145,4 +141,3 @@ for (var ancora of document.querySelectorAll('div#itens a')) {
         ancora.className = 'ativo';
     }
 }
-alert('não houve erros')
