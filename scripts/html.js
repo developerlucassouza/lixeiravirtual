@@ -118,23 +118,25 @@ for (var ancora of document.querySelectorAll('div#itens a')) {
 }
 */
 
-var url = location.href
-alert('colocou a url na variavel')
+var url = location.href;
+alert('colocou a url na variavel');
 
-if (url.indexOf('file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/') != -1) {
-    alert('entrou no primeiro if')
-    url = url.replace('file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/', '')
+var prefixo1 = 'file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/';
+var prefixo2 = 'https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/';
+var prefixo3 = 'developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/';
 
-} else if (url.indexOf('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/') != -1) {
-    alert('entrou no segundo if')
-    url = url.replace('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
-
-} else if (url.indexOf('developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/') != -1) {
-    alert('entrou no terceiro if')
-    url = url.replace('developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/', '')
-
+if (url.indexOf(prefixo1) !== -1) {
+    alert('entrou no primeiro if');
+     url = url.replace(prefixo1, '');
+} else if (url.indexOf(prefixo2) !== -1) {
+     alert('entrou no segundo if');
+     url = url.replace(prefixo2, '');
+} else if (url.indexOf(prefixo3) !== -1) {
+     alert('entrou no terceiro if');
+     url = url.replace(prefixo3, '');
 }
-alert(url)
+
+alert(url);
 
 
 for (var ancora of document.querySelectorAll('div#itens a')) {
