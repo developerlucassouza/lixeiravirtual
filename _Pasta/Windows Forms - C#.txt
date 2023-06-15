@@ -126,11 +126,26 @@ string.IsNUllOrEmply(txbSenha.Text);
 Copiar texto para área de transferencia:
 Clipboard.SetText(txbSenha.Text));
 
-Pegar valor de um Message do tipo YesNo:
+Pegar valor de um MessageBox do tipo YesNo:
 if (MessageBox.Show("Tem certeza que deseja apagar toda a lista de tarefas?", "Aviso", MessageBoxButtons.YesNo) == DialogResult.Yes)
 {
    // Bloco
 }
+
+Atribuir resposta do MessageBox a uma variável:
+DialogResult pergunta = MessageBox.Show("Deseja excluir esse aluno?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+Simular o click em um botão:
+toolCancelar.PerformClick();
+
+Abrir janela de seleção de arquivo e atribuir nome do arquivo a variável resp:
+OpenFileDialog foto = new OpenFileDialog();
+foto.Title = "Selecione uma foto";
+foto.Filter = "Todos os arquivos (*.*)|*.*";
+DialogResult resp = foto.ShowDialog();
+
+Pegar o nome do arquivo de um caminho inteiro:
+Path.GetFileName(txbFoto.Text)
 
 =============================================================================
 Programa com multiplos formulários
