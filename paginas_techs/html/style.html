@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltstyle&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltstyle&gt HTML</h1>
+        <p>A tag <code>style</code> é utilizada para criar um <code><a href="../css/index.html">CSS</a></code> interno no seu documento HTML.</p>
+        <p>Normalmente é criada dentro da tag <code><a href="head.html">&lthead&gt</a></code>.</p>
+        <p>Dentro da tag <code>style</code>, será escrito os comandos de estilização <code><a href="../css/index.html">CSS</a></code>.</p>
+
+        <div class="code">
+            <pre>
+&lthead&gt
+    [...]
+
+    &ltstyle&gt
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: blue;
+        }
+
+        div > p {
+            text-decoration: underline;   
+        }
+    &lt/style&gt
+&lt/head&gt</pre>
+        </div>
+
+        <p>Para importar um arquivo <code>.css</code> com <code><a href="../css/index.html">CSS</a></code> externo, será preciso usar a tag <code><a href="link.html">&ltlink&gt</a></code>.</p>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>

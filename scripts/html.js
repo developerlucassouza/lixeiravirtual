@@ -79,36 +79,37 @@ pages.innerHTML += '<a href="pre.html">HTML &ltpre&gt</a>'
 pages.innerHTML += '<a href="q.html">HTML &ltq&gt</a>'
 
 // S
-pages.innerHTML += '<a href="                   ">HTML &ltscript&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltsection&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltselect&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltsmall&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltspan&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltstrong&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltstyle&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltsub&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltsummary&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltsup&gt</a>'
+pages.innerHTML += '<a href="script.html">HTML &ltscript&gt</a>'
+pages.innerHTML += '<a href="section.html">HTML &ltsection&gt</a>'
+pages.innerHTML += '<a href="select.html">HTML &ltselect&gt</a>'
+pages.innerHTML += '<a href="small.html">HTML &ltsmall&gt</a>'
+pages.innerHTML += '<a href="span.html">HTML &ltspan&gt</a>'
+pages.innerHTML += '<a href="strong.html">HTML &ltstrong&gt</a>'
+pages.innerHTML += '<a href="style.html">HTML &ltstyle&gt</a>'
+pages.innerHTML += '<a href="sub.html">HTML &ltsub&gt</a>'
+pages.innerHTML += '<a href="summary.html">HTML &ltsummary&gt</a>'
+pages.innerHTML += '<a href="sup.html">HTML &ltsup&gt</a>'
 
 // T
-pages.innerHTML += '<a href="                   ">HTML &lttable&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lttbody&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lttd&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lttextarea&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lttfoot&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltth&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &ltthead&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lttitle&gt</a>'
-pages.innerHTML += '<a href="                   ">HTML &lttr&gt</a>'
+pages.innerHTML += '<a href="table.html">HTML &lttable&gt</a>'
+pages.innerHTML += '<a href="tbody.html">HTML &lttbody&gt</a>'
+pages.innerHTML += '<a href="td.html">HTML &lttd&gt</a>'
+pages.innerHTML += '<a href="textarea.html">HTML &lttextarea&gt</a>'
+pages.innerHTML += '<a href="tfoot.html">HTML &lttfoot&gt</a>'
+pages.innerHTML += '<a href="th.html">HTML &ltth&gt</a>'
+pages.innerHTML += '<a href="thead.html">HTML &ltthead&gt</a>'
+pages.innerHTML += '<a href="title.html">HTML &lttitle&gt</a>'
+pages.innerHTML += '<a href="tr.html">HTML &lttr&gt</a>'
 
 // U
-pages.innerHTML += '<a href="                   ">HTML &ltul&gt</a>'
+pages.innerHTML += '<a href="ul.html">HTML &ltul&gt</a>'
 
 // V
-pages.innerHTML += '<a href="                   ">HTML &ltvideo&gt</a>'
+pages.innerHTML += '<a href="video.html">HTML &ltvideo&gt</a>'
 
 // pages.innerHTML += '<a href="">HTML &lt &gt</a>'
 
+/*
 var url = location.href;
 var prefixo1 = 'file:///C:/Users/Lucas/Documents/Sites/lixeiravirtual/paginas_techs/html/';
 var prefixo2 = 'https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/';
@@ -124,7 +125,21 @@ if (url.indexOf(prefixo1) !== -1) {
 } else if (url.indexOf(prefixo4) !== -1) {
     url = url.replace(prefixo4, '');
 }
+*/
 
+// Obtém a URL atual
+var url = new URL(window.location.href);
+
+// Obtém o pathname da URL
+var pathname = url.pathname;
+
+// Separa o pathname em partes usando o caractere '/'
+var partes = pathname.split('/');
+
+// Obtém a última parte do pathname (parte final da URL)
+url = partes[partes.length - 1];
+
+// Avaliar href de cada tag e se ela é igual o arquivo atual
 for (var ancora of document.querySelectorAll('div#itens a')) {
     var href = ancora.getAttribute('href')
     if (href === url) {

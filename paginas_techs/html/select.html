@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltselect&gt HTML</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tag &ltselect&gt HTML</h1>
+        <p>A tag <code>select</code> é utilizada normalmente dentro de formulários (<code><a href="form.html">&ltform&gt</a></code>), é utilizada para criar uma lista suspensa onde o usuário pode selecionar um dos itens pré estabelecidos.</p>
+        <p>Para adicionar os itens do <code>select</code> é preciso usar a tag <code><a href="option.html">&ltoption&gt</a></code>para cada item.</p>
+
+        <div class="code">
+            <pre>
+&ltp>Selecione um estado:&lt/p>
+&ltselect>
+    &ltoption>São Paulo&lt/option>
+    &ltoption>Rio de Janeiro&lt/option>   
+    &ltoption>Minas Gerais&lt/option>
+    &ltoption>Paraná&lt/option>
+&lt/select></pre>
+        </div>
+
+        <div style="margin-left:20px;">
+            <p>Selecione um estado:</p>
+            <select>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+                <option>Paraná</option>
+            </select>
+        </div>
+
+        <p>A tag <code><a href="option.html">&ltoption&gt</a></code> também pode receber o atributo <code>value</code>, que mudará o valor enviado pelo formulário. Ao invés de enviar o que está escrito dentro da tag <code><a href="option.html">&ltoption&gt</a></code>.</p>
+
+        <div class="code">
+            <pre>
+&ltp>Selecione um estado:&lt/p>
+&ltselect>
+    &ltoption value="SP">São Paulo&lt/option>
+    &ltoption value="RJ">Rio de Janeiro&lt/option>   
+    &ltoption value="MG">Minas Gerais&lt/option>
+    &ltoption value="PR">Paraná&lt/option>
+&lt/select></pre>
+        </div>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/html.js"></script>
