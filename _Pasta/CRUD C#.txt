@@ -1,0 +1,240 @@
+=============================================================================
+Criar classe de conexão (liga e desliga Banco de Dados)
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Escola.Classes
+{
+    class Conexao
+    {
+        #region "Variáveis"
+
+        private static string _servidor = @"VPR0576613W10-1\SQLEXPRESS";
+        private static string _baseDeDados = "escola";
+        private static string _usuario = "sa";
+        private static string _senha = "123456";
+
+        // Linha de conexão para o SQL Server com usuário e senha
+        private static string _strConexao = "Data Source=" + _servidor + ";Initial Catalog=" + _baseDeDados + ";User ID=" + _usuario + ";Password=" + _senha;
+
+        // linha de conexão para o SQL Server sem usuário e senha
+        //private static string _strConexao = "Data Source=" + _servidor + ";Initial Catalog=" + _baseDeDados + ";Integrated Security=True";
+
+        public string query;
+        public SqlConnection conexao = new SqlConnection(_strConexao);
+        public SqlCommand comando;
+        public SqlDataAdapter da;
+        public SqlDataReader dr;
+        public DataSet ds;
+
+        #endregion
+
+        #region "Métodos"
+
+        public void AbreConexao()
+        {
+            if (conexao.State == ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+            conexao.Open();
+        }
+
+
+
+        public void FechaConexao() {
+            if (conexao.State == ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+
+        #endregion
+    }
+}
+
+=============================================================================
+Classe do CRUD
+
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Forms;
+
+namespace Escola.Classes
+{
+    public class Sala
+    {
+        #region "Variáveis"
+
+        int id_sala;
+        int numero;
+        int capacidade;
+        string equipamento;
+
+        public Sala(int _id_sala) 
+        { 
+            id_sala = _id_sala;
+        }
+
+        public Sala(int _id_sala, int _num, int _capacidade, string _equipamento)
+        {
+            id_sala = _id_sala;
+            numero = _num;
+            capacidade = _capacidade;
+            equipamento = _equipamento;
+        }
+
+        public Sala(int _num, int _capacidade, string _equipamento)
+        {
+            numero = _num;
+            capacidade = _capacidade;
+            equipamento = _equipamento;
+        }
+
+        #endregion
+
+        #region "Métodos"
+
+        // CRUD 
+
+        // Create
+        public void InsereSala()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = String.Format($"INSERT INTO tab_salas (numero, capacidade, equipamento) VALUES ({numero}, {capacidade}, '{equipamento}')");
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        // Read
+        public static dynamic MostraSalas()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = "SELECT * FROM tab_salas;";
+                cn.da = new SqlDataAdapter(cn.query, cn.conexao);
+                cn.ds = new System.Data.DataSet();
+                cn.da.Fill(cn.ds, "Salas");
+                return cn.ds.Tables["Salas"];
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+        // Update
+        public void AlteraSala()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = string.Format($"UPDATE tab_salas SET numero={numero}, capacidade={capacidade}, equipamento='{equipamento}' WHERE id_sala={id_sala}");
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        // Delete
+        public void DeletaSala()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = string.Format($"DELETE FROM tab_salas WHERE id_sala={id_sala}");
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        #endregion
+    }
+}
+
+=============================================================================
+Usar uma determinada função a partir do clique em um botão
+
+private void toolSalvar_Click(object sender, EventArgs e)
+{
+   Sala insere = new Sala(int.Parse(txbNumero.Text), int.Parse(txbCapacidade.Text), cmbEquipamento.Text);
+   insere.InsereSala();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
