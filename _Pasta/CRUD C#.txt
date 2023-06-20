@@ -202,7 +202,7 @@ namespace Escola.Classes
 }
 
 =============================================================================
-Usar uma determinada função a partir do clique em um botão
+Usar uma determinada função a partir do clique em um botão:
 
 private void toolSalvar_Click(object sender, EventArgs e)
 {
@@ -210,6 +210,11 @@ private void toolSalvar_Click(object sender, EventArgs e)
    insere.InsereSala();
 }
 
+Carregar SELECT no DataGridView ao carregar o form:
+private void frmAlunos_Load(object sender, EventArgs e)
+{
+   dgvAlunos.DataSource = Aluno.MostraAlunos();
+}
 
 
 
