@@ -131,6 +131,12 @@ if (MessageBox.Show("Tem certeza que deseja apagar toda a lista de tarefas?", "A
 {
    // Bloco
 }
+   ou
+DialogResult excluir = MessageBox.Show("Deseja realmente excluir essa turma?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+if (excluir == DialogResult.Yes)
+{
+   // Bloco
+}
 
 Atribuir resposta do MessageBox a uma variável:
 DialogResult pergunta = MessageBox.Show("Deseja excluir esse aluno?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -146,6 +152,47 @@ DialogResult resp = foto.ShowDialog();
 
 Pegar o nome do arquivo de um caminho inteiro:
 Path.GetFileName(txbFoto.Text)
+
+Ver se algo foi selecionado no ComboBox:
+if (cmbAluno.SelectedIndex != -1)
+{
+   // Bloco
+}
+
+Limpar um DataGridView:
+for (int i = 0; i < dgvSelecionados.RowCount; i++)
+{
+   dgvSelecionados.Rows[i].DataGridView.Columns.Clear();
+}
+
+Pegar valor de uma das células do DataGridView:
+dgvTurmas.SelectedRows[0].Cells[0].Value.ToString()
+Rows indica a Linha
+Cells indica a Coluna
+
+Mudar nome da coluna no DataGridView:
+dgvTurmas.Columns[0].HeaderText = "Código";
+
+Ocultar coluna no DataGridView:
+dgvTurmas.Columns[7].Visible = false;
+
+Mudar cor da célula selecionada do DataGridView:
+private void dgvTurmas_Click(object sender, EventArgs e)
+{
+   dgvTurmas.DefaultCellStyle.SelectionBackColor = Color.Tomato;
+}
+
+Mudar cor de um TextBox:
+txbID.BackColor = Color.Tomato;
+
+Resetar cor de um TextBox:
+txbID.BackColor = System.Drawing.SystemColors.Window;
+
+Desabilitar botão:
+toolSalvar.Enabled = false;
+
+Mudar Visibilidade do botão:
+toolCancelar.Visible = true;
 
 =============================================================================
 Programa com multiplos formulários

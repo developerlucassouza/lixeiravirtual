@@ -225,12 +225,6 @@ private void frmTurmas_Load(object sender, EventArgs e)
    cmbAluno.SelectedIndex = -1;
 }
 
-Mudar nome da coluna no DataGridView:
-dgvTurmas.Columns[0].HeaderText = "Código";
-
-Ocultar coluna no DataGridView:
-dgvTurmas.Columns[7].Visible = false;
-
 
 
 
