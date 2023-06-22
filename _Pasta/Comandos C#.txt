@@ -50,7 +50,14 @@ Atribuir valor char com Console.ReadLine():
 char letra; 
 char.TryParse(Console.ReadLine(), out letra); 
 
-Trnasformar string (dt1) em data:
+=================================================================================
+Pegar data atual:
+string dataAtual = DateTime.Now.ToString("dd/MM/yyyy");
+
+Pegar data e hora atuais:
+DateTime data = DateTime.Now;
+
+Transformar string (dt1) em data:
 DateTime data1 = DateTime.ParseExact(dt1, "dd/MM/yyyy", null);
 
 Fazer calculo com datas:
@@ -589,7 +596,6 @@ Abrir region:
 
 Fechar region:
 #endregion
-
 
 
 
