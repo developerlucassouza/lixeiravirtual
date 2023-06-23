@@ -38,6 +38,8 @@ Desabilitando o AutoSize de um Label, você poderá alterar o tamanho dele, e ut
 
 Para criar um menu em cima do programa, dentro de Caixa de Ferramentas, na aba Menus e Barra de Ferramentas, dê dois clique em ToolStrip para adiciona-lo a janela
 
+Outra forma de criar um menu acima é o MenuStrip, que permite criar opções aninhadas
+
 =============================================================================
 Pesquisar: 
 DataGridView
@@ -194,6 +196,9 @@ toolSalvar.Enabled = false;
 Mudar Visibilidade do botão:
 toolCancelar.Visible = true;
 
+Alterar formato da data de um DateTimePicker:
+string data = dtpNasc.Value.ToString("yyyy-MM-dd");
+
 =============================================================================
 Programa com multiplos formulários
 
@@ -206,6 +211,21 @@ Telas.frmJogo jogo = new Telas.frmJogo();
 
 Fazer tela aparecer, mas sem poder ser sobressaida por outra tela:
 jogo.ShowDialog();
+
+Passar variável ao carregar um formulário:
+- Chamar novo formulário:
+FrmCliente Cliente = new FrmCliente(usuarioLogado);
+Cliente.ShowDialog();
+- Receber valor no novo formulário
+public partial class FrmCliente : Form
+{
+   Usuario usuarioLogado = new Usuario();
+   public FrmCliente(Usuario usu)
+   {
+      InitializeComponent();
+      usuarioLogado = usu; 
+   }
+}
 
 =============================================================================
 Fazer TextBox só poder digitar números e vírgula:
