@@ -33,13 +33,14 @@ cabeçalho.innerHTML += '<a href="https://developerlucassouza.github.io/lixeirav
 // cabeçalho.innerHTML += '<a href="#">C#</a>'
 // cabeçalho.innerHTML += '<a href="#">Java</a>'
 // cabeçalho.innerHTML += '<a href="#">MySQL</a>'
-// cabeçalho.innerHTML += '<a href="#">SQL_Server</a>'
+// cabeçalho.innerHTML += '<a href="#">SQL Server</a>'
 // cabeçalho.innerHTML += '<a href="#">MongoDB</a>' 
 // cabeçalho.innerHTML += '<a href="#">JQuery</a>'
 // cabeçalho.innerHTML += '<a href="#">Bootstrap</a>'
 // cabeçalho.innerHTML += '<a href="#">React</a>'
 // cabeçalho.innerHTML += '<a href="#">Vue.js</a>'
 // cabeçalho.innerHTML += '<a href="#">Angular</a>'
+// cabeçalho.innerHTML += '<a href="#">Visual Basic</a>'
 // cabeçalho.innerHTML += '<a href="#">TypeScript</a>'
 // cabeçalho.innerHTML += '<a href="#">Ruby</a>'
 // cabeçalho.innerHTML += '<a href="#">R</a>'
@@ -49,8 +50,10 @@ cabeçalho.innerHTML += '<a href="https://developerlucassouza.github.io/lixeirav
 // cabeçalho.innerHTML += '<a href="#">Word</a>'
 // cabeçalho.innerHTML += '<a href="#">Excel</a>'
 // cabeçalho.innerHTML += '<a href="#">PowerPoint</a>'
+// cabeçalho.innerHTML += '<a href="#">Linux</a>'
 // cabeçalho.innerHTML += '<a href="#">Hardware</a>'
 // cabeçalho.innerHTML += '<a href="#">Redes</a>'
+// cabeçalho.innerHTML += '<a href="#">Servidores</a>'
 
 
 // ======================================================================================================================================
