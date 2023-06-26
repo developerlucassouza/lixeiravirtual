@@ -44,13 +44,32 @@
 
     header {
         background-color: var(--bpreto);
-        height: 60px;
+        height: 70px;
         overflow-x: auto;
+        overflow-y: hidden;
     }
 
+    /* Barra de rolagem do cabeçalho */
     header::-webkit-scrollbar {
-        height: 1px;
+        height: 10px;
+        width: 0px;
     }
+      
+    /* Estilo do trilho da barra de rolagem */
+    header::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+      
+    /* Estilo do polegar da barra de rolagem */
+    header::-webkit-scrollbar-thumb {
+        background-color: #888888;
+    }
+      
+    /* Estilo do polegar da barra de rolagem quando hover */
+    header::-webkit-scrollbar-thumb:hover {
+        background-color: #555555;
+    }
+    /* ================================= */
 
     header img {
         width: 15px;
@@ -59,7 +78,7 @@
     header a {
         color: white;
         display: table-cell;
-        height: 60px;
+        height: 70px;
         padding: 20px 10px;
         text-decoration: none;
     }
@@ -96,6 +115,12 @@
 
     div#itens a:hover {
         background-color: var(--bpreto);
+    }
+
+    div#itens p {
+        color: white;
+        font-weight: bolder;
+        padding: 10px 20px;
     }
 
     form#pesquisa {

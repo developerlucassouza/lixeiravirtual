@@ -20,8 +20,38 @@ var itens = document.querySelector('div#itens')
 cabeça.innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>'
 
 // --- Criando cabeçalho
-cabeçalho.innerHTML += ' <a href="https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/index.html">HTML</a> '
-//<a href="#">Python</a> <a href="#">CSS</a> <a href="#">JavaScript</a> <a href="#">PHP</a> <a href="#">C</a> <a href="#">C++</a> <a href="#">C#</a> <a href="#">MySQL</a>
+// cabeçalho.innerHTML += '<a href="#"></a>'
+
+cabeçalho.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/python/index.html">Python</a>'
+cabeçalho.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/index.html">HTML</a>'
+// cabeçalho.innerHTML += '<a href="#">CSS</a>'
+// cabeçalho.innerHTML += '<a href="#">JavaScript</a>'
+// cabeçalho.innerHTML += '<a href="#">Node.js</a>'
+// cabeçalho.innerHTML += '<a href="#">PHP</a>'
+// cabeçalho.innerHTML += '<a href="#">C</a>'
+// cabeçalho.innerHTML += '<a href="#">C++</a>'
+// cabeçalho.innerHTML += '<a href="#">C#</a>'
+// cabeçalho.innerHTML += '<a href="#">Java</a>'
+// cabeçalho.innerHTML += '<a href="#">MySQL</a>'
+// cabeçalho.innerHTML += '<a href="#">SQL_Server</a>'
+// cabeçalho.innerHTML += '<a href="#">MongoDB</a>' 
+// cabeçalho.innerHTML += '<a href="#">JQuery</a>'
+// cabeçalho.innerHTML += '<a href="#">Bootstrap</a>'
+// cabeçalho.innerHTML += '<a href="#">React</a>'
+// cabeçalho.innerHTML += '<a href="#">Vue.js</a>'
+// cabeçalho.innerHTML += '<a href="#">Angular</a>'
+// cabeçalho.innerHTML += '<a href="#">TypeScript</a>'
+// cabeçalho.innerHTML += '<a href="#">Ruby</a>'
+// cabeçalho.innerHTML += '<a href="#">R</a>'
+// cabeçalho.innerHTML += '<a href="#">Kotlin</a>'
+// cabeçalho.innerHTML += '<a href="#">GO</a>'
+// cabeçalho.innerHTML += '<a href="#">Swift</a>'
+// cabeçalho.innerHTML += '<a href="#">Word</a>'
+// cabeçalho.innerHTML += '<a href="#">Excel</a>'
+// cabeçalho.innerHTML += '<a href="#">PowerPoint</a>'
+// cabeçalho.innerHTML += '<a href="#">Hardware</a>'
+// cabeçalho.innerHTML += '<a href="#">Redes</a>'
+
 
 // ======================================================================================================================================
 
