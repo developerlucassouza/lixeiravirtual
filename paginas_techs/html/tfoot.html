@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag &lttd&gt HTML</title>
+    <title>Tag &lttfoot&gt HTML</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -21,26 +21,30 @@
     </form> 
 
     <main id="tech">
-        <h1>Tag &lttd&gt HTML</h1>
-        <p>A tag <code>td</code> é utilizada para inserir dados em uma tabela (<code><a href="table.html">&lttable&gt</a></code>) </p>
-        <p>Tags <code>td</code> devem ser colocados dentro de uma tag <code><a href="tr.html">&lttr&gt</a></code>, tag que indica uma linha da tabela.</p>
+        <h1>Tag &lttfoot&gt HTML</h1>
+        <p>A tag <code>tfoot</code> é utilizada para criar o rodapé de uma tabela (<code><a href="table.html">&lttable&gt</a></code>), isto é, a parte final da tabela.</p>
 
         <div class="code">
             <pre>
 &lttable>
-    &lttr>
-        &lttd>A1&lt/td>   
-        &lttd>B1&lt/td>
-        &lttd>C1&lt/td>
-    &lt/tr>
+    &ltthead>
+        [...]
+    &lt/thead>
 
-    &lttr>
-        &lttd>A2&lt/td>
-        &lttd>B2&lt/td>
-        &lttd>C2&lt/td>
-    &lt/tr>
+    &lttbody>
+        [...]
+    &lt/tbody>
+
+    &lttfoot>
+        &lttr>
+            &ltth>Total&lt/th>
+            &lttd>100.000&lt/td>   
+        &lt/tr>
+    &lt/tfoot>
 &lt/table></pre>
         </div>
+
+        <p>Tal tag deve ser usada em conjunto das tags <code><a href="thead.html">&ltthead&gt</a></code> e <code><a href="tbody.html">&lttbody&gt</a></code>.</p>
     </main>
     
 </body>
