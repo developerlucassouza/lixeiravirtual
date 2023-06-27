@@ -32,7 +32,7 @@ cabeçalho.innerHTML += '<a href="https://developerlucassouza.github.io/lixeirav
 // cabeçalho.innerHTML += '<a href="#">C++</a>'
 // cabeçalho.innerHTML += '<a href="#">C#</a>'
 // cabeçalho.innerHTML += '<a href="#">Java</a>'
-// cabeçalho.innerHTML += '<a href="#">MySQL</a>'
+cabeçalho.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/mysql/index.html">MySQL</a>'
 // cabeçalho.innerHTML += '<a href="#">SQL Server</a>'
 // cabeçalho.innerHTML += '<a href="#">MongoDB</a>'
 // cabeçalho.innerHTML += '<a href="#">Git/GitHub</a>' 

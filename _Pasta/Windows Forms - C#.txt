@@ -152,6 +152,12 @@ foto.Title = "Selecione uma foto";
 foto.Filter = "Todos os arquivos (*.*)|*.*";
 DialogResult resp = foto.ShowDialog();
 
+Passar caminho do arquivo para txbFoto:
+if (resp == DialogResult.OK)
+{
+   txbFoto.Text = foto.FileName;
+}
+
 Pegar o nome do arquivo de um caminho inteiro:
 Path.GetFileName(txbFoto.Text)
 

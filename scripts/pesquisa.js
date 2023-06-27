@@ -9,6 +9,14 @@ function pesquisar() {
         case "html":
             open('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/html/index.html', '_self')
             break
+
+        case "mysql":
+            open('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/mysql/index.html', '_self')
+            break
+
+        case "python":
+            open('https://developerlucassouza.github.io/lixeiravirtual/paginas_techs/python/index.html', '_self')
+            break
         
         default:
             open('https://www.youtube.com/', '_self')

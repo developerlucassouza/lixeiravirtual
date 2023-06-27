@@ -11,6 +11,8 @@
 
     --htmlclaro: #EF652A;
     --htmlescuro: #E34F26;
+    --mysqlazul: blue;
+    --mysqllaranja: orange;
     --pythonazul: #357FB9;
     --pythonamarelo: #FFC42D;
 }
@@ -360,6 +362,10 @@
 
 body.html {
     background-color: var(--htmlescuro);
+}
+
+body.mysql {
+    background-color: var(--mysqllaranja);
 }
 
 body.python {

@@ -524,30 +524,6 @@ public class Aluno
         }
 
 
-
-        // Método para alterar a foto de um Aluno
-        public void AlteraFotoAluno()
-        {
-            Conexao cn = new Conexao();
-            try
-            {
-                cn.query = String.Format("UPDATE tab_alunos SET foto = '{0}' WHERE id_aluno = {1}", Foto, Id_aluno);
-                cn.comando = new SqlCommand(cn.query, cn.conexao);
-                cn.AbreConexao();
-                cn.comando.ExecuteNonQuery();
-            }
-            catch (Exception erro)
-            {
-
-                MessageBox.Show(erro.Message);
-            }
-            finally
-            {
-                cn.FechaConexao();
-            }
-        }
-
-
         // Método para mostrar todos os Alunos no DataGrid
         public static dynamic MostraAlunos()
         {

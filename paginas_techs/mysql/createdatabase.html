@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE DATABASE MySQL</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>CREATE DATABASE MySQL</h1>
+        <p>A primeira, e mais importante, coisa a se fazer é criar o Banco de Dados.</p>
+        <p>Para criar um novo Banco de Dados, usamos o comando <code>CREATE DATABASE</code>, e em seguida, o nome do Banco de Dados.</p>
+
+        <div class="code">
+            <pre>CREATE DATABASE pessoas;   </pre>
+        </div>
+
+        <p>Também podemos adicionar algumas configuração opcionais para fazer com que o Banco de Dados tenha melhor compatibilidade com acentuações.</p>
+
+        <div class="code">
+            <pre>
+CREATE DATABASE pessoas
+DEFAULT CHARACTER SET utf8
+DEFAULT COLLATE utf8_general_ci;   </pre>
+        </div>
+
+        <p>Após criado o Banco de Dados, usaremos o comando <code>USE</code> para ativá-lo.</p>
+        <p>É preciso ativar o Banco de Dados para criar tabelas e utilizar os demais comandos.</p>
+
+        <div class="code">
+            <pre>USE pessoas;</pre>
+        </div>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/mysql.js"></script>
