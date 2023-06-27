@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input em Python</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Input em Python</h1>
+        <p>Na página anterior, vimos que podemos exibir mensagens, números e cálculos.</p>
+        <p>Mas, o que foi visto é apenas mostrar mensagens e cálculos já prontos, não podemos pedir valores ao usuário e mostrá-los.</p>
+
+        <div class="output">
+            <pre>
+Digite seu nome: <span class="user">Lucas</span>
+Bem-vindo, Lucas!</pre>
+        </div>
+
+        <p>Para isso, precisamos criar um input, isto é, a entrada de dados pelo usuário.</p>
+        <p>Para criar uma entrada de usuário, basta utilizar o comando <code>input()</code>, e, dentro dos parênteses, escrever a mensagem que você deseja mostrar.</p>
+
+        <div class="code">
+            <pre>input("Digite seu nome: ")</pre>
+        </div>
+
+        <div class="output">
+            <pre>Digite seu nome:|</pre>
+        </div>
+
+        <p>Mas, só isso não basta.</p>
+        <p>Será preciso guardar esse valor dentro de variáveis. No caso, na variável nome.</p>
+        <p>Depois, iremos utilizar o sinal de soma (+) para concatenar <code>strings</code> no comando <code>print()</code></p>
+
+        <div class="code">
+            <pre>nome = input("Digite seu nome:")</pre>
+            <pre>print("Olá, " + nome)</pre>
+        </div>
+
+        <div class="output">
+            <pre>Digite seu nome: <span class="user">Lucas</span></pre>
+            <pre>Olá, Lucas</pre>
+        </div>
+
+        <p>Mas, se formos utilizar para receber números e somá-los, não irá funcionar.</p>
+
+        <div class="code">
+            <pre>
+n1 = input("Digite um número: ")
+n2 = input("Digite outro número: ")
+print(n1 + n2)</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Digite um número: <span class="user">3</span>
+Digite outro número: <span class="user">4</span>
+34</pre>
+        </div>
+
+        <p>O que acontece é que, o comando <code>input()</code> retorna um valor <code>string</code> por padrão, isto é, um texto. E com texto não se faz cálculo.</p>
+        <p>No caso, ao invés de fazer 3 + 4, ele está fazendo "3" + "4".</p>
+        <p>Para poder corrigir isso, precisaremos aprender umm pouco sobre Tipos Primitivos.</p>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/python.js"></script>

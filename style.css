@@ -192,7 +192,19 @@
         background-color: var(--bpreto);
         border-radius: 2px;
         border-left: 10px solid green;
-        color: cyan;
+        color: rgb(0, 200, 200);
+        display: block;
+        margin: 10px auto;
+        overflow-x: auto;
+        padding: 20px;
+        width: 80%;
+    }
+
+    div.output {
+        background-color: var(--bpreto);
+        border-radius: 2px;
+        border-left: 10px solid rgb(0, 200, 200);
+        color: white;
         display: block;
         margin: 10px auto;
         overflow-x: auto;
@@ -232,6 +244,11 @@
         display: block;
         margin: auto;
         width: 100%;
+    }
+
+    span.user {
+        color: green;
+        font-weight: bolder;
     }
 
 }

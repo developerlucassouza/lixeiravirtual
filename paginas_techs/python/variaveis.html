@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis em Python</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Variáveis em Python</h1>
+        <p>Variáveis são lugares na memória onde podemos armazenar valores para utilizá-los depois.</p>
+        <p>Para definir uma variável, utilizamos o sinal de igual (=), que em programação é chamado de recebe.</p>
+
+        <div class="code">
+            <pre>nome = "Lucas"</pre>
+        </div>
+
+        <p>Podemos utilizar o comando <code>print()</code> para mostrar uma variável.</p>
+
+        <div class="code">
+            <pre>print(nome)</pre>
+        </div>
+
+        <div class="output">
+            <pre>Lucas</pre>
+        </div>
+
+        <p>Também podemos guardar números e fazer cálculos depois.</p>
+
+        <div class="code">
+            <pre>
+x = 3
+y = 4
+print(x + y)</pre>
+        </div>
+
+        <div class="output">
+            <pre>7</pre>
+        </div>
+
+        <p>Os estudos de variáveis serão mais aprofundados quando falarmos de Tipos Primitivos.</p>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/python.js"></script>

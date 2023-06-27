@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output em Python</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Output em Python</h1>
+        <p>Output é quando você mostra algo ao usuário, é a saída de dados de um programa.</p>
+        <p>Em Python, a função para saída de dados é o <code>print()</code>.</p>
+        <p>Dentro dos parenteses, você irá escrever aquilo que quer escrever ao usuário.</p>
+        <p>Vamos começar com um clássico Olá, Mundo!</p>
+
+        <div class="code">
+            <pre>print("Olá, Mundo!")</pre>
+        </div>
+
+        <div class="output">
+            <pre>Olá, Mundo!</pre>
+        </div>
+
+        <p>Peceba que o texto está escrito entre aspas.</p>
+        <p>As aspas indicam um texto, algo do tipo primitivo <code>string</code>, mas isso será abordado mais a frente.</p>
+        <br>
+        <p>Podemos usar o <code>print()</code> para executar contas matemáticas.</p>
+        <p>Por não se tratar de texto, e sim números e cálculos, não será preciso utilizar aspas.</p>
+
+        <div class="code">
+            <pre>print(4+4)</pre>
+        </div>
+
+        <div class="output">
+            <pre>8</pre>
+        </div>
+
+        <p>O uso das aspas faz com que seja mostrado o texto de forma literal.</p>
+
+        <div class="code">
+            <pre>print("4+4")</pre>
+        </div>
+
+        <div class="output">
+            <pre>4+4</pre>
+        </div>
+
+        <p>Além disso, podemos usar o sinal de soma (+) para concatenar (juntar) textos, também chamados de <code>string</code>.</p>
+
+        <div class="code">
+            <pre>
+print("Olá," + "Mundo!")
+print("4" + "4")</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Olá, Mundo!
+44</pre>
+        </div>
+
+        <p>Há diferença entre 4 e "4" (com e sem aspas)</p>
+        <p>O 4 é do tipo <code>int</code>, isto é, um número inteiro.</p>
+        <p>O "4" é do tipo <code>string</code>, isto é, um texto.</p>
+        <p>Por isso não é possível somar "4", pois não é possível somar textos.</p>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/python.js"></script>
