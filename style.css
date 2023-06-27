@@ -9,7 +9,10 @@
     --bverde: #32CD32;
     --bvermelho: #FF0000;
 
-    
+    --htmlclaro: #EF652A;
+    --htmlescuro: #E34F26;
+    --pythonazul: #357FB9;
+    --pythonamarelo: #FFC42D;
 }
 
 @media all {
@@ -225,6 +228,12 @@
         width: 40vw;
     }
 
+    img.tutorial {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -328,6 +337,17 @@
 
 
 
+
+
+/* Cores de Fundo do body */
+
+body.html {
+    background-color: var(--htmlescuro);
+}
+
+body.python {
+    background-color: var(--pythonazul);
+}
 
 
 

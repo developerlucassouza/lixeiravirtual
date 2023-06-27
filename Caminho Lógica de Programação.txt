@@ -1,0 +1,18 @@
+Instalação
+Output
+Input
+Variáveis
+Tipos Primitivos
+Manipulação de Strings
+Operadores Aritméticos
+Operadores Relacionais
+Operadores Lógicos
+if/else/else if
+switch/case/default
+for
+while
+do while
+break/continue
+arrays
+function
+try/except

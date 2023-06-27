@@ -1,4 +1,8 @@
 var pages = document.querySelector('div#itens')
+var corpo = document.querySelector('body')
+
+// Cor de Fundo das páginas
+corpo.className = 'html'
 
 // pages.innerHTML += '<a href="">HTML &lt &gt</a>'
 
