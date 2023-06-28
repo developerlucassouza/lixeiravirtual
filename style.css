@@ -11,8 +11,8 @@
 
     --htmlclaro: #EF652A;
     --htmlescuro: #E34F26;
-    --mysqlazul: blue;
-    --mysqllaranja: orange;
+    --mysqlazul: #00758F;
+    --mysqllaranja: #F29111;
     --pythonazul: #357FB9;
     --pythonamarelo: #FFC42D;
 }
@@ -94,14 +94,30 @@
         background-color: var(--bvermelho);
     }
 
-    main > h1 {
-        text-align: center;
-    }
-
     header span#burguer {
         color: white;
         display: table-cell;
         text-decoration: none;
+    }
+
+    main > h1 {
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 20px;
+        overflow-x: auto;
+    }
+
+    th {
+        background-color: var(--bazul);
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 5px 20px;
+        text-align: center;
     }
 
     /* Id */
@@ -202,6 +218,10 @@
         width: 80%;
     }
 
+    div.container {
+        overflow-x: auto;
+    }
+
     div.output {
         background-color: var(--bpreto);
         border-radius: 2px;
@@ -246,6 +266,10 @@
         display: block;
         margin: auto;
         width: 100%;
+    }
+
+    span.comentario {
+        color: green;
     }
 
     span.user {

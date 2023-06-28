@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos Primitivos do Python</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Tipos Primitivos do Python</h1>
+        <p>Como já vimos antes, as aspas indicam um texto, ou seja, um dado do tipo <code>string</code>.</p>
+        <p>Também vimos que um número com e sem aspas possui total diferença.</p>
+
+        <div class="code">
+            <pre>
+print(3 + 4)
+print('3' + '4')</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+7
+34</pre>
+        </div>
+
+        <p>Isso acontece por causa do Tipo Primitivo de cada dado.</p>
+
+        <hr>
+
+        <p>O Python possui quatro Tipos Primitivos: <code>str</code> (que é o tipo <code>string</code>), <code>int</code>, <code>float</code> e <code>bool</code>.</p>
+
+        <p><code>str</code>: Esse tipo indica palavras e caracteres.</p>
+        <p>Exemplo: 'Olá, Mundo!', '7.9', 'Python'</p>
+        <p><code>int</code>: Esse tipo indica um número inteiro.</p>
+        <p>Exemplo: 7, -2, 736, 10, 0</p>
+        <p><code>float</code>: Esse tipo indica números quebrados, com casas decimais, com vírgula flutuante.</p>
+        <p>Exemplo: 3.45, 61.7, 4.0, -17.1223</p>
+        <p><code>bool</code>: São valores booleanos, valores binários. Eles representam apenas verdadeiro ou falso (true or false)</p>
+        <p>Exemplo: True, False</p>
+
+        <hr>
+        
+        <p>Com isso, podemos resolver o nosso problema anterior com os números:</p>
+
+        <div class="code">
+            <pre>
+n1 = input('Digite um número: ')
+n2 = input('Digite outro número: ')
+print(n1 + n2)</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Digite um número: <span class="user">3</span>
+Digite outro número: <span class="user">4</span>
+34</pre>
+        </div>
+
+        <p>O comando <code>input()</code>, por padrão, retorna um valor <code>str</code>, então precisaremos especificar o Tipo Primitivo (no caso, tipo <code>int</code>). Para isso, temos que colocar o comando <code>input()</code> dentro do comando <code>int()</code>. Exemplo:</p>
+
+        <div class="code">
+            <pre>n1 = int(input('Digite um número: ))</pre>
+        </div>
+
+        <p>Fazendo essa alteração, nosso código ficará assim:</p>
+
+        <div class="code">
+            <pre>
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+print(n1 + n2)</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Digite um número: <span class="user">3</span>
+Digite outro número: <span class="user">4</span>
+7</pre>                
+            </pre>
+        </div>
+
+        <hr>
+
+        <p>Para entendermos melhor, podemos utilizar o comando <code>type()</code> para vermos o Tipo Primitivo de um dado.</p>
+
+        <div class="code">
+            <pre>print(type('Olá, Mundo!'))</pre>
+        </div>
+
+        <div class="output">
+            <pre>&ltclass 'str'&gt</pre>
+        </div>
+
+        <p>Exemplos:</p>
+
+        <div class="code">
+            <pre>
+print(type('Olá, Mundo!'))
+print(type(3))
+print(type(8.2))
+print(type(True))</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+&ltclass 'str'&gt
+&ltclass 'int'&gt
+&ltclass 'float'&gt
+&ltclass 'bool'&gt</pre>
+        </div>
+
+        <hr>
+
+        <p>Também temos o comando <code>.isnumeric()</code>, que diz se uma variável é um número, mesmo se for uma <code>str</code>.</p>
+
+        <div class="code">
+            <pre>
+txt = '2'
+print(txt.isnumeric)</pre>
+        </div>
+
+        <div class="output">
+            <pre>True</pre>
+        </div>
+
+        <p>Há alguns comandos semelhantes para outras situações:</p>
+        <p><code>.isalpha()</code> para letras.</p>
+        <p><code>.isalnum()</code> para letras e números.</p>
+        <p><code>.isupper()</code> para letras maiúsculas.</p>
+        <p><code>.islower()</code> para letras minúsculas.</p>
+        <p><code>.isspace()</code> para espaço.</p>
+
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/python.js"></script>

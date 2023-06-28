@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos do Python</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Operadores Aritméticos do Python</h1>
+        <p>Como vimos anteriormente, podemos efetuar cálculos de soma com o sinal <code>+</code>, mas podemos efetuar outros cálculos, como subtração, multiplicação, etc.</p>
+
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Símbolo</th>
+                    <th>Cálculo</th>
+                    <th>Exemplo</th>
+                    <th>Resultado</th>
+                </tr>
+    
+                <tr>
+                    <td>+</td>
+                    <td>Adição</td>
+                    <td>5 + 2</td>
+                    <td>7</td>
+                </tr>
+    
+                <tr>
+                    <td>-</td>
+                    <td>Subtração</td>
+                    <td>5 - 2</td>
+                    <td>3</td>
+                </tr>
+    
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicação</td>
+                    <td>5 * 2</td>
+                    <td>10</td>
+                </tr>
+    
+                <tr>
+                    <td>/</td>
+                    <td>Divisão</td>
+                    <td>5 / 2</td>
+                    <td>2.5</td>
+                </tr>
+    
+                <tr>
+                    <td>**</td>
+                    <td>Potência</td>
+                    <td>5 ** 2</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>//</td>
+                    <td>Divisão Inteira</td>
+                    <td>5 // 2</td>
+                    <td>2</td>
+                </tr>
+    
+                <tr>
+                    <td>%</td>
+                    <td>Resto da Divisão</td>
+                    <td>5 % 2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Assim como na matemática, as linguagens de programação possuem uma ordem de precedência:</p>
+
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Ordem</th>
+                    <th>Sinais</th>
+                </tr>
+
+                <tr>
+                    <td>1°</td>
+                    <td>()</td>
+                </tr>
+
+                <tr>
+                    <td>2°</td>
+                    <td>**</td>
+                </tr>
+
+                <tr>
+                    <td>3°</td>
+                    <td>*   /   //   %</td>
+                </tr>
+
+                <tr>
+                    <td>4°</td>
+                    <td>+   -</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <h2>Multiplicar Strings</h2>
+        <p>Como vimos anteriormente, o sinal <code>+</code> pode ser utilizado para concatenar <code>str</code>.</p>
+
+        <div class="code">
+            <pre>print('Olá, ' + 'Mundo!')</pre>
+        </div>
+
+        <div class="output">
+            <pre>Olá, Mundo!</pre>
+        </div>
+
+        <p>Em Python, podemos utilizar o sinal <code>*</code> para repetir uma string.</p>
+
+        <div class="code">
+            <pre>print('Olá ' * 5)</pre>
+        </div>
+
+        <div class="output">
+            <pre>Olá Olá Olá Olá Olá</pre>
+        </div>
+
+        <hr>
+
+        <h2>Raiz Quadrada</h2>
+        <p>Por padrão, o Python não possui comando para calcular raiz quadrada.</p>
+        <p>Mas, podemos utilizar a potência de fração para executar uma raiz quadrada.</p>
+
+        <div class="code">
+            <pre>print( 25 ** (1/2) )</pre>
+        </div>
+
+        <div class="output">
+            <pre>5</pre>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/python.js"></script>
