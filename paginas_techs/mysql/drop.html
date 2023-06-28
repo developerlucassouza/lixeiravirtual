@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CREATE DATABASE MySQL</title>
+    <title>DROP MySQL</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body class="">
@@ -21,28 +21,39 @@
     </form> 
 
     <main id="tech">
-        <h1>CREATE DATABASE MySQL</h1>
-        <p>A primeira, e mais importante, coisa a se fazer é criar o Banco de Dados.</p>
-        <p>Para criar um novo Banco de Dados, usamos o comando <code>CREATE DATABASE</code>, e em seguida, o nome do Banco de Dados.</p>
+        <h1>DROP MySQL</h1>
+        <p>O comando <code>DROP</code> é utilizado tanto para um Banco de Dados, quanto para uma Tabela.</p>
+        <p>Para apagar uma Tabela, use:</p>
 
         <div class="code">
-            <pre>CREATE DATABASE dados;   </pre>
+            <pre>DROP TABLE pessoas;</pre>
         </div>
 
-        <p>Também podemos adicionar algumas configuração opcionais para fazer com que o Banco de Dados tenha melhor compatibilidade com acentuações.</p>
+        <p>E para apagar um Banco de Dados:</p>
+
+        <div class="code">
+            <pre>DROP DATABASE dados;</pre>
+        </div>
+
+        <p>Abaixo, irei deixar os comandos para recriar o Banco de Dados e a Tabela que fizemos até agora.</p>
+        <p>Faça os seus testes com o <code>DROP</code> e use os comandos abaixo para recriar o Banco.</p>
 
         <div class="code">
             <pre>
-CREATE DATABASE dados
-DEFAULT CHARACTER SET utf8
-DEFAULT COLLATE utf8_general_ci;   </pre>
-        </div>
+CREATE DATABASE dados;
 
-        <p>Após criado o Banco de Dados, usaremos o comando <code>USE</code> para ativá-lo.</p>
-        <p>É preciso ativar o Banco de Dados para criar tabelas e utilizar os demais comandos.</p>
+USE dados;
 
-        <div class="code">
-            <pre>USE dados;</pre>
+CREATE TABLE pessoas (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome varchar(30) NOT NULL,
+    nascimento date,
+    sexo varchar(1),
+    peso float,
+    altura float,
+    nacionalidade varchar(20) DEFAULT 'Brasil',   
+    primary key(id)
+)default charset=utf8;</pre>
         </div>
     </main>
     

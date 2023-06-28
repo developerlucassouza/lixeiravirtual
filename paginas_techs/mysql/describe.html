@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESCRIBE MySQL</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>DESCRIBE MySQL</h1>
+        <p>O comando <code>DESCRIBE</code> serve para visualizarmos a estrutura da tabela.</p>
+        <p>Usaremos esse comando para conferir se a Tabela pessoas foi criada corretamente.</p>
+
+        <div class="code">
+            <pre>DESCRIBE pessoas;</pre>
+        </div>
+
+        <p>Esse comando é útil para conferir quantas e quais colunas uma Tabela possui.</p>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/mysql.js"></script>

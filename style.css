@@ -100,6 +100,10 @@
         text-decoration: none;
     }
 
+    hr {
+        margin: 10px 0;
+    }
+
     main > h1 {
         text-align: center;
     }
@@ -118,6 +122,10 @@
         border: 1px solid black;
         padding: 5px 20px;
         text-align: center;
+    }
+
+    ul {
+        margin-left: 40px;
     }
 
     /* Id */
