@@ -90,7 +90,35 @@ CREATE TABLE pessoas (
 )default charset=utf8;</pre>
         </div>
 
-        
+        <hr>
+
+        <h2>UNIQUE</h2>
+        <p>O atributo <code>UNIQUE</code> faz com que um determinado campo não possa ser repetido, por exemplo, impedir que dois Registros tenham o mesmo nome.</p>
+        <p>A Chave Primária possui o <code>UNIQUE</code> por padrão.</p>
+
+        <div class="code">
+            <pre>
+CREATE TABLE pessoas (
+    nome varchar(30) UNIQUE,
+    [...]   
+)default charset=utf8;</pre>
+        </div>
+
+        <hr>
+
+        <h2>UNSIGNED</h2>
+        <p><code>UNSIGNED</code>, ou sem sinal, faz com que os números sejam sempre positivos.</p>
+
+        <div class="code">
+            <pre>
+CREATE TABLE pessoas (
+    [...]
+    peso float UNSIGNED,
+    altura float UNSIGNED,
+    [...]   
+)default charset=utf8;</pre>
+        </div>
+
     </main>
     
 </body>

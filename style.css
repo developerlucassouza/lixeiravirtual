@@ -26,6 +26,10 @@
 
     /* Tags */
 
+    html, body {
+        scroll-behavior: smooth;
+    }
+
     body {
         background-color: var(--bazul);
         font-family: Arial, Helvetica, sans-serif;
