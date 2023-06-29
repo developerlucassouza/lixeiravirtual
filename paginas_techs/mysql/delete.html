@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE MySQL</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>DELETE MySQL</h1>
+        <p>O comando <code>DELETE</code> é utilizado para deletar Registros.</p>
+        <p>Assim como o <code><a href="update.html">UPDATE</a></code>, ele necessita do <code>WHERE</code>.</p>
+
+        <div class="code">
+            <pre>
+DELETE FROM cadastrados
+WHERE nome = 'Afonso';</pre>
+        </div>
+
+        <p>Assim, todos os Registros que possuem o nome igual a 'Afonso' serão deletados.</p>
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/mysql.js"></script>
