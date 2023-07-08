@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos em Python</title>
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        .color {
+            background-color: var(--bazul);
+        }
+    </style>
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Operadores Lógicos em Python</h1>
+        <p>Os Operadores Lógicos são utilizados para comparar operações lógicas (na maioria das vezes, resultados de <a href="operadoresrelacionais.html">Operações Relacionais</a>).</p>
+
+        <hr>
+
+        <h2>Operador and</h2>
+        <p>O Operador <code>and</code> irá avaliar se todas as condições são verdadeiras, caso seja retorna True, caso não, retorna False.</p>
+
+        <table>
+            <tr>
+                <td>True</td>
+                <td class="color">and</td>
+                <td>True</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>True</td>
+                <td class="color">and</td>
+                <td>False</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+
+            <tr>
+                <td>False</td>
+                <td class="color">and</td>
+                <td>True</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+
+            <tr>
+                <td>False</td>
+                <td class="color">and</td>
+                <td>False</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+        </table>
+
+        <p>Exemplos:</p>
+
+        <table>
+            <tr>
+                <td>5 > 2</td>
+                <td class="color">and</td>
+                <td>8 == 8</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>6 &lt= 8</td>
+                <td class="color">and</td>
+                <td>4 == 9</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+
+            <tr>
+                <td>7 != 7</td>
+                <td class="color">and</td>
+                <td>7 == 7</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+
+            <tr>
+                <td>2 &lt 1</td>
+                <td class="color">and</td>
+                <td>3 > 7</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Operador or</h2>
+        <p>O Operador <code>or</code> irá avaliar se uma das expressões é verdadeira.</p>
+        <p>Apenas se todas as expressões forem falsas ele retorna False.</p>
+
+        <table>
+            <tr>
+                <td>True</td>
+                <td class="color">or</td>
+                <td>True</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>True</td>
+                <td class="color">or</td>
+                <td>False</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>False</td>
+                <td class="color">or</td>
+                <td>True</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>False</td>
+                <td class="color">or</td>
+                <td>False</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+        </table>
+
+        <p>Exemplos:</p>
+
+        <table>
+            <tr>
+                <td>5 == 5</td>
+                <td class="color">or</td>
+                <td>3 == 3</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>2 == 2</td>
+                <td class="color">or</td>
+                <td>9 == 1</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>4 != 4</td>
+                <td class="color">or</td>
+                <td>8 != 2</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+
+            <tr>
+                <td>6 > 9</td>
+                <td class="color">or</td>
+                <td>8 &lt 3</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Operador not</h2>
+        <p>O operador <code>not</code> funciona com apenas uma expressão, tornando expressões True em False, e False em True.</p>
+
+        <table>
+            <tr>
+                <td class="color">not</td>
+                <td>True</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+
+            <tr>
+                <td class="color">not</td>
+                <td>False</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+        </table>
+
+        <p>Exemplos:</p>
+
+        <table>
+            <tr>
+                <td class="color">not</td>
+                <td>5 == 5</td>
+                <td class="color">=></td>
+                <td>False</td>
+            </tr>
+
+            <tr>
+                <td class="color">not</td>
+                <td>7 == 9</td>
+                <td class="color">=></td>
+                <td>True</td>
+            </tr>
+        </table>
+        
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/python.js"></script>

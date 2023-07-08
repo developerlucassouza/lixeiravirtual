@@ -22,6 +22,187 @@
 
     <main id="tech">
         <h1>Manipulação de Strings em Python</h1>
+        <p>Para começarmos, temos que entender que uma string pode ser fatiada em pequenas partes.</p>
+        <p>Cada caracter se uma string ocupa um espaço diferente.</p>
+        <p>Vamos considerar a seguinte string:</p>
+
+        <div class="code">
+            <pre>exemplo = "Lixeira Virtual Python"</pre>
+        </div>
+
+        <p>Podemos visualizar a string exemplo da seguinte forma:</p>
+
+        <div class="container">
+            <table>
+                <caption>
+                    exemplo
+                </caption>
+
+                <tr>
+                    <th>L</th>
+                    <th>i</th>
+                    <th>x</th>
+                    <th>e</th>
+                    <th>i</th>
+                    <th>r</th>
+                    <th>a</th>
+                    <th></th>
+                    <th>V</th>
+                    <th>i</th>
+                    <th>r</th>
+                    <th>t</th>
+                    <th>u</th>
+                    <th>a</th>
+                    <th>l</th>
+                    <th></th>
+                    <th>P</th>
+                    <th>y</th>
+                    <th>t</th>
+                    <th>h</th>
+                    <th>o</th>
+                    <th>n</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Como podemos ver, cada caracter possui uma posição numérica.</p>
+
+        <hr>
+        <h2 id="fatiamento">Fatiamento de strings</h2>
+
+        <p>Podemos utilizar isso para ver cada posição isoladamente:</p>
+
+        <div class="code">
+            <pre>print(exemplo[14])</pre>
+        </div>
+
+        <div class="output">
+            <pre>l</pre>
+        </div>
+
+        <hr>
+
+        <p>Ou um determinado intervalo de caracteres.</p>
+        <p>Por exemplo, ver da posição 3 até a posição 12:</p>
+
+        <div class="code">
+            <pre>print(exemplo[3:12])</pre>
+        </div>
+        
+        <div class="output">
+            <pre>eira Virt</pre>
+        </div>
+
+        <p>Perceba que, mesmo colocando para ir até a posição 12, só é mostrado até a posição 11.</p>
+
+        <hr>
+
+        <p>Pode-se fazer esse mesmo intervalo, mas pulando de 2 em 2 (ou 3 em 3, 4 em 4, etc).</p>
+
+        <div class="code">
+            <pre>print(exemplo[3:12:2])</pre>
+        </div>
+
+        <div class="output">
+            <pre>er it</pre>
+        </div>
+
+        <hr>
+
+        <p>Nenhum desses valores são obrigatórios, podemos utilizar, por exemplo, [2::4].</p>
+
+        <div class="code">
+            <pre>
+# Do começo até a posição 17
+print(exemplo[:17])
+
+# Da posição 8 até o final
+print(exemplo[8:])
+
+# Da posição 5, até o final, pulando de 2 em 2   
+print(exemplo[5::2])
+
+# Do início ao final pulando de 3 em 3
+print(exemplo[::3])</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Lixeira Virtual P   
+Virtual Python
+r ita yhn     
+Leaiu tn</pre>
+        </div>
+
+        <hr>
+
+        <p>Também podemos utilizar os números negativos para indicar as posições de trás para frente.</p>
+
+        <div class="code">
+            <pre>
+# Última posição
+print(exemplo[-1])   </pre>
+        </div>
+
+        <div class="output">
+            <pre>n</pre>
+        </div>
+
+        <hr>
+
+        <p>Podemos utilizar os números negativos no passo para ir voltando para trás.</p>
+
+        <div class="code">
+            <pre>
+# Da última posição, até a primeira, voltando de 1 em 1   
+print(exemplo[-1:0:-1])</pre>
+        </div>
+
+        <div class="output">
+            <pre>nohtyP lautriV ariexi</pre>
+        </div>
+
+        <hr>
+
+        <h2 id="analise">Analisando Strings</h2>
+        <p>Podemos fazer análises de strings, retirando algumas informações sobre a string.</p>
+
+        <hr>
+
+        <p>Com o comando <code>len()</code>, podemos ver o tamanho de uma string.</p>
+
+        <div class="code">
+            <pre>print(len(exemplo))</pre>
+        </div>
+
+        <div class="output">
+            <pre>22</pre>
+        </div>
+        
     </main>
     
 </body>
