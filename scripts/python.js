@@ -21,6 +21,7 @@ pages.innerHTML += '<a href="operadoresaritmeticos.html">Python Operadores Aritm
 pages.innerHTML += '<a href="operadoresrelacionais.html">Python Operadores Relacionais</a>'
 pages.innerHTML += '<a href="operadoreslogicos.html">Python Operadores Lógicos</a>'
 pages.innerHTML += '<a href="manipulacaodestrings.html">Python Manipulação de Strings</a>'
+pages.innerHTML += '<a href="formatacaodestrings.html">Python Formatação de Strings</a>'
 pages.innerHTML += '<a href="modulos.html">Python Módulos</a>'
 pages.innerHTML += '<a href="math.html">Python Math</a>'
 pages.innerHTML += '<a href="random.html">Python Random</a>'

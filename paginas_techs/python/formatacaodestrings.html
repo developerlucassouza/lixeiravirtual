@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Strings em Python</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="">
+
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickHamb()">menu</span>
+    </header>
+
+    <div id="itens"></div>
+
+    <form id="pesquisa" autocomplete="off">
+        <input type="text" id="tpesquisa" placeholder="Pesquisar">
+        <input type="button" id="bpesquisa" value="_" onclick="pesquisar()">
+    </form> 
+
+    <main id="tech">
+        <h1>Formatação de Strings em Python</h1>
+        <p>Como vimos anteriormente, podemos utilizar o sinal <code>+</code> para concatenar strings.</p>
+        <p>Outra forma é utilizar a vírgula. Isso permitirá uma melhor compatibilidade com dados de outros <code><a href="tiposprimitivos.html">Tipos Primitivos</a></code>, como <code>int</code> e <code>float</code></p>
+
+        <div class="code">
+            <pre>
+nome = input('Digite seu nome: ')   
+print('Olá, ' , nome)</pre>
+        </div>
+
+        <p>Mas, ao se utilizar várias variáveis, o trabalho pode se tornar mais difícil.</p>
+
+        <div class="code">
+            <pre>
+nome = str(input('Digite seu nome: '))
+idade = int(input('Digite sua idade: '))
+altura = float(input('Digite sua altura: '))
+print('Olá, ' , nome , '. Sua idade é ' , idade , ' e sua altura é ' , altura)   </pre>
+        </div>
+
+        <p>Por isso, podemos utilizar a formatação de strings.</p>
+        <p>Basta, antes das aspas, colocar a letra f e, dentro da string, colocar o nome das variáveis entre chaves <code>{}</code>.</p>
+
+        <div class="code">
+            <pre>
+nome = str(input('Digite seu nome: '))
+idade = int(input('Digite sua idade: '))
+altura = float(input('Digite sua altura: '))
+print(f'Olá, {nome}. Sua idade é {idade} e sua altura é {altura}')   </pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Digite seu nome: <span class="user">Pedro</span>
+Digite sua idade: <span class="user">27</span>
+Digite sua altura: <span class="user">1.80</span>
+Olá, Pedro. Sua idade é 27 e sua altura é 1.8   </pre>
+        </div>
+
+        <hr>
+
+        <p>Outra forma mais avançada é utilizando a função <code>.format()</code>.</p>
+        <p>Dentro da string, iremos utilizar chaves <code>{}</code> para indicar onde as variáveis serão colocadas.</p>
+        <p>No final da string, depois das aspas, coloque o <code>.format()</code> e as variáveis em ordem que elas aparecem, separadas por vírgula.</p>
+
+        <div class="code">
+            <pre>print('Olá, {}. Sua idade é {} e sua altura é {}'.format(nome, idade, altura))   </pre>
+        </div>
+
+        <div class="output">
+            <pre>Olá, Pedro. Sua idade é 27 e sua altura é 1.8</pre>
+        </div>
+
+        <hr>
+
+        <p>Com o uso do <code>.format()</code>, podemos especificar quantos espaços a variável irá ocupar na string.</p>
+        <p>Dentro das chaves <code>{}</code>, digite dois pontos <code>:</code> seguido da quantidade de caracteres que você quer que ocupe.</p>
+
+        <div class="code">
+            <pre>
+nome = input('Digite seu nome: ')
+print('Olá, {:20}!!!'.format(nome))   </pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Digite seu nome: <span class="user">Pedro</span>
+Olá, Pedro               !!!   </pre>
+        </div>
+
+        <hr>
+
+        <p>Utilizando os sinais <code>&lt</code>, <code>></code> e <code>^</code>, podemos definir qual será o alinhamento do nome nesse espaço (20 de espaço).</p>
+        <p><code>&lt</code> para alinhamento a esquerda.</p>
+        <p><code>></code> para alinhamento a direita.</p>
+        <p><code>^</code> para alinhamento no centro.</p>
+        <p>Coloque um dos sinais após o dois pontos <code>:</code>.</p>
+
+        <div class="code">
+            <pre>print('Olá, {:>20}!'.format(nome))   </pre>
+        </div>
+
+        <div class="output">
+            <pre>Olá,                Pedro!   </pre>
+        </div>
+
+        <p>Podemos preencher esse espaço vazio com qualquer caracter que desejar.</p>
+        <p>Basta colocar o caracter após o dois pontos <code>:</code>.</p>
+
+        <div class="code">
+            <pre>print('{:-^20}'.format(nome))   </pre>
+        </div>
+
+        <div class="output">
+            <pre>-------Pedro--------   </pre>
+        </div>
+
+        <hr>
+
+        <p>Outra vantagem é podermos definir quantas casas decimais será mostrado em um número.</p>
+        <p>Como vimos anteriormente, a altura só está mostrando uma casa decimal.</p>
+
+        <div class="code">
+            <pre>
+altura = float(input('Digite sua altura: '))   
+print('Sua altura é {}m'.format(altura))</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Digite sua altura: <span class="user">1.80</span>   
+Sua altura é 1.8m</pre>
+        </div>
+
+        <p>Para configurar a quantidade de casas decimais, utilizando <code>.format()</code>, iremos colocar um ponto <code>.</code>, seguido da quantidade de casas decimais que queremos ver, seguido de um f.</p>
+        <p>Por exemplo: <code>:.2f</code> para ver duas casas decimais, veja:</p>
+
+        <div class="code">
+            <pre>
+altura = float(input('Digite sua altura: '))
+print('Sua altura é {:.2f}m'.format(altura))   </pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Digite sua altura: <span class="user">1.80</span>   
+Sua altura é 1.80m</pre>
+        </div>
+
+        <hr>
+
+        <p>Podemos fazer essas formatações utilizando o f no início da string.</p>
+        <p>Basta colocar o dois pontos <code>:</code> após o nome da variável.</p>
+
+        <div class="code">
+            <pre>print(f'Olá, {nome:>20}!')   </pre>
+        </div>
+
+        <div class="code">
+            <pre>print(f'{nome:-^20}')   </pre>
+        </div>
+
+        <div class="code">
+            <pre>
+altura = float(input('Digite sua altura: '))
+print(f'Sua altura é {altura:.2f}m')   </pre>
+        </div>
+
+        <hr>
+
+        <h2>Quebras de Linhas</h2>
+        <p>Por padrão, o <code>print()</code> irá criar uma quebra de linha.</p>
+        <p>Mas podemos impedir isso colocando um <code>end=''</code> no final do <code>print()</code></p>
+
+        <div class="code">
+            <pre>
+print('Olá, ', end='')   
+print('Mundo!')</pre>
+        </div>
+
+        <div class="output">
+            <pre>Olá, Mundo!</pre>
+        </div>
+
+        <p>Também há o <code>\n</code>, que criará uma quebra dentro de um <code>print()</code>.</p>
+
+        <div class="code">
+            <pre>print('Olá, Mundo! \nBem Vindo ao Lixeira Virtual!')</pre>
+        </div>
+
+        <div class="output">
+            <pre>
+Olá, Mundo!
+Bem Vindo ao Lixeira Virtual!</pre>
+        </div>
+
+    </main>
+    
+</body>
+</html>
+
+<script src="../../scripts/elementos_auto.js"></script>
+<script src="../../scripts/pesquisa.js"></script>
+<script src="../../scripts/python.js"></script>
