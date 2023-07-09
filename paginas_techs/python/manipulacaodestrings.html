@@ -22,6 +22,17 @@
 
     <main id="tech">
         <h1>Manipulação de Strings em Python</h1>
+
+        <p>Tópicos abordados:</p>
+        <ul>
+            <li><a href="#fatiamento">Fatiamento de Strings</a></li>
+            <li><a href="#analise">Analise de Strings</a></li>
+            <li><a href="#alteracao">Alteração de Strings</a></li>
+            <li><a href="#divisao">Divisão de Strings</a></li>
+        </ul>
+
+        <hr>
+
         <p>Para começarmos, temos que entender que uma string pode ser fatiada em pequenas partes.</p>
         <p>Cada caracter se uma string ocupa um espaço diferente.</p>
         <p>Vamos considerar a seguinte string:</p>
@@ -193,7 +204,7 @@ print(exemplo[-1:0:-1])</pre>
 
         <hr>
 
-        <p>Com o comando <code>len()</code>, podemos ver o tamanho de uma string.</p>
+        <p>Com o comando <code>len()</code>, podemos ver o tamanho de uma string, isto é, a quantidade de caracteres que ela possui.</p>
 
         <div class="code">
             <pre>print(len(exemplo))</pre>
@@ -202,6 +213,174 @@ print(exemplo[-1:0:-1])</pre>
         <div class="output">
             <pre>22</pre>
         </div>
+
+        <hr>
+
+        <p>Com a função <code>.count()</code>, podemos contar quantas vezes um caracter aparece na string.</p>
+
+        <div class="code">
+            <pre>
+# Contando caracter i     
+exemplo.count('i')</pre>
+        </div>
+
+        <div class="output">
+            <pre>3</pre>
+        </div>
+
+        <p>Ou podemos avaliar uma sequência de caracteres.</p>
+
+        <div class="code">
+            <pre>
+# Contando sequência ir     
+exemplo.count('ir')</pre>
+        </div>
+
+        <div class="output">
+            <pre>2</pre>
+        </div>
+
+        <p>Também podemos especificar o intervalo que iremos contar o caracter.</p>
+
+        <div class="code">
+            <pre>
+# Contar caracter i nas posições 7 a 15
+print(exemplo.count('i',, 7, 15))
+            </pre>
+        </div>
+
+        <div class="output">
+            <pre>1</pre>
+        </div>
+
+        <hr>
+
+        <p>O comando <code>.find()</code> irá verificar se um determinado caracter ou sequência de caracters está presente na string, retornando a posição da primeira vez que aparece.</p>
+
+        <div class="code">
+            <pre>print(exemplo.find('Python'))</pre>
+        </div>
+
+        <div class="output">
+            <pre>16</pre>
+        </div>
+
+        <p>Caso não exista, será retornado o valor -1</p>
+
+        <div class="code">
+            <pre>print(exemplo.find('Java'))</pre>
+        </div>
+
+        <div class="output">
+            <pre>-1</pre>
+        </div>
+
+        <hr>
+
+        <p>Outra forma de avaliar se determinado valor existe dentro da string, é utilizado o operador <code>in</code>.</p>
+        <p>Ele irá retornar True ou False, caso esteja ou não dentro.</p>
+
+        <div class="code">
+            <pre>'Python' in exemplo</pre>
+        </div>
+
+        <div class="output">
+            <pre>True</pre>
+        </div>
+
+        <hr>
+
+        <h2 id="alteracao">Alteração</h2>
+
+        <p>Podemos modificar strings utilizando o comando <code>.replace()</code>.</p>
+        <p>Ele irá trocar caracteres por outros.</p>
+        <p>Recebe dois valores: primeiro os caracteres a serem substituídos, depois os novos caracteres que ficarão no lugar.</p>
+
+        <div class="code">
+            <pre>print(exemplo.replace('Lixeira', 'Caneca'))</pre>
+        </div>
+
+        <div class="output">
+            <pre>Caneca Virtual Python</pre>
+        </div>
+
+        <p>Há também outros comandos de alteração:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Função</th>
+                    <th>O que faz</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>.upper()</td>
+                    <td>Deixa tudo em maiúsculo</td>
+                </tr>
+
+                <tr>
+                    <td>.lower()</td>
+                    <td>Deixa tudo em minúsculo</td>
+                </tr>
+
+                <tr>
+                    <td>.capitalize()</td>
+                    <td>Primeiro caracter maiúsculo e restante minúsculo</td>
+                </tr>
+
+                <tr>
+                    <td>.title()</td>
+                    <td>Toda palavra começa em maiúscula</td>
+                </tr>
+
+                <tr>
+                    <td>.strip()</td>
+                    <td>Remove espaços desnecessários</td>
+                </tr>
+
+                <tr>
+                    <td>.rstrip()</td>
+                    <td>Remove espaços desnecessários a direita</td>
+                </tr>
+
+                <tr>
+                    <td>.lstrip()</td>
+                    <td>Remove espaços desnecessários a esquerda</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2 id="divisao">Divisão e União.</h2>
+
+        <p>Com o comando <code>.split()</code> podemos transormar uma string em uma <code><a href="listas.html">lista</a></code></p>
+
+        <div class="code">
+            <pre>
+exemplo = exemplo.split()   
+print(exemplo)</pre>
+        </div>
+
+        <div class="output">
+            <pre>['Lixeira', 'Virtual', 'Python']</pre>
+        </div>
+
+        <p>Podemos fazer essa <code><a href="listas.html">lista</a></code> voltar a ser uma string utilizando o comando <code>.join()</code>.</p>
+
+        <div class="code">
+            <pre>
+exemplo = '-'.join(exemplo)   
+print(exemplo)</pre>
+        </div>
+
+        <div class="code">
+            <pre>Lixeira-Virtual-Python</pre>
+        </div>
+
+        <p>Perceba que o traço (-) foi utilizado para juntar as palavras.</p>
         
     </main>
     
