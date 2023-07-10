@@ -149,6 +149,10 @@ namespace Escola.Classes
                 MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
+	    finally
+            {
+                cn.FechaConexao();
+            }
         }
 
         // Update
