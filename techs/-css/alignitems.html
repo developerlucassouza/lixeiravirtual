@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items CSS - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        div.cont {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            display: flex;
+            height: 200px;
+            margin: auto;
+            padding: 10px;
+            width: 70%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header></header>
+    <div id="espaco"></div>
+    <div id="itens"></div>  
+
+    <main id="tech">
+        <h1>align-items CSS</h1>
+        <p><code>align-items</code> é utilizada para configurar o alinhamento vertical de elementos dentro de um contêiner flexível (<code><a href="display.html">display</a>: flex;</code>).</p>
+        <p>Para cada valor de <code>align-items</code>, vamos considerar o seguinte <code><a href="../html/index.html">HTML</a></code>:</p>
+
+        <div class="code">
+            <pre>
+&ltdiv class="container">
+    &ltdiv class="item">Item 1&lt/div>   
+    &ltdiv class="item">Item 2&lt/div>
+&lt/div></pre>
+        </div>
+
+        <hr>
+        <h2>align-items: flex-start;</h2>
+        <p>Os itens serão alinhados no topo do contêiner</p>
+        <div class="code">
+            <pre>
+.container {
+    display: flex;
+    align-items: flex-start;   
+}</pre>
+        </div>
+        <div class="cont" style="align-items: flex-start;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+        </div>
+
+        <hr>
+        <h2>align-items: flex-end;</h2>
+        <p>Os itens serão alinhados no final do contêiner, abaixo.</p>
+        <div class="code">
+            <pre>
+.container {
+    display: flex;
+    align-items: flex-end;   
+}</pre>
+        </div>
+        <div class="cont" style="align-items: flex-end;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+        </div>
+
+        <hr>
+        <h2>align-items: center;</h2>
+        <p>Os itens serão alinhados no centro, verticalmente.</p>
+        <div class="code">
+            <pre>
+.container {
+    display: flex;
+    align-items: center;   
+}</pre>
+        </div>
+        <div class="cont" style="align-items: center;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+        </div>
+
+        <hr>
+        <h2>align-items: baseline;</h2>
+        <p>Os itens serão alinhados a partir da linha base do texto.</p>
+        <div class="code">
+            <pre>
+.container {
+    display: flex;
+    align-items: baseline;   
+}</pre>
+        </div>
+        <div class="cont" style="align-items: baseline;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+        </div>
+
+        <hr>
+        <h2>align-items: stretch;</h2>
+        <p>Os itens serão esticados para preencher todo o espaço vertical disponível.</p>
+        <div class="code">
+            <pre>
+.container {
+    display: flex;
+    align-items: stretch;   
+}</pre>
+        </div>
+        <div class="cont" style="align-items: stretch;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+        </div>
+        
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/css.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-transform CSS - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../style.css" type="text/css">
+
+    <style>
+        p.teste {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header></header>
+    <div id="espaco"></div>
+    <div id="itens"></div>  
+
+    <main id="tech">
+        <h1>text-transform CSS</h1>
+        <p>A propriedade <code>text-transform</code> é utilizada para controlar a transformação do texto em relação às letras maiúsculas e minúsculas. Ela permite que você defina como o texto deve ser capitalizado ou formatado.</p>
+
+        <div class="code">
+            <pre>text-transform: <em>valor</em>;   </pre>
+        </div>
+
+        <p>Os valores aceitos são: <code>uppercase</code> para letras maiúsculas, <code>lowercase</code> para letras minúsculas, <code>capitalize</code> para texto capitalizado, <code>none</code> para deixar normal e <code>full-width</code> para utilizar toda a largura.</p>
+
+        <p>Vamos considerar o seguinte código <a href="../html/index.html">HTML</a>:</p>
+
+        <div class="code">
+            <pre>&ltp>oLá, mUndo!&lt/p></pre>
+        </div>
+
+        <p style="font-weight: 600;">uppercase</p>
+        <p style="text-transform: uppercase;">oLá, mUndo!</p>
+        <p style="font-weight: 600;">lowercase</p>
+        <p style="text-transform: lowercase;">oLá, mUndo!</p>
+        <p style="font-weight: 600;">capitalize</p>
+        <p style="text-transform: capitalize;">oLá, mUndo!</p>
+        <p style="font-weight: 600;">none</p>
+        <p style="text-transform: none;">oLá, mUndo!</p>
+        <p style="font-weight: 600;">full-width</p>
+        <p style="text-transform: full-width;">oLá, mUndo!</p>
+        
+    </main>
+
+    <script src="../../bootstrap/jquery.js" type="text/javascript"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
+
+    <script src="../../scripts/css.js" type="text/javascript"></script>
+    <script src="../../scripts/auto.js" type="text/javascript"></script>
+
+</body>
+
+</html>

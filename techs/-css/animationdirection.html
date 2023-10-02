@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-direction CSS - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+    <header></header>
+    <div id="espaco"></div>
+    <div id="itens"></div>  
+
+    <main id="tech">
+        <h1>animation-direction CSS</h1>
+        <p>Esta propriedade é aplicada para elementos que possuem animações criadas com <code><a href="keyframes.html">@keyframes</a></code>.</p>
+        <p>O <code>animation-direction</code> é utilizado para indicar a direção da reprodução da animação, ou seja, se a animação será executada no sentido normal, reverso, ou alternando entre normal e reverso.</p>
+
+        <div class="code">
+            <pre>
+.elemento {
+    animation: [...];
+    animation-direction: reverse;   
+}</pre>
+        </div>
+
+        <p>O <code>animation-delay</code> pode receber os seguintes valores:</p>
+
+        <p><code>normal</code>: A animação será executada normalmente (padrão).</p>
+        <p><code>reverse</code>: A animação será executada ao contrário do que está programado no <code><a href="keyframes.html">@keyframes</a></code>.</p>
+        <p><code>alternate</code>: A animação ficará alternando entre normal e reverse, começando por normal.</p>
+        <p><code>alternate-reverse</code>: A animação ficará alternando entre normal e reverse, começando por reverse.</p>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/css.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

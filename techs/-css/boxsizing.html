@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing CSS - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        div.teste {
+            border: 1px solid black;
+            min-height: 150px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header></header>
+    <div id="espaco"></div>
+    <div id="itens"></div>  
+
+    <main id="tech">
+        <h1>box-sizing CSS</h1>
+        <p>A propriedade <code>box-sizing</code> é utilizada para controlar como a largura e a altura de um elemento <code><a href="../html/index.html">HTML</a></code> são calculadas, levando em consideração o preenchimento (<code><a href="padding.html">padding</a></code>) e a borda (<code><a href="border.html">border</a></code>) ou não. Ela afeta a modelagem do tamanho de um elemento e como ele se encaixa em seu contêiner.</p>
+
+        <div class="code">
+            <pre>box-sizing: <em>valor</em>;</pre>
+        </div>
+
+        <hr>
+
+        <p>Existem apenas dois valores de <code>box-sizing</code>:</p>
+
+        <p><code>content-box</code> (padrão): A largura e a altura do elemento são calculadas apenas com base no conteúdo real do elemento, excluindo qualquer preenchimento (<code><a href="padding.html">padding</a></code>) e borda (<code><a href="border.html">border</a></code>).</p>
+
+        <p><code>border-box</code>: a largura e a altura do elemento incluem o preenchimento (<code><a href="padding.html">padding</a></code>) e a borda (<code><a href="border.html">border</a></code>).</p>
+
+        <p>Vamos considerar duas <code><a href="../html/div.html">&ltdiv></a></code> com mesmo <code><a href="width.html">width</a></code> e mesmo <code><a href="height.html">height</a></code>, mas com <code>box-sizing diferentes.</code></p>
+
+        <div class="code">
+            <pre>
+div {
+    border: 1px solid black;   
+    min-height: 150px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+}</pre>
+        </div>
+
+        <div class="teste" style="box-sizing: content-box;"><h3>box-sizing: content-box;</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque error dolorum, est et aperiam. Adipisci exercitationem rerum voluptates eligendi voluptatum blanditiis culpa quidem qui, id, aperiam perspiciatis, fugiat atque.</div>
+
+        <div class="teste" style="box-sizing: border-box;"><h3>box-sizing: border-box;</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque error dolorum, est et aperiam. Adipisci exercitationem rerum voluptates eligendi voluptatum blanditiis culpa quidem qui, id, aperiam perspiciatis, fugiat atque.</div>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/css.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

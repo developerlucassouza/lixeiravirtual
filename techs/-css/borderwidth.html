@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-width CSS - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        .borda {
+            border-style: solid;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            width: 30%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header></header>
+    <div id="espaco"></div>
+    <div id="itens"></div>  
+
+    <main id="tech">
+        <h1>border-width CSS</h1>
+        <p>A propriedade CSS <code>border-width</code> é utilizada para definir a largura da borda de um elemento HTML. Você pode especificar a largura da borda de forma individual para cada lado do elemento (superior, direita, inferior e esquerda) ou definir uma largura única para todos os lados ao mesmo tempo.</p>
+
+        <div class="code">
+            <pre>border-width: <em>valor</em>;</pre>
+        </div>
+
+        <p>Definindo largura para todos os lados:</p>
+        <div class="code">
+            <pre>border-width: 5px;</pre>
+        </div>
+
+        <p>Definindo cada lado separadamente:</p>
+        <div class="code">
+            <pre>
+.elemento {
+    border-top-width: 1px;
+    border-right-width: 2px;
+    border-bottom-width: 3px;   
+    border-left-width: 4px;
+}</pre>
+        </div>
+
+        <hr>
+
+        <h2>thin, medium e thick</h2>
+        <p>Ao invés de utilizar valores numéricos, pode-se utilizar os valores <code>thin</code>, <code>medium</code> e <code>thick</code> ao definir a largura da borda.</p>
+
+        <div class="borda" style="border-width: thin;">thin</div>
+        <div class="borda" style="border-width: medium;">medium</div>
+        <div class="borda" style="border-width: thick;">thick</div>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/css.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

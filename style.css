@@ -1,0 +1,551 @@
+@charset "UTF-8";
+
+:root {
+    --bazul: #ADCAE8; /* #0000AAC0 */
+    --bazulescuro: #00008B;
+    --bciano: #00CED1;
+    --blaranja: #FF4500;
+    --bpreto: #202020;
+    --broxo: #FF4500;
+    --bverde: #32CD32;
+    --bvermelho: #FF0000;
+
+    --cssclaro: #0089CA;
+    --cssescuro: #0074BE;
+    --htmlclaro: #EF652A;
+    --htmlescuro: #E34F26;
+    --jsamarelo: #F8DC3E;
+    --jspreto: #2E302C;
+    --mysqlazul: #00758F;
+    --mysqllaranja: #F29111;
+    --pythonazul: #357FB9;
+    --pythonamarelo: #FFC42D;
+}
+
+@media all {
+    
+    /* Tags */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #274360;
+        /* background-image: linear-gradient(var(--bazul), var(--cssescuro)); */
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+
+    caption {
+        text-align: left;
+    }
+
+    code {
+        background-color: rgba(0, 255, 255, 0.3);
+        color: rgb(0, 0, 150);
+        font-size: 1em;
+        padding: 2px;
+    }
+
+    code > a {
+        text-decoration: underline;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: bolder;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 20px;
+    }
+
+    header {
+        position: fixed;
+        width: 100vw;
+        z-index: 99;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    fieldset {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    footer {
+        margin-top: 100vh;
+    }
+
+    main {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 20px;
+        overflow-x: auto;
+    }
+
+    th {
+        background-color: var(--bazul);
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 5px 20px;
+        text-align: center;
+    }
+
+    ul {
+        margin-left: 40px;
+    }
+
+    /* ID */
+
+    div#espaco {
+        width: 100vw;
+    }
+
+    div#itens {
+        background-color: black;
+        padding-bottom: 50px;
+        overflow-y: auto;
+    }
+
+    div#itens a {
+        color: white;
+        display: block;
+        padding: 5px;
+        padding-left: 20px;
+    }
+
+    div#itens a:hover {
+        background-color: var(--bpreto);
+        text-decoration: none;
+    }
+
+    div#itens a.ativo {
+        background-color: var(--bverde);
+    }
+
+    div#itens p {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bolder;
+        padding: 10px;
+    }
+
+    div#navbartechs {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    div#navbartechs a:link,
+    div#navbartechs a:visited {
+       color: lightgray;
+    }
+
+    div#navbartechs a:hover,
+    div#navbartechs a:active {
+        background-color: #333333;
+    }
+
+    main#so {
+        background-color: white;
+        color: black;
+        display: block;
+        margin: auto;
+        padding: 20px;
+        width: 70vw;
+    }
+
+    main#so a {
+        background-color: var(--bazulescuro);
+        display: block;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    main#so img {
+        display: block;
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    main#sos {
+        background-color: white;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+
+    main#tech {
+        background-color: rgb(230, 230, 230);
+        /*border-radius: 10px;*/
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        color: black;
+        margin: 50px 0;
+        padding: 10px 0px;
+    }
+
+    main#tech > p {
+        margin: 10px 20px;
+    }
+
+    /* Classes */
+
+    div.code {
+        background-color: var(--bpreto);
+        border-radius: 2px;
+        border-left: 10px solid green;
+        display: block;
+        margin: 10px auto;
+        overflow-x: auto;
+        padding: 20px;
+        width: 80%;
+    }
+
+    div.code pre {
+        color: rgb(0, 150, 200);
+    }
+
+    div.output {
+        background-color: var(--bpreto);
+        border-radius: 2px;
+        border-left: 10px solid rgb(0, 200, 200);
+        display: block;
+        margin: 10px auto;
+        overflow-x: auto;
+        padding: 20px;
+        width: 80%;
+    }
+
+    div.output pre {
+        color: white;
+    }
+
+    div.scrollx {
+        overflow-x: auto;
+    }
+
+    div.tech {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    div.tech a {
+        background-color: var(--bpreto);
+        border-radius: 100px;
+        color: white;
+        display: block;
+        font-size: 1.4em;
+        margin: 20px auto;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    div.tech a:hover {
+        background-color: black;
+    }
+
+    div.tech h2 {
+        text-align: center;
+    }
+
+    div.tech img {
+        display: block;
+        margin: auto;
+        width: 40vw;
+    }
+
+    img.tutorial {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    pre {
+        margin: 0;
+        padding: 0;
+    }
+
+    span.comentario {
+        color: green;
+    }
+
+    span.user {
+        color: green;
+        font-weight: bolder;
+    }
+
+    table.db tbody td {
+        border: none;
+        text-align: right;
+    }
+
+    table.db tbody td.left {
+        text-align: left;
+    }
+
+    table.db tbody tr:nth-child(2n) {
+        background-color: #E5E6E7;
+    }
+
+    table.db thead th {
+        background-image: linear-gradient(to bottom, white, rgb(165, 165, 165));
+        border: none;
+        color: rgb(0, 0, 90);
+        text-align: center;
+    }
+
+}
+
+/* Computador */
+@media screen and (min-width: 763px) {
+    
+    /* Tags */
+
+    main {
+        width: 70vw;
+    }
+
+    /* ID */
+
+    div#espaco {
+        height: 56px;
+    }
+
+    div#itens {
+        position: fixed;
+        height: calc(100vh - 56px);
+        width: 20vw;
+    }
+
+    div#navbartechs {
+        width: 300px;
+    }
+
+    img#menuburguer {
+        cursor: pointer;
+        display: none;
+    }
+
+    main#so {
+        margin: 20px auto;
+    }
+
+    main#so a {
+        width: 50%;
+    }
+
+    main#so img {
+        width: 50%;
+    }
+
+    /* main#tech {
+        margin-left: 25vw;
+    } */
+
+    /* Classes */
+
+    .celular {
+        display: none;
+    }
+    .pc {
+        display: block;
+    }
+
+    div.tech img {
+        width: 40%;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 763px) {
+    
+    /* Tags */
+
+    main {
+        width: 90vw;
+    }
+
+    /* ID */
+
+    div#espaco {
+        height: 120px;
+    }
+
+    div#itens {
+        display: none;
+        height: 70vh;
+        position: fixed;
+        width: 80vw;
+        z-index: 99;
+    }
+
+    div#navbartechs {
+        width: 90%;
+    }
+
+    img#menuburguer {
+        display: block;
+    }
+
+    main#so {
+        width: 90vw;
+    }
+
+    main#tech {
+        margin: 20px auto;
+    }
+
+    /* ul#navbartechs {
+        display: none;
+        height: 80px;
+        overflow-y: auto;
+        width: 90vw;
+    } */
+
+    /* Classes */
+
+    .celular {
+        display: block;
+    }
+    .pc {
+        display: none;
+    }
+
+    div.code, div.output {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cores de Fundo do body */
+
+body.html {
+    background-color: var(--htmlescuro);
+    background-image: linear-gradient(var(--htmlescuro));
+}
+
+body.mysql {
+    background-color: var(--mysqllaranja);
+    background-image: linear-gradient(var(--mysqllaranja));
+}
+
+body.css {
+    background-color: var(--cssclaro);
+    background-image: linear-gradient(var(--cssclaro));
+}
+
+body.python {
+    background-color: var(--pythonazul);
+    background-image: linear-gradient(var(--pythonazul));
+}
+
+body.js {
+    background-color: var(--jsamarelo);
+    background-image: linear-gradient(var(--jsamarelo));
+}
+
+
+
+
+/* Cores de Fundo */
+
+.bg-azul {
+    background-color: var(--bazul);
+}
+
+.bg-ciano {
+    background-color: var(--bciano);
+}
+
+.bg-laranja {
+    background-color: var(--blaranja);
+}
+
+.bg-preto {
+    background-color: var(--bpreto);
+}
+
+.bg-roxo {
+    background-color: var(--broxo);
+}
+
+.bg-verde {
+    /* background-color: var(--bverde); */
+    background-color: blue;
+}
+
+.bg-vermelho {
+    background-color: var(--bvermelho);
+}

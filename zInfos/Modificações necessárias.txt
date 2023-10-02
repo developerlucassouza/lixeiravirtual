@@ -1,0 +1,5 @@
+colspan e rowspan na tag <td>
+
+Adicionar valor italic ao text-decoration CSS
+
+Adicionar visibility CSS

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltimg&gt HTML - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <!-- Link para Home -->
+            <a class="navbar-brand" href="https://developerlucassouza.github.io/lixeiravirtual/index.html">Lixeira
+                Virtual</a>
+
+            <!-- Botão Responsivo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Search -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search" id="txtSearch">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="btnSearch">Search</button>
+                </form>
+
+                <!-- Itens da Navbar -->
+                <ul class="navbar-nav mr-auto" id="navbaritens">
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Navbar Techs -->
+        <nav class="navbar navbar-expand-sm bg-preto">
+            <!-- Menu Burguer Pages -->
+            <img src="../../imgs/menuburguer.png" alt="" id="menuburguer">
+
+            <!-- Links -->
+            <ul class="navbar-nav" id="navbartechs">
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div id="espaco"></div>
+
+    <div id="itens">
+        
+    </div>  
+
+    <main id="tech">
+        <h1>Tag &ltimg&gt HTML</h1>
+        <p>A tag <code>img</code> serve para introduzir uma imagem ao seu site.</p>
+        <p>Por padrão a tag <code>img</code> irá pedir dois parâmetros. <code>src</code>, que é o caminho para a imagem. E <code>alt</code>, que é uma descrição da imagem que será mostrado caso a imagem não seja carregada.</p>
+
+        <div class="code">
+            <pre>
+&ltimg src="c#.png" alt="Logo do C#"&gt   </pre>
+        </div>
+
+        <img src="../../imgs/logo_csharp.png" alt="" style="margin: 10px 0; margin-left:20px;">
+
+        <div class="code">
+            <pre>
+&ltimg src="SEM IMAGEM" alt="Logo do C#"&gt   </pre>
+        </div>
+
+        <img src="" alt="Logo do C#" style="margin:0px; margin-left:20px;">
+
+        <hr>
+
+        <p>Com o uso de <code><a href="../css/index.html">CSS</a></code>, podemos centralizar uma imagem, utilizando as propriedades <code>display</code> e <code>margin</code>.</p>
+
+        <div class="code">
+            <pre>
+&ltstyle&gt
+    img {
+        display: block;   
+        margin: auto;
+    }
+&lt/style&gt</pre>
+        </div>
+
+        <img src="../../imgs/logo_csharp.png" alt="" style="display: block; margin:50px auto;">
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/html.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

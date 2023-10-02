@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT ORDER BY MySQL - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+    <header></header>
+
+    <div id="espaco"></div>
+
+    <div id="itens">
+        
+    </div>  
+
+    <main id="tech">
+        <h1>SELECT ORDER BY MySQL</h1>
+
+        <p>Por padrão, ao utilizar um <code><a href="select.html">SELECT</a> * FROM cadastrados</code>, a ordem dos Registros irá se basear na primeira coluna (normalmente a de id, a <code><a href="primarykey.html">primary key</a></code>). Mas, podemos mudar qual coluna irá ordenar a ordem dos Registros.</p>
+        <p>Vamos supor que, ao invés de ordenar pela coluna id, queremos ordenar pela coluna nome:</p>
+
+        <div class="code">
+            <pre>
+SELECT * FROM cadastrados   
+ORDER BY nome;</pre>
+        </div>
+
+        <hr>
+
+        <p>Com o atributo <code>DESC</code>, a ordem será invertida do padrão, ao invés de A - Z será ordenada por Z - A.</p>
+
+        <div class="code">
+            <pre>
+SELECT * FROM cadastrados   
+ORDER BY nome DESC;</pre>
+        </div>
+
+        <hr>
+
+        <p>Podemos colocar mais de uma coluna para criar a ordem, seguindo pela ordem de importância de cada coluna.</p>
+
+        <div class="code">
+            <pre>
+SELECT * FROM cadastrados   
+ORDER BY nome, altura;</pre>
+        </div>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/mysql.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

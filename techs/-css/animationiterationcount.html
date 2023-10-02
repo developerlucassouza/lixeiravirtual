@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-iteration-count CSS - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+    <header></header>
+    <div id="espaco"></div>
+    <div id="itens"></div>  
+
+    <main id="tech">
+        <h1>animation-iteration-count CSS</h1>
+        <p>O <code>animation-iteration-count</code> é uma propriedade de animações criadas com <code><a href="keyframes.html">@keyframes</a></code>.</p>
+        <p>Esta propriedade irá indicar quantas vezes a animação irá acontecer/se repetir.</p>
+
+        <div class="code">
+            <pre>
+.elemento {
+    [...]
+    animation-iteration-count: 3;   
+}</pre>
+        </div>
+
+        <p>Neste exemplo, a animação irá se repetir 3 vezes.</p>
+        <p>O valor padrão do <code>animation-iteration-count</code> é 1.</p>
+
+        <hr>
+
+        <p>Também pode-se utilizar o valor <code>infinite</code>, para fazer a animação repetir infinitamente.</p>
+
+        <div class="code">
+            <pre>
+.elemento {
+    [...]
+    animation-iteration-count: infinite;   
+}</pre>
+        </div>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/css.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

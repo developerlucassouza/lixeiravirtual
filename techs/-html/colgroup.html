@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltcolgroup&gt HTML - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <!-- Link para Home -->
+            <a class="navbar-brand" href="https://developerlucassouza.github.io/lixeiravirtual/index.html">Lixeira
+                Virtual</a>
+
+            <!-- Botão Responsivo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Search -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search" id="txtSearch">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="btnSearch">Search</button>
+                </form>
+
+                <!-- Itens da Navbar -->
+                <ul class="navbar-nav mr-auto" id="navbaritens">
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Navbar Techs -->
+        <nav class="navbar navbar-expand-sm bg-preto">
+            <!-- Menu Burguer Pages -->
+            <img src="../../imgs/menuburguer.png" alt="" id="menuburguer">
+
+            <!-- Links -->
+            <ul class="navbar-nav" id="navbartechs">
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div id="espaco"></div>
+
+    <div id="itens">
+        
+    </div>  
+
+    <main id="tech">
+        <h1>Tag &ltcolgroup&gt HTML</h1>
+        <p>A tag <code>colgroup</code> é utilizada para representar grupos de colunas em tabelas. Dentro de um <code>colgroup</code> haverá várias tags <code><a href="col.html">&ltcol&gt</a></code>, onde cada tag irá representar uma coluna. <code>colgroup</code> não possui nenhum estilo padrão.</p>
+
+        <div class="code">
+            <pre>
+&lttable style="margin-left:20px;">   
+    &ltcolgroup>
+        &ltcol class="coluna1">
+        &ltcol class="coluna2">
+        &ltcol class="coluna3">
+    &lt/colgroup>
+
+    &lttr>
+        &lttd>1&lt/td>
+        &lttd>2&lt/td>
+        &lttd>3&lt/td>
+    &lt/tr>
+
+    &lttr>
+        &lttd>4&lt/td>
+        &lttd>5&lt/td>
+        &lttd>6&lt/td>
+    &lt/tr>
+&lt/table></pre>
+        </div>
+
+        <table style="margin-left:20px;">
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <p>Para explorar melhor o <code>colgroup</code>, veja também a tag <code><a href="col.html">&ltcol&gt</a></code>.</p>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/html.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

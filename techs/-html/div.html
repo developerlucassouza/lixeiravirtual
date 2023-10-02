@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltdiv&gt HTML - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <!-- Link para Home -->
+            <a class="navbar-brand" href="https://developerlucassouza.github.io/lixeiravirtual/index.html">Lixeira
+                Virtual</a>
+
+            <!-- Botão Responsivo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Search -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search" id="txtSearch">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="btnSearch">Search</button>
+                </form>
+
+                <!-- Itens da Navbar -->
+                <ul class="navbar-nav mr-auto" id="navbaritens">
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Navbar Techs -->
+        <nav class="navbar navbar-expand-sm bg-preto">
+            <!-- Menu Burguer Pages -->
+            <img src="../../imgs/menuburguer.png" alt="" id="menuburguer">
+
+            <!-- Links -->
+            <ul class="navbar-nav" id="navbartechs">
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div id="espaco"></div>
+
+    <div id="itens">
+        
+    </div>  
+
+    <main id="tech">
+        <h1>Tag &ltdiv&gt HTML</h1>
+        <p>A tag <code>div</code> cria um container genérico, ele não possui estilo padrão.</p>
+
+        <div class="code">
+            <pre>
+&ltdiv&gtOlá, Mundo!&lt/div&gt   </pre>
+        </div>
+
+        <div style="margin-left:20px;">Olá, Mundo!</div>
+
+        <hr>
+
+        <p>Mesmo não possuindo semântica especifica nem estilo próprio, a tag <code>div</code> é uma das mais utilizadas, por ser estilizável, passando seus estilos para as tags dentro dela.</p>
+
+        <div class="code">
+            <pre>
+&ltstyle&gt
+    div.estilos {
+        background-color: blue;
+        color: orange;
+        padding: 10px;
+    }
+&lt/style&gt
+
+&ltdiv class="estilos"&gt
+    &lth2&gtOlá, Mundo!&lt/h2&gt
+    &ltp&gtEsse é um exemplo de utilidade do div.&lt/p&gt   
+&lt/div&gt</pre>
+        </div>
+
+        <style>
+            div.estilos {
+                background-color: blue;
+                color: orange;
+                padding: 10px;
+            }
+        </style>
+
+        <div class="estilos">
+            <h2>Olá, Mundo!</h2>
+            <p>Esse é um exemplo de utilidade do div.</p>
+        </div>
+
+        <hr>
+
+        <p>A tag <code>div</code> só deve ser utilizada quando não houver outro elemento semântico (como <code><a href="article.html">&ltarticle&gt</a></code>, <code><a href="nav.html">&ltnav&gt</a></code>, <code><a href="main.html">&ltmain&gt</a></code>, <code><a href="section.html">&ltsection&gt</a></code>, etc)</p>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/html.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>

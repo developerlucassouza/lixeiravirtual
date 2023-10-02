@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &ltscript&gt HTML - Lixeira Virtual</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <div id="espaco"></div>
+
+    <div id="itens">
+        
+    </div>  
+
+    <main id="tech">
+        <h1>Tag &ltscript&gt HTML</h1>
+        <p>A tag <code>script</code> é utilizada para criar códigos <code><a href="../javascript/index.html">JavaScript</a></code> dentro do documento HTML.</p>
+
+        <div class="code">
+            <pre>
+&ltscript&gt
+    var h1 = document.querySelector('h1#iprincipal')   
+    h1.innerHTML = "Olá, Mundo!"
+&lt/script&gt</pre>
+        </div>
+
+        <hr>
+
+        <p>Com o atributo <code>src</code>, podemos importar um arquivo <code>.js</code> externo. Tal prática é muito mais utilizada do que escrever o código no próprio arquivo, por permitir a reutilização do script em outras páginas.</p>
+
+        <div class="code">
+            <pre>
+&ltscript src="script.js"&gt&lt/script&gt   </pre>
+        </div>
+    </main>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="../../scripts/html.js"></script>
+    <script src="../../scripts/auto.js"></script>
+
+</body>
+
+</html>
