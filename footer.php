@@ -13,9 +13,14 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-<!-- Menu Hamburguer das Páginas -->
+
 <script type="text/javascript">
+
+    // Menu Hamburguer e Afins
     try {
+        // === Menu Hamburguer das Páginas ===
+
+        /* Fazer Menu aparecer e desaparecer */
         let button = document.querySelector('#menuburguer');
         let itens = document.querySelector('#itens');
 
@@ -28,8 +33,52 @@
             }
         }
     } catch (ERRO) {
-        console.log(ERRO);
-    }   
+        console.log(ERRO, message);
+    }
+
+    try {
+        // === Deixar URL como ativo === 
+        // Obtém a URL atual
+        let url = new URL(window.location.href);
+
+        // Obtém o pathname da URL
+        let pathname = url.pathname;
+
+        // Separa o pathname em partes usando o caractere '/'
+        let partes = pathname.split('/');
+
+        // Obtém a última parte do pathname (parte final da URL)
+        url = partes[partes.length - 1];
+
+
+
+        window.addEventListener('load', function () {
+            // Obtém a URL atual
+            let url = new URL(window.location.href);
+
+            // Obtém o pathname da URL
+            let pathname = url.pathname;
+
+            // Separa o pathname em partes usando o caractere '/'
+            let partes = pathname.split('/');
+
+            // Obtém a última parte do pathname (parte final da URL)
+            let urlFinal = partes[partes.length - 1];
+
+            // Avalia href de cada tag e se ela é igual à parte final da URL atual
+            for (let ancora of document.querySelectorAll('div#itens a')) {
+                let href = ancora.getAttribute('href');
+                // Se o href for igual à parte final da URL, adiciona a classe 'ativo'
+                if (href === urlFinal) {
+                    ancora.classList.add('ativo');
+                }
+            }
+        });
+    } catch (ERRO) {
+        console.log(ERRO.message);
+    }
+
+
 </script>
 </body>
 

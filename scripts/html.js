@@ -7,14 +7,14 @@ corpo.className = 'html'
 // pages.innerHTML += '<a href="">HTML &lt &gt</a>'
 
 // Home
-pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
-pages.innerHTML += '<a href="index.html">HTML Home</a>'
+pages.innerHTML += '<a href="https://localhost/lixeiravirtual/">Lixeira Virtual</a>'
+pages.innerHTML += '<a href="index.php">HTML Home</a>'
 
 // Tags HTML
 pages.innerHTML += '<p>Tags HTML</p>'
 
 // A
-pages.innerHTML += '<a href="a.html">HTML &lta&gt</a>'
+pages.innerHTML += '<a href="a.php">HTML &lta&gt</a>'
 pages.innerHTML += '<a href="abbr.html">HTML &ltabbr&gt</a>'
 pages.innerHTML += '<a href="address.html">HTML &ltaddress&gt</a>'
 pages.innerHTML += '<a href="article.html">HTML &ltarticle&gt</a>'

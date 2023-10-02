@@ -64,21 +64,21 @@
                 <div class="tech">
                     <h2>HTML5</h2>
                     <img src="imgs/logo_html.png" alt="logo_html">
-                    <a href="techs/html/index.php">Aprenda HTML</a>
+                    <a href="techs/html/">Aprenda HTML</a>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="tech">
                     <h2>CSS3</h2>
                     <img src="imgs/logo_css.png" alt="logo_css">
-                    <a href="techs/css/index.php">Aprenda CSS</a>
+                    <a href="techs/css/">Aprenda CSS</a>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="tech">
                     <h2>JavaScript</h2>
                     <img src="imgs/logo_javascript.png" alt="logo_js">
-                    <a href="techs/javascript/index.php">Aprenda JavaScript</a>
+                    <a href="techs/javascript/">Aprenda JavaScript</a>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
                 <div class="tech">
                     <h2>MySQL</h2>
                     <img src="imgs/logo_mysql.png" alt="logo_mysql">
-                    <a href="techs/mysql/index.php">Aprenda MySQL</a>
+                    <a href="techs/mysql/">Aprenda MySQL</a>
                 </div>
             </div>
             <div class="col-lg-4">
