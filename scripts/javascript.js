@@ -8,11 +8,11 @@ corpo.className = 'js'
 
 // Home
 pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
-pages.innerHTML += '<a href="index.html">JS Home</a>'
+pages.innerHTML += '<a href="index.php">JS Home</a>'
 
 // JS Básico
 pages.innerHTML += '<p>JS Básico</p>'
-pages.innerHTML += '<a href="instalacao.html">Instalação Node.js</a>'
+pages.innerHTML += '<a href="instalacao.php">Instalação Node.js</a>'
 pages.innerHTML += '<a href="">JS Output</a>'
 pages.innerHTML += '<a href="">JS Variáveis</a>'
 pages.innerHTML += '<a href="">JS Tipos Primitivos</a>'

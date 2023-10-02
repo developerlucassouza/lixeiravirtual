@@ -1,4 +1,4 @@
-<footer class="footer bg-dark p-2">
+<footer class="footer bg-dark fixed-bottom p-4">
     <p class="text-center text-light">Desenvolvido por Lucas Souza</p>
 </footer>
 
