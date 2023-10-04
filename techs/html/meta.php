@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltmeta&gt HTML</h1>
-        <p>A tag <code>meta</code> é colocada dentro da tag <code><a href="head.html">&lthead&gt</a></code>. Define informações e metadados que não podem ser estabelecidos por outras tags (<code><a href="style.html">&ltstyle&gt</a></code>, <code><a href="title.html">&lttitle&gt</a></code>, <code><a href="script.html">&ltscript&gt</a></code>, <code><a href="link.html">&ltlink&gt</a></code>)</p>
+        <p>A tag <code>meta</code> é colocada dentro da tag <code><a href="head.php">&lthead&gt</a></code>. Define informações e metadados que não podem ser estabelecidos por outras tags (<code><a href="style.php">&ltstyle&gt</a></code>, <code><a href="title.php">&lttitle&gt</a></code>, <code><a href="script.php">&ltscript&gt</a></code>, <code><a href="link.php">&ltlink&gt</a></code>)</p>
 
         <hr>
 

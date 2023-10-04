@@ -11,7 +11,7 @@
         <main id="tech">
         <h1>Tag &ltul&gt HTML</h1>
         <p>A tag <code>ul</code> cria uma lista não ordenada, isto é, uma lista que não possui uma ordem correta.</p>
-        <p>Para adicionar cada item da lista é preciso utilizar a tag <code><a href="li.html">&ltli&gt</a></code>.</p>
+        <p>Para adicionar cada item da lista é preciso utilizar a tag <code><a href="li.php">&ltli&gt</a></code>.</p>
 
         <div class="code">
             <pre>

@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltli&gt HTML</h1>
-        <p>A tag <code>li</code> é um item de lista, utilizado para adicionar itens as listas ordenadas (<code><a href="ol.html">&ltol&gt</a></code>) e nas listas não ordenadas (<code><a href="ul.html">&ltul&gt</a></code>)</p>
+        <p>A tag <code>li</code> é um item de lista, utilizado para adicionar itens as listas ordenadas (<code><a href="ol.php">&ltol&gt</a></code>) e nas listas não ordenadas (<code><a href="ul.php">&ltul&gt</a></code>)</p>
 
         <div class="code">
             <pre>

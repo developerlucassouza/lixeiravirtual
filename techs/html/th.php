@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltth&gt HTML</h1>
-        <p>A tag <code>th</code> é utilizada para criar uma célula de cabeçalho em uma tabela (<code><a href="table.html">&lttable&gt</a></code>)</p>
+        <p>A tag <code>th</code> é utilizada para criar uma célula de cabeçalho em uma tabela (<code><a href="table.php">&lttable&gt</a></code>)</p>
 
         <div class="code">
             <pre>

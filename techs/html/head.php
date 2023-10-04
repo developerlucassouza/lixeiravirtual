@@ -10,8 +10,8 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &lthead&gt HTML</h1>
-        <p>A tag <code>head</code> é a "cabeça" do seu documento HTML, ele trás informações gerais sobre o documento. A tag <code>head</code> é posicionada antes da tag <code><a href="body.html">&ltbody&gt</a></code> e não aparece visualmente no navegador.</p>
-        <p>No <code>head</code> definimos metadados como título do documento com a tag <code><a href="title.html">&lttitle&gt</a></code>, importar estilos de <a href="../css/index.html">CSS</a> externo com <code><a href="link.html">&ltlink&gt</a></code>, entre outros metadados com a tag <code><a href="meta.html">&ltmeta&gt.</a></code></p>
+        <p>A tag <code>head</code> é a "cabeça" do seu documento HTML, ele trás informações gerais sobre o documento. A tag <code>head</code> é posicionada antes da tag <code><a href="body.php">&ltbody&gt</a></code> e não aparece visualmente no navegador.</p>
+        <p>No <code>head</code> definimos metadados como título do documento com a tag <code><a href="title.php">&lttitle&gt</a></code>, importar estilos de <a href="../css/">CSS</a> externo com <code><a href="link.php">&ltlink&gt</a></code>, entre outros metadados com a tag <code><a href="meta.php">&ltmeta&gt.</a></code></p>
 
         <div class="code">
             <pre>

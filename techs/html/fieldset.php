@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltfieldset&gt HTML</h1>
-        <p>A tag <code>fieldset</code> serve para agrupar dados em um <code><a href="form.html">&ltform&gt</a></code>, onde as tags <code><a href="input.html">&ltinput&gt</a></code> ficam dentro do <code>fieldset</code></p>
+        <p>A tag <code>fieldset</code> serve para agrupar dados em um <code><a href="form.php">&ltform&gt</a></code>, onde as tags <code><a href="input.php">&ltinput&gt</a></code> ficam dentro do <code>fieldset</code></p>
 
         <div class="code">
             <pre>
@@ -46,7 +46,7 @@
 
         <hr>
 
-        <p>Com a tag <code><a href="legend.html">&ltlegend&gt</a></code>podemos atribuir nomes/legendas a cada <code>fieldset</code></p>
+        <p>Com a tag <code><a href="legend.php">&ltlegend&gt</a></code>podemos atribuir nomes/legendas a cada <code>fieldset</code></p>
 
         <div class="code">
             <pre>

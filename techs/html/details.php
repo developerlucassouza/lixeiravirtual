@@ -25,7 +25,7 @@
 
         <hr>
 
-        <p>Há também a adição da tag <code><a href="summary.html">&ltsummary&gt</a></code> que altera o que estará escrito no indicador no lugar de Saiba mais.</p>
+        <p>Há também a adição da tag <code><a href="summary.php">&ltsummary&gt</a></code> que altera o que estará escrito no indicador no lugar de Saiba mais.</p>
 
         <div class="code">
             <pre>

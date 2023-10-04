@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltdt&gt HTML</h1>
-        <p>A tag <code>dt</code> indica um termo de uma Lista de Definições. Uma Lista de Definições é criada a partir da tag <code><a href="dl.html">&ltdl&gt</a></code>. As definições dos termos das tags <code>dt</code> são adicionadas com a tag <code><a href="dd.html">&ltdd&gt</a></code>.</p>
+        <p>A tag <code>dt</code> indica um termo de uma Lista de Definições. Uma Lista de Definições é criada a partir da tag <code><a href="dl.php">&ltdl&gt</a></code>. As definições dos termos das tags <code>dt</code> são adicionadas com a tag <code><a href="dd.php">&ltdd&gt</a></code>.</p>
 
         <div class="code">
             <pre>

@@ -10,8 +10,8 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltsummary&gt HTML</h1>
-        <p>A tag <code>summary</code> faz conjunto com a tag <code><a href="details.html">&ltdetails&gt</a></code>.</p>
-        <p>A tag <code>summary</code> irá alterar o rótulo da tag <code><a href="details.html">&ltdetails&gt</a></code>.</p>
+        <p>A tag <code>summary</code> faz conjunto com a tag <code><a href="details.php">&ltdetails&gt</a></code>.</p>
+        <p>A tag <code>summary</code> irá alterar o rótulo da tag <code><a href="details.php">&ltdetails&gt</a></code>.</p>
 
         <div class="code">
             <pre>

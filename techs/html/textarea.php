@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &lttextarea&gt HTML</h1>
-        <p>A tag <code>textarea</code> é uma área de texto semelhante ao <code><a href="input.html">&ltinput&gt</a></code> do tipo <code>text</code>, mas que possui uma área maior, permitindo escrever textos maiores.</p>
+        <p>A tag <code>textarea</code> é uma área de texto semelhante ao <code><a href="input.php">&ltinput&gt</a></code> do tipo <code>text</code>, mas que possui uma área maior, permitindo escrever textos maiores.</p>
 
         <div class="code">
             <pre>

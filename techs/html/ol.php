@@ -11,7 +11,7 @@
         <main id="tech">
         <h1>Tag &ltol&gt HTML</h1>
         <p>A tag <code>ol</code> indica uma Lista Ordenada, ou seja, uma lista onde os itens possuem uma ordem específica a ser mostrada.</p>
-        <p><Code>ol</Code> apenas criará a Lista Ordenada, para adicionar itens é preciso usar a tag <code><a href="li.html">&ltli&gt</a></code>.</p>
+        <p><Code>ol</Code> apenas criará a Lista Ordenada, para adicionar itens é preciso usar a tag <code><a href="li.php">&ltli&gt</a></code>.</p>
 
         <div class="code">
             <pre>

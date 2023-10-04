@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltlegend&gt HTML</h1>
-        <p>A tag <code>legend</code> é um complemento da tag <code><a href="fieldset.html">&ltfieldset&gt</a></code> dentro de um <code><a href="form.html">&ltform&gt</a></code>. O <code>legend</code> irá nomear o grupo do <code><a href="fieldset.html">&ltfieldset&gt</a></code>.</p>
+        <p>A tag <code>legend</code> é um complemento da tag <code><a href="fieldset.php">&ltfieldset&gt</a></code> dentro de um <code><a href="form.php">&ltform&gt</a></code>. O <code>legend</code> irá nomear o grupo do <code><a href="fieldset.php">&ltfieldset&gt</a></code>.</p>
 
         <div class="code">
             <pre>

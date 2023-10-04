@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltdatalist&gt HTML</h1>
-        <p>A tag <code>datalist</code> é utilizada para criar opções padrões para um <code><a href="input.html">&ltinput&gt</a></code> do tipo text. Primeiro é preciso criar a lista utilizando a tag <code><a href="option.html">&ltoption&gt</a></code> para cada opção que deseja criar. Depois atribua um <code>id</code> ao <code>datalist</code>.</p>
+        <p>A tag <code>datalist</code> é utilizada para criar opções padrões para um <code><a href="input.php">&ltinput&gt</a></code> do tipo text. Primeiro é preciso criar a lista utilizando a tag <code><a href="option.php">&ltoption&gt</a></code> para cada opção que deseja criar. Depois atribua um <code>id</code> ao <code>datalist</code>.</p>
 
         <div class="code">
             <pre>
@@ -23,7 +23,7 @@
 &lt/datalist&gt</pre>
         </div>
 
-        <p>Depois, na tag <code><a href="input.html">&ltinput&gt</a></code> do tipo text, utilize o atributo <code>list</code> para passar o <code>datalist</code> ao <code><a href="input.html">&ltinput&gt</a></code></p>
+        <p>Depois, na tag <code><a href="input.php">&ltinput&gt</a></code> do tipo text, utilize o atributo <code>list</code> para passar o <code>datalist</code> ao <code><a href="input.php">&ltinput&gt</a></code></p>
 
         <div class="code">
             <pre>

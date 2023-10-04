@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltfooter&gt HTML</h1>
-        <p>A tag <code>footer</code> é uma tag de agrupamento que indica o rodapé de um site. A tag <code>footer</code> é semelhante as tags <code><a href="main.html">&ltmain&gt</a></code> e <code><a href="header.html">&ltheader&gt</a></code>. <code>footer</code> não possui estilo padrão.</p>
+        <p>A tag <code>footer</code> é uma tag de agrupamento que indica o rodapé de um site. A tag <code>footer</code> é semelhante as tags <code><a href="main.php">&ltmain&gt</a></code> e <code><a href="header.php">&ltheader&gt</a></code>. <code>footer</code> não possui estilo padrão.</p>
 
         <div class="code">
             <pre>

@@ -10,8 +10,8 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &lttd&gt HTML</h1>
-        <p>A tag <code>td</code> é utilizada para inserir dados em uma tabela (<code><a href="table.html">&lttable&gt</a></code>) </p>
-        <p>Tags <code>td</code> devem ser colocados dentro de uma tag <code><a href="tr.html">&lttr&gt</a></code>, tag que indica uma linha da tabela.</p>
+        <p>A tag <code>td</code> é utilizada para inserir dados em uma tabela (<code><a href="table.php">&lttable&gt</a></code>) </p>
+        <p>Tags <code>td</code> devem ser colocados dentro de uma tag <code><a href="tr.php">&lttr&gt</a></code>, tag que indica uma linha da tabela.</p>
 
         <div class="code">
             <pre>

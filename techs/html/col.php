@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltcol&gt HTML</h1>
-        <p>A tag <code>col</code> é usada junto da tag <code><a href="colgroup.html">colgroup</a></code> em tabelas, a fim de agrupar cada coluna e atribuir uma class para a mesma. Tal tag não possui nenhum estilo em particular.
+        <p>A tag <code>col</code> é usada junto da tag <code><a href="colgroup.php">&ltcolgroup></a></code> em tabelas, a fim de agrupar cada coluna e atribuir uma class para a mesma. Tal tag não possui nenhum estilo em particular.
         </p>
 
         <div class="code">
@@ -53,7 +53,7 @@
 
         <hr>
 
-        <p>Com as colunas agrupadas e classes atribuidas, pode-se estilizar cada coluna individualmente utilizando <a href="../css/index.html">CSS</a>.</p>
+        <p>Com as colunas agrupadas e classes atribuidas, pode-se estilizar cada coluna individualmente utilizando <a href="../css/">CSS</a>.</p>
 
         <div class="code">
             <pre>

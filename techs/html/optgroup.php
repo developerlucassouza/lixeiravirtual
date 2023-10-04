@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltoptgroup&gt HTML</h1>
-        <p>A tag <code>optgroup</code> é utilizada para separar determinados grupos de tags <code><a href="option.html">&ltoption&gt</a></code>. Sendo tanto o <code>optgroup</code> quanto o <code><a href="option.html">&ltoption&gt</a></code> entando dentro de uma tag <code><a href="select.html">&ltselect&gt</a></code>.</p>
+        <p>A tag <code>optgroup</code> é utilizada para separar determinados grupos de tags <code><a href="option.php">&ltoption&gt</a></code>. Sendo tanto o <code>optgroup</code> quanto o <code><a href="option.php">&ltoption&gt</a></code> entando dentro de uma tag <code><a href="select.php">&ltselect&gt</a></code>.</p>
         <p>É preciso usar um atributo <code>label</code> para nomear o grupo.</p>
 
         <div class="code">
@@ -46,7 +46,7 @@
             </optgroup>
         </select>
 
-        <p>Assim, é possível organizar melhor as opções dentro de um <code><a href="select.html">&ltselect&gt</a></code>.</p>
+        <p>Assim, é possível organizar melhor as opções dentro de um <code><a href="select.php">&ltselect&gt</a></code>.</p>
         </main>
     </div>
 </div>

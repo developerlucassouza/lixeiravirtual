@@ -10,8 +10,8 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltlabel&gt HTML</h1>
-        <p>O <code>label</code> é uma etiqueta que irá se relacionar semanticamente com uma tag <code><a href="input.html">&ltinput&gt</a></code>.</p>
-        <p>Para criar essa relação, coloque o id do <code><a href="input.html">&ltinput&gt</a></code> no atributo <code>for</code> do <code>label</code></p>
+        <p>O <code>label</code> é uma etiqueta que irá se relacionar semanticamente com uma tag <code><a href="input.php">&ltinput&gt</a></code>.</p>
+        <p>Para criar essa relação, coloque o id do <code><a href="input.php">&ltinput&gt</a></code> no atributo <code>for</code> do <code>label</code></p>
 
         <div class="code">
             <pre>
@@ -24,11 +24,11 @@
             <input type="text" id="inome">
         </div>
 
-        <p>Com essa etiqueta, ao clicar no <code>label</code>, o cursor será levado ao <code><a href="input.html">&ltinput&gt</a></code> relacionado.</p>
+        <p>Com essa etiqueta, ao clicar no <code>label</code>, o cursor será levado ao <code><a href="input.php">&ltinput&gt</a></code> relacionado.</p>
 
         <hr>
 
-        <p>Alguns tipos de <code><a href="input.html">&ltinput&gt</a></code> necessitam de <code>label</code> para funcionarem corretamente, como os <code>types</code> <code>checkbox</code> e <code>radio</code></p>
+        <p>Alguns tipos de <code><a href="input.php">&ltinput&gt</a></code> necessitam de <code>label</code> para funcionarem corretamente, como os <code>types</code> <code>checkbox</code> e <code>radio</code></p>
 
         <div class="code">
             <pre>

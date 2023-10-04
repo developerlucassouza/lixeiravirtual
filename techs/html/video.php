@@ -11,7 +11,7 @@
         <main id="tech">
         <h1>Tag &ltvideo&gt HTML</h1>
         <p>A tag <code>video</code>, como o nome sugere, é utilizada para inserir um vídeo de hospedagem própria.</p>
-        <p><code>video</code> é muito semelhante a tag <code><a href="audio.html">&ltaudio&gt</a></code>.</p>
+        <p><code>video</code> é muito semelhante a tag <code><a href="audio.php">&ltaudio&gt</a></code>.</p>
         <p>Para indicar o caminho do vídeo é preciso utilizar o atributo <code>src</code>.</p>
         <p>Também é preciso adicionar o atributo <code>controls</code> para adicionar os controles do vídeo.</p>
 

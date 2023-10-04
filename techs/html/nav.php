@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltnav&gt HTML</h1>
-        <p>A tag <code>nav</code> é uma tag semântica para indicar um local de navegação, ou seja, uma seção com tags <code><a href="a.html">&lta&gt</a></code> que leva para outras páginas do site.</p>
+        <p>A tag <code>nav</code> é uma tag semântica para indicar um local de navegação, ou seja, uma seção com tags <code><a href="a.php">&lta&gt</a></code> que leva para outras páginas do site.</p>
         <p>A tag <code>nav</code> tem apenas função semântica, então não possue estilo padrão.</p>
 
         <div class="code">

@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &lttbody&gt HTML</h1>
-        <p>A tag <code>tbody</code> é utilizada para criar o corpo de uma tabela (<code><a href="table.html">&lttable&gt</a></code>) inserindo os dados principais (<code><a href="tr.html">&lttr&gt</a></code> e <code><a href="td.html">&lttd&gt</a></code>).</p>
+        <p>A tag <code>tbody</code> é utilizada para criar o corpo de uma tabela (<code><a href="table.php">&lttable&gt</a></code>) inserindo os dados principais (<code><a href="tr.php">&lttr&gt</a></code> e <code><a href="td.php">&lttd&gt</a></code>).</p>
 
         <div class="code">
             <pre>

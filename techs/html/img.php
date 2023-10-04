@@ -29,7 +29,7 @@
 
         <hr>
 
-        <p>Com o uso de <code><a href="../css/index.html">CSS</a></code>, podemos centralizar uma imagem, utilizando as propriedades <code>display</code> e <code>margin</code>.</p>
+        <p>Com o uso de <code><a href="../css/index.php">CSS</a></code>, podemos centralizar uma imagem, utilizando as propriedades <code>display</code> e <code>margin</code>.</p>
 
         <div class="code">
             <pre>

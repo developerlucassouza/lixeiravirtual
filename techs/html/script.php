@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltscript&gt HTML</h1>
-        <p>A tag <code>script</code> é utilizada para criar códigos <code><a href="../javascript/index.html">JavaScript</a></code> dentro do documento HTML.</p>
+        <p>A tag <code>script</code> é utilizada para criar códigos <code><a href="../javascript/index.php">JavaScript</a></code> dentro do documento HTML.</p>
 
         <div class="code">
             <pre>

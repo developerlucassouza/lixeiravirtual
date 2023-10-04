@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltdd&gt HTML</h1>
-        <p>A tag <code>dd</code> indica o significado de uma lista de definição. Para criar uma lista de definição usamos a tag <code><a href="dl.html">&ltdl&gt</a></code> e a tag <code><a href="dt.html">&ltdt&gt</a></code> para dicionar os dados da lista de definição.</p>
+        <p>A tag <code>dd</code> indica o significado de uma lista de definição. Para criar uma lista de definição usamos a tag <code><a href="dl.php">&ltdl&gt</a></code> e a tag <code><a href="dt.php">&ltdt&gt</a></code> para dicionar os dados da lista de definição.</p>
 
         <div class="code">
             <pre>
@@ -27,7 +27,7 @@
 
         <hr>
 
-        <p>É possível usar vários <code>dd</code> dentro de um <code><a href="dl.html">&ltdl&gt</a></code>.</p>
+        <p>É possível usar vários <code>dd</code> dentro de um <code><a href="dl.php">&ltdl&gt</a></code>.</p>
 
         <div class="code">
             <pre>

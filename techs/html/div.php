@@ -54,7 +54,7 @@
 
         <hr>
 
-        <p>A tag <code>div</code> só deve ser utilizada quando não houver outro elemento semântico (como <code><a href="article.html">&ltarticle&gt</a></code>, <code><a href="nav.html">&ltnav&gt</a></code>, <code><a href="main.html">&ltmain&gt</a></code>, <code><a href="section.html">&ltsection&gt</a></code>, etc)</p>
+        <p>A tag <code>div</code> só deve ser utilizada quando não houver outro elemento semântico (como <code><a href="article.php">&ltarticle&gt</a></code>, <code><a href="nav.php">&ltnav&gt</a></code>, <code><a href="main.php">&ltmain&gt</a></code>, <code><a href="section.php">&ltsection&gt</a></code>, etc)</p>
         </main>
     </div>
 </div>

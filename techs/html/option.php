@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltoption&gt HTML</h1>
-        <p>A tag <code>option</code> é utilizada para criar opções dentro da tag <code><a href="select.html">&ltselect&gt</a></code>.</p>
+        <p>A tag <code>option</code> é utilizada para criar opções dentro da tag <code><a href="select.php">&ltselect&gt</a></code>.</p>
 
         <div class="code">
             <pre>
@@ -33,7 +33,7 @@
             <option>Hóquei</option>
         </select>
 
-        <p>Como o <code><a href="select.html">&ltselect&gt</a></code> é usado dentro de formulários (<code><a href="form.html">&ltform&gt</a></code>), a tag <code><a href="select.html">&ltselect&gt</a></code> deve retornar algum valor, no caso, o <code>option</code> selecionado.</p>
+        <p>Como o <code><a href="select.php">&ltselect&gt</a></code> é usado dentro de formulários (<code><a href="form.php">&ltform&gt</a></code>), a tag <code><a href="select.php">&ltselect&gt</a></code> deve retornar algum valor, no caso, o <code>option</code> selecionado.</p>
         <p>Normalmente ele retornará o valor que está escrito dentro da tag <code>option</code>. Mas, utilizando o atributo <code>value</code>, podemos passar outros valores.</p>
 
         <div class="code">

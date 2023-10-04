@@ -11,9 +11,9 @@
         <main id="tech">
         <h1>Tag &ltdl&gt HTML</h1>
         <p>A tag <code>dl</code> é utilizada para criar uma Lista de Definições, isto é, uma lista com termos e suas respectivas descrições.</p>
-        <p><code>dl</code> apenas indica uma Lista de Definições. Para adicionar os termos e as definições usamos as tags <code><a href="dt.html">&ltdt&gt</a></code> e <code><a href="dd.html">&ltdd&gt</a></code>.</p>
-        <p><code><a href="dt.html">&ltdt&gt</a></code> para adicionar os termos.</p>
-        <p><code><a href="dd.html">&ltdd&gt</a></code> para adicionar as definições.</p>
+        <p><code>dl</code> apenas indica uma Lista de Definições. Para adicionar os termos e as definições usamos as tags <code><a href="dt.php">&ltdt&gt</a></code> e <code><a href="dd.php">&ltdd&gt</a></code>.</p>
+        <p><code><a href="dt.php">&ltdt&gt</a></code> para adicionar os termos.</p>
+        <p><code><a href="dd.php">&ltdd&gt</a></code> para adicionar as definições.</p>
 
         <div class="code">
             <pre>

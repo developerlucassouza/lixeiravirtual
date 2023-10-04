@@ -35,7 +35,7 @@
 
         <hr>
 
-        <p>Também podemos usar a tag <code><a href="a.html">&lta&gt</a></code> para mudar as páginas mostradas no <code>iframe</code>. Primeiro é preciso dar um <code>name</code> ao <code>iframe</code> e depois usar esse nome como <code>target</code> na tag <code><a href="a.html">&lta&gt.</a></code></p>
+        <p>Também podemos usar a tag <code><a href="a.php">&lta&gt</a></code> para mudar as páginas mostradas no <code>iframe</code>. Primeiro é preciso dar um <code>name</code> ao <code>iframe</code> e depois usar esse nome como <code>target</code> na tag <code><a href="a.php">&lta&gt.</a></code></p>
 
         <div class="code">
             <pre>

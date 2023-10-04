@@ -24,7 +24,7 @@
 
         <hr>
         
-        <p>Submit <br> <input type="submit"> <br> - Usado em formulários (<code><a href="form.html">&ltform&gt</a></code>) para enviar os dados.</p>
+        <p>Submit <br> <input type="submit"> <br> - Usado em formulários (<code><a href="form.php">&ltform&gt</a></code>) para enviar os dados.</p>
 
         <hr>
         
@@ -32,7 +32,7 @@
 
         <hr>
         
-        <p>Reset <br> <input type="reset" value="Limpar"> <br> - Limpa todos os campos do formulário (<code><a href="form.html">&ltform&gt</a></code>) <br> - Pede atributo <code>value</code>, que é o texto que será mostrado no botão.</p>
+        <p>Reset <br> <input type="reset" value="Limpar"> <br> - Limpa todos os campos do formulário (<code><a href="form.php">&ltform&gt</a></code>) <br> - Pede atributo <code>value</code>, que é o texto que será mostrado no botão.</p>
 
         <hr>
         
@@ -65,7 +65,7 @@
             <input type="checkbox" id="opt2"> <label for="opt2">Opção 2</label> <br>
             <input type="checkbox" id="opt3"> <label for="opt3">Opção 3</label> <br>
             - Cria um checkbox. <br>
-            - Necessita de ligação com um <code><a href="label.html">&ltlabel&gt</a></code> para funcionar corretamente.
+            - Necessita de ligação com um <code><a href="label.php">&ltlabel&gt</a></code> para funcionar corretamente.
         </p>
 
         <hr>

@@ -16,7 +16,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltblockquote&gt HTML</h1>
-        <p>A tag <code>blockquote</code> cria uma citação em bloco, usado para citações grandes e extensas. Para citações menores usa-se a tag <code><a href="q.html">&ltq&gt</a></code>. Ainda usamos o <code>cite</code> para relacionar a citação a um link externo.</p>
+        <p>A tag <code>blockquote</code> cria uma citação em bloco, usado para citações grandes e extensas. Para citações menores usa-se a tag <code><a href="q.php">&ltq&gt</a></code>. Ainda usamos o <code>cite</code> para relacionar a citação a um link externo.</p>
 
         <div class="code">
             <pre>

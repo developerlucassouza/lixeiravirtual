@@ -12,7 +12,7 @@
         <h1>Tag &lttitle&gt HTML</h1>
         <p>A tag <code>title</code> é utilizada para definir o título do documento HTML.</p>
         <p>Ela é útil principalmente para indexação de páginas no Google, pois o título é o que irá aparecer nas pesquisas do Google.</p>
-        <p><code>title</code> é colocada dentro da tag <code><a href="head.html">&lthead&gt</a></code></p>
+        <p><code>title</code> é colocada dentro da tag <code><a href="head.php">&lthead&gt</a></code></p>
 
         <div class="code">
             <pre>

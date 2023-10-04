@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltspan&gt HTML</h1>
-        <p>A tag <code>span</code> é uma tag de agrupamento semelhante a <code><a href="div.html">&ltdiv&gt</a></code> com a diferença de que <code><a href="div.html">&ltdiv&gt</a></code> é uma tag <code>block</code>, enquanto <code>span</code> é uma tag <code>inline</code>.</p>
+        <p>A tag <code>span</code> é uma tag de agrupamento semelhante a <code><a href="div.php">&ltdiv&gt</a></code> com a diferença de que <code><a href="div.php">&ltdiv&gt</a></code> é uma tag <code>block</code>, enquanto <code>span</code> é uma tag <code>inline</code>.</p>
         <p>Por ser uma tag de agrupamento, não possui estilo prórpio.</p>
 
         <div class="code">

@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltsection&gt HTML</h1>
-        <p>A tag <code>section</code> é uma tag semântica que indica uma seção ou área de conteúdo do documento HTML. É utilizada para criar agrupamentos semelhantes ao <code><a href="div.html">&ltdiv&gt</a></code>.</p>
+        <p>A tag <code>section</code> é uma tag semântica que indica uma seção ou área de conteúdo do documento HTML. É utilizada para criar agrupamentos semelhantes ao <code><a href="div.php">&ltdiv&gt</a></code>.</p>
         <p>Por ser uma tag apenas de semântica, não possui estilo próprio.</p>
 
         <div class="code">

@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltcolgroup&gt HTML</h1>
-        <p>A tag <code>colgroup</code> é utilizada para representar grupos de colunas em tabelas. Dentro de um <code>colgroup</code> haverá várias tags <code><a href="col.html">&ltcol&gt</a></code>, onde cada tag irá representar uma coluna. <code>colgroup</code> não possui nenhum estilo padrão.</p>
+        <p>A tag <code>colgroup</code> é utilizada para representar grupos de colunas em tabelas. Dentro de um <code>colgroup</code> haverá várias tags <code><a href="col.php">&ltcol&gt</a></code>, onde cada tag irá representar uma coluna. <code>colgroup</code> não possui nenhum estilo padrão.</p>
 
         <div class="code">
             <pre>
@@ -50,7 +50,7 @@
             </tr>
         </table>
 
-        <p>Para explorar melhor o <code>colgroup</code>, veja também a tag <code><a href="col.html">&ltcol&gt</a></code>.</p>
+        <p>Para explorar melhor o <code>colgroup</code>, veja também a tag <code><a href="col.php">&ltcol&gt</a></code>.</p>
         </main>
     </div>
 </div>

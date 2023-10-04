@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltcaption&gt HTML</h1>
-        <p>A tag <code>caption</code> é usado em tabelas para criar um título (ou legenda) para a tabela, trazendo informações adicionais para se guiar a tabela. Ela deve ser colocada logo após a abertura do <code>table</code>.</p>
+        <p>A tag <code>caption</code> é usado em tabelas (<code><a href="table.php">&lttable></a></code>) para criar um título (ou legenda) para a tabela, trazendo informações adicionais para se guiar a tabela. Ela deve ser colocada logo após a abertura do <code>table</code>.</p>
 
         <div class="code">
             <pre>

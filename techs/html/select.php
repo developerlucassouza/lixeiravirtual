@@ -10,8 +10,8 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltselect&gt HTML</h1>
-        <p>A tag <code>select</code> é utilizada normalmente dentro de formulários (<code><a href="form.html">&ltform&gt</a></code>), é utilizada para criar uma lista suspensa onde o usuário pode selecionar um dos itens pré estabelecidos.</p>
-        <p>Para adicionar os itens do <code>select</code> é preciso usar a tag <code><a href="option.html">&ltoption&gt</a></code>para cada item.</p>
+        <p>A tag <code>select</code> é utilizada normalmente dentro de formulários (<code><a href="form.php">&ltform&gt</a></code>), é utilizada para criar uma lista suspensa onde o usuário pode selecionar um dos itens pré estabelecidos.</p>
+        <p>Para adicionar os itens do <code>select</code> é preciso usar a tag <code><a href="option.php">&ltoption&gt</a></code>para cada item.</p>
 
         <div class="code">
             <pre>
@@ -34,7 +34,7 @@
 
         <hr>
 
-        <p>A tag <code><a href="option.html">&ltoption&gt</a></code> também pode receber o atributo <code>value</code>, que mudará o valor enviado pelo formulário. Ao invés de enviar o que está escrito dentro da tag <code><a href="option.html">&ltoption&gt</a></code>.</p>
+        <p>A tag <code><a href="option.php">&ltoption&gt</a></code> também pode receber o atributo <code>value</code>, que mudará o valor enviado pelo formulário. Ao invés de enviar o que está escrito dentro da tag <code><a href="option.php">&ltoption&gt</a></code>.</p>
 
         <div class="code">
             <pre>

@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &lttfoot&gt HTML</h1>
-        <p>A tag <code>tfoot</code> é utilizada para criar o rodapé de uma tabela (<code><a href="table.html">&lttable&gt</a></code>), isto é, a parte final da tabela.</p>
+        <p>A tag <code>tfoot</code> é utilizada para criar o rodapé de uma tabela (<code><a href="table.php">&lttable&gt</a></code>), isto é, a parte final da tabela.</p>
 
         <div class="code">
             <pre>
@@ -32,7 +32,7 @@
 &lt/table></pre>
         </div>
 
-        <p>Tal tag deve ser usada em conjunto das tags <code><a href="thead.html">&ltthead&gt</a></code> e <code><a href="tbody.html">&lttbody&gt</a></code>.</p>
+        <p>Tal tag deve ser usada em conjunto das tags <code><a href="thead.php">&ltthead&gt</a></code> e <code><a href="tbody.php">&lttbody&gt</a></code>.</p>
         </main>
     </div>
 </div>

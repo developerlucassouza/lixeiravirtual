@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltform&gt HTML</h1>
-        <p>A tag <code>form</code> indica um formulário, dentro de um formulário usa-se tags <code><a href="input.html">&ltinput&gt</a></code> para criar os campos dos dados desejados.</p>
+        <p>A tag <code>form</code> indica um formulário, dentro de um formulário usa-se tags <code><a href="input.php">&ltinput&gt</a></code> para criar os campos dos dados desejados.</p>
 
         <div class="code">
             <pre>
@@ -25,7 +25,7 @@
             Senha: <input type="password">
         </form>
 
-        <p>Por padrão, a tag <code>form</code> pede o atributo <code>action</code>, que receberá um arquivo .php. Esse arquivo será executado ao clicar em um <code><a href="input.html">&ltinput&gt</a></code> com <code>type submit</code></p>
+        <p>Por padrão, a tag <code>form</code> pede o atributo <code>action</code>, que receberá um arquivo .php. Esse arquivo será executado ao clicar em um <code><a href="input.php">&ltinput&gt</a></code> com <code>type submit</code></p>
 
         <div class="code">
             <pre>
