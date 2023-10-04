@@ -1,0 +1,43 @@
+==================================================================================
+Pesquisar
+
+- Para requisitar uma informação usando o protocolo GET, podemos usar:
+
+- Para executarmos uma operação a cada 1 segundo, podemos usar:
+
+- Para obtermos o valor de um atributo de um elemento, usamos:
+
+- Para utilizar um 'debugador' disponível no browserr, usamos:
+==================================================================================
+Objetos:
+let pessoa = {nome: 'João', sobrenome: 'Batista'};
+pessoa['nome'];
+pessoa.['sobrenome'];
+
+Tamanho de um Array:
+cores.length
+
+Última posição de um Array:
+cores[cores.length - 1]
+
+Voltar histórico do navegador:
+history.go(-1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

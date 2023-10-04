@@ -1,0 +1,154 @@
+using System;
+using System.Collections.Immutable;
+using System.Drawing;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Runtime.Serialization.Formatters;
+using System.Security.Cryptography.X509Certificates;
+using System.Media;
+
+class Programa
+{
+    static void Main(string[] args)
+    {
+        int escolha;
+        int dMaria;
+        int dKatia;
+        int dSogra;
+        string corredora = "indefinido";
+
+        Random random = new Random();
+
+        while (true)
+        {
+            dMaria = 0;
+            dKatia = 0;
+            dSogra = 0;
+
+            Console.Clear();
+
+            Console.WriteLine(" === Corrida de Muié === ");
+            Console.WriteLine("[1] Maria");
+            Console.WriteLine("[2] Kátia");
+            Console.WriteLine("[3] Ryan Sogra");
+            Console.WriteLine("[0] Fechar Jogo");
+            Console.Write("Qual corredora você escolhe? (1, 2 ou 3): ");
+            escolha = int.Parse(Console.ReadLine());
+
+            if (escolha == 0)
+            {
+                break;
+            }
+
+            switch (escolha)
+            {
+                case 0:
+                    break;
+                case 1:
+                    corredora = "Maria";
+                    break;
+                case 2:
+                    corredora = "Kátia";
+                    break;
+                case 3:
+                    corredora = "Ryan Sogra";
+                    break;
+                default:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Escolha inválida, tente novamente");
+                    Console.ResetColor();
+                    Console.ReadKey();
+                    continue;
+                    break;
+            }
+
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine($"Sua corredora é {corredora}");
+
+                Console.WriteLine("==================================================");
+                Console.SetCursorPosition(dMaria, 2);
+                Console.WriteLine("M");
+
+                Console.WriteLine("==================================================");
+                Console.SetCursorPosition(dKatia, 4);
+                Console.WriteLine("K");
+
+                Console.WriteLine("==================================================");
+                Console.SetCursorPosition(dSogra, 6);
+                Console.WriteLine("S");
+
+                Console.WriteLine("==================================================");
+
+                if (dMaria >= 50)
+                {
+                    dMaria = 50;
+                    break;
+                }
+
+                if (dKatia >= 50)
+                {
+                    dKatia = 50;
+                    break;
+                }
+
+                if (dSogra >= 50)
+                {
+                    dSogra = 50;
+                    break;
+                }
+
+
+
+                dMaria += random.Next(1, 11);
+                if (dMaria >= 50)
+                {
+                    dMaria = 50;
+                    continue;
+                }
+
+                dKatia += random.Next(1, 11);
+                if (dKatia >= 50)
+                {
+                    dKatia = 50;
+                    continue;
+                }
+
+                dSogra += random.Next(1, 11);
+                if (dSogra > 50)
+                {
+                    dSogra = 50;
+                    continue;
+                }
+
+                Thread.Sleep(1000);
+
+            } while (true);
+
+            Console.WriteLine();
+
+            if ((corredora == "Maria" && dMaria >= 50) || (corredora == "Kátia" && dKatia >= 50) || (corredora == "Ryan Sogra" && dSogra >= 50))
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Corredora {corredora} venceu. Parabéns");
+                Console.ResetColor();
+            }
+
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Corredora {corredora} perdeu...");
+                Console.ResetColor();
+            }
+
+            Console.WriteLine("\nPressione qualquer tecla para jogar novamente... ");
+            Console.ReadKey();
+        }
+
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("\nFinalizando o Programa...");
+        Console.WriteLine("Aguarde...");
+        Thread.Sleep(3000);
+        Console.Clear();

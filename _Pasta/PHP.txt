@@ -1,0 +1,107 @@
+======================================================================================
+Condicional Ternário:
+$numero = isset($_POST['numero']) ? $_POST['numero'] : null;
+Assim, a variável $numero só vai receber a variável 'numero' do método POST caso a variável 'numero' do POST exista
+
+======================================================================================
+O navegador pode ter dificuldades em atualizar o CSS e o JavaScript, para auxiliar nisso, instale a extensão Classic Cache Killer, ou atualize a página com Ctrl + F5
+
+======================================================================================
+Definir tipo de horário do PHP:
+date_default_timezone_set('America/Sao_Paulo');
+
+Pegar horário atual:
+$hora = date('H:i:s');
+
+Pegar data atual:
+$data = date('d/m/Y');
+	y = Ano com dois dígitos
+	Y = Ano com quatro dígitos
+
+Pegar data e hora:
+$data_hora = date('d/m/Y - H:i:s');
+
+======================================================================================
+Escrevendo em arquivos .txt
+
+Nome do arquivo:
+$arquivo = 'x9.txt';
+
+Texto a ser escrito:
+$texto = 'Usuário logado em ' . $data . ' às ' . $hora . PHP_EOL;
+
+Abrir arquivo:
+$file = fopen($arquivo, 'a');
+
+Escrever no arquivo:
+fwrite($file, $texto);
+
+Fechar o arquivo:
+fclose($file);
+
+
+
+    $arquivo = 'x9.txt';
+    $texto = 'Usuário logado em ' . $data . ' às ' . $hora . PHP_EOL;
+    $file = fopen($arquivo, 'a');
+    fwrite($file, $texto);
+    fclose($file);
+
+
+
+O comando PHP_EOL funciona como uma quebra de linha
+
+======================================================================================
+Passar valores entre páginas usando <a>:
+<a href="arquivo.php?dado=valor">Próxima Página</a>
+
+======================================================================================
+Podemos incluir uma página PHP utilizando:
+include_once 'arquivo.php';
+
+======================================================================================
+Direcionar para outra página com PHP:
+header('Location: arquivo.php');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

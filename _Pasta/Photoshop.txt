@@ -1,0 +1,6 @@
+Após selecionar o fundo, usar Ctrl + Shift + I para separar a imagem do fundo
+
+Usar Ctrl + T para mudar o tamanho da imagem colocada a frente
+
+Para poder fazer o recorte de um cabelo, utilize a Seleção Rápida para selecionar a maior parte da imagem.
+Depois, no canto superior, selecione Selecionar e Mascarar, utilize Ferramenta Pincel para Refinar Borda para refinar as bordas

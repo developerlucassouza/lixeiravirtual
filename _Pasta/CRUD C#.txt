@@ -1,0 +1,575 @@
+=============================================================================
+Criar classe de conexão (liga e desliga Banco de Dados)
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Escola.Classes
+{
+    class Conexao
+    {
+        #region "Variáveis"
+
+        private static string _servidor = @"VPR0576613W10-1\SQLEXPRESS";
+        private static string _baseDeDados = "escola";
+        private static string _usuario = "sa";
+        private static string _senha = "123456";
+
+        // Linha de conexão para o SQL Server com usuário e senha
+        private static string _strConexao = "Data Source=" + _servidor + ";Initial Catalog=" + _baseDeDados + ";User ID=" + _usuario + ";Password=" + _senha;
+
+        // linha de conexão para o SQL Server sem usuário e senha
+        //private static string _strConexao = "Data Source=" + _servidor + ";Initial Catalog=" + _baseDeDados + ";Integrated Security=True";
+
+        public string query;
+        public SqlConnection conexao = new SqlConnection(_strConexao);
+        public SqlCommand comando;
+        public SqlDataAdapter da;
+        public SqlDataReader dr;
+        public DataSet ds;
+
+        #endregion
+
+        #region "Métodos"
+
+        public void AbreConexao()
+        {
+            if (conexao.State == ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+            conexao.Open();
+        }
+
+
+
+        public void FechaConexao() {
+            if (conexao.State == ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+
+        #endregion
+    }
+}
+
+=============================================================================
+Classe do CRUD
+
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Forms;
+
+namespace Escola.Classes
+{
+    public class Sala
+    {
+        #region "Variáveis"
+
+        int id_sala;
+        int numero;
+        int capacidade;
+        string equipamento;
+
+        public Sala(int _id_sala) 
+        { 
+            id_sala = _id_sala;
+        }
+
+        public Sala(int _id_sala, int _num, int _capacidade, string _equipamento)
+        {
+            id_sala = _id_sala;
+            numero = _num;
+            capacidade = _capacidade;
+            equipamento = _equipamento;
+        }
+
+        public Sala(int _num, int _capacidade, string _equipamento)
+        {
+            numero = _num;
+            capacidade = _capacidade;
+            equipamento = _equipamento;
+        }
+
+        #endregion
+
+        #region "Métodos"
+
+        // CRUD 
+
+        // Create
+        public void InsereSala()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = String.Format($"INSERT INTO tab_salas (numero, capacidade, equipamento) VALUES ({numero}, {capacidade}, '{equipamento}')");
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        // Read
+        public static dynamic MostraSalas()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = "SELECT * FROM tab_salas;";
+                cn.da = new SqlDataAdapter(cn.query, cn.conexao);
+                cn.ds = new System.Data.DataSet();
+                cn.da.Fill(cn.ds, "Salas");
+                return cn.ds.Tables["Salas"];
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+	    finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        // Update
+        public void AlteraSala()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = string.Format($"UPDATE tab_salas SET numero={numero}, capacidade={capacidade}, equipamento='{equipamento}' WHERE id_sala={id_sala}");
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        // Delete
+        public void DeletaSala()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = string.Format($"DELETE FROM tab_salas WHERE id_sala={id_sala}");
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show($"Ocorreu um erro:\n{erro.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        #endregion
+    }
+}
+
+=============================================================================
+Usar uma determinada função a partir do clique em um botão:
+
+private void toolSalvar_Click(object sender, EventArgs e)
+{
+   Sala insere = new Sala(int.Parse(txbNumero.Text), int.Parse(txbCapacidade.Text), cmbEquipamento.Text);
+   insere.InsereSala();
+}
+
+Carregar SELECT no DataGridView ao carregar o form:
+private void frmAlunos_Load(object sender, EventArgs e)
+{
+   dgvAlunos.DataSource = Aluno.MostraAlunos();
+}
+
+=============================================================================
+Fazer ComboBox receber nomes de uma tabela
+private void frmTurmas_Load(object sender, EventArgs e)
+{
+   cmbAluno.DataSource = Aluno.MostraAlunos();
+   cmbAluno.DisplayMember = "nome";
+   cmbAluno.SelectedIndex = -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jeito "correto" de criar classe
+
+public class Aluno
+    {
+        #region "Variáveis"
+
+        private int _id_aluno;
+        private string _nome;
+        private string _email;
+        private string _fone;
+        private string _foto;
+
+        #endregion
+
+
+        #region "Propriedades"
+
+        public int Id_aluno
+        {
+            get { return _id_aluno; }
+            set { _id_aluno = value;}
+        }
+
+        public string Nome
+        {
+            get { return _nome; }
+            set { _nome = value; }
+        }
+
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; }
+        }
+
+        public string Fone
+        {
+            get { return _fone; }
+            set { _fone = value; }
+        }
+
+        public string Foto
+        {
+            get { return _foto; }
+            set { _foto = value; }
+        }
+
+        #endregion
+
+
+        #region "Construtores"
+
+        // Construtor padrão
+        public Aluno()
+        {
+            Id_aluno = 0;
+            Nome = string.Empty;
+            Email = string.Empty;
+            Fone = string.Empty;
+            Foto = string.Empty;
+        }
+
+        // Construtor para inserir um Aluno
+        public Aluno(string nome, string email, string fone, string foto)
+        {
+            Nome = nome;
+            Email = email;
+            Fone = fone;
+            Foto = foto;
+        }
+
+        // Construtor para alterar um Aluno
+        public Aluno(int id_aluno, string nome, string email, string fone)
+        {
+            Id_aluno = id_aluno;
+            Nome = nome;
+            Email = email;
+            Fone = fone;
+        }
+
+        // Construtor para alterar a foto de um Aluno
+        public Aluno(int id_aluno, string foto)
+        {
+            Id_aluno = Id_aluno;
+            Foto = foto;
+        }
+
+        // Construtor para o DataGrid buscar um Aluno
+        public Aluno(int id_aluno)
+        {
+            Id_aluno = id_aluno;
+        }
+
+        #endregion
+
+
+        #region "Métodos"
+
+        // Método para inserir um Aluno
+        public void InsereAluno()
+        {
+            Conexao cn = new Conexao();
+            try
+            {
+                cn.query = String.Format("INSERT INTO tab_alunos(nome, email, fone, foto) VALUES ('{0}', '{1}', '{2}', '{3}')", Nome, Email, Fone, Foto);
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+
+
+        // Método para alterar um Aluno
+        public void AlteraAluno()
+        {
+            Conexao cn = new Conexao();
+            try
+            {
+                cn.query = String.Format("UPDATE tab_alunos SET nome = '{0}', email = '{1}', fone = '{2}' WHERE id_aluno = {3}", Nome, Email, Fone, Id_aluno);
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show(erro.Message);
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+
+        // Método para mostrar todos os Alunos no DataGrid
+        public static dynamic MostraAlunos()
+        {
+            Conexao cn = new Conexao();
+
+            try
+            {
+                cn.query = "SELECT * FROM tab_alunos;";
+                cn.da = new SqlDataAdapter(cn.query, cn.conexao);
+                cn.ds = new System.Data.DataSet();
+                cn.da.Fill(cn.ds, "Alunos");
+                return cn.ds.Tables["Alunos"];
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        // Método para excluir Aluno
+        public void ExcluiAluno()
+        {
+            Conexao cn = new Conexao();
+            try
+            {
+                cn.query = String.Format("DELETE FROM tab_alunos WHERE id_aluno = {0}", Id_aluno);
+                cn.comando = new SqlCommand(cn.query, cn.conexao);
+                cn.AbreConexao();
+                cn.comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show(erro.Message);
+            }
+            finally
+            {
+                cn.FechaConexao();
+            }
+        }
+
+        #endregion
+    }
+

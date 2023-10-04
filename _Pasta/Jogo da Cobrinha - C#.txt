@@ -1,0 +1,272 @@
+using System;
+using System.Collections.Immutable;
+using System.Drawing;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Runtime.Serialization.Formatters;
+using System.Security.Cryptography.X509Certificates;
+
+class Programa
+{
+    
+    static void Main(string[] args)
+    {
+        int[] xCobra = new int[5];
+        int[] yCobra = new int[5];
+
+        Console.CursorVisible = false;
+        Random random = new Random();
+
+        int x = random.Next(1, (Console.WindowWidth / 3) - 3) * 3;
+        int y = Console.WindowHeight / 2;
+
+        int xObj = random.Next(1, (Console.WindowWidth / 3) - 3) * 3;
+        int yObj = random.Next(1, Console.WindowHeight - 3);
+
+        int time = 1000;
+        int pontos = 0;
+
+        
+
+        while (true)
+        {
+            // Mostrar Menu
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine($"Pontos {pontos}");
+            Console.WriteLine($"Tempo {time}");
+            time--;
+
+            // Mostrar Fruta
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.SetCursorPosition(xObj, yObj);
+            Console.WriteLine("Fruta");
+            Console.ResetColor();
+
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+            // Mostrar Cobra
+            Console.SetCursorPosition(x, y);
+            Console.WriteLine("Titio Kid");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Colisão
+            if (x == xObj && y == yObj)
+            {
+                xObj = random.Next(1, (Console.WindowWidth / 3) - 3) * 3;
+                yObj = random.Next(1, Console.WindowHeight - 3);
+                pontos++;
+            }
+
+            // Mover Cobra
+            if (Console.KeyAvailable)
+            {
+                ConsoleKeyInfo key = Console.ReadKey(true);
+                switch (key.Key)
+                {
+                    case ConsoleKey.LeftArrow:
+                        x -= 3;
+                        break;
+
+                    case ConsoleKey.RightArrow:
+                        x += 3;
+                        break;
+
+                    case ConsoleKey.UpArrow:
+                        y--;
+                        break;
+
+                    case ConsoleKey.DownArrow:
+                        y++;
+                        break;
+
+                    case ConsoleKey.Spacebar:
+                        time = 0;
+                        break;
+                }
+            }
+
+
+
+            if (x <= 9)
+            {
+                x = 9;
+            }
+
+            if (x >= Console.WindowWidth - 9) 
+            {
+                x = Console.WindowWidth - 9;
+            }
+
+            if (y <= 3) 
+            { 
+                y = 3;
+            }
+
+            if (y >= Console.WindowHeight - 3)
+            {
+                y = Console.WindowHeight - 3;
+            }
+
+
+
+            if (xObj <= 9)
+            {
+                xObj = 9;
+            }
+
+            if (xObj >= Console.WindowWidth - 9)
+            {
+                xObj = Console.WindowWidth - 9;
+            }
+
+            if (yObj <= 3)
+            {
+                yObj = 3;
+            }
+
+            if (yObj >= Console.WindowHeight - 3)
+            {
+                yObj = Console.WindowHeight - 3;
+            }
+
+
+
+            // Acabar o tempo
+            if (time <= 0)
+            {
+                break;
+            }
+
+            System.Threading.Thread.Sleep(100);
+        }
+
+        Console.ResetColor();
+        Console.Clear();
+        Console.WriteLine("Fim de jogo");
+        Console.WriteLine($"Sua pontuação foi de {pontos} pontos");
+        Console.ReadKey();
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
