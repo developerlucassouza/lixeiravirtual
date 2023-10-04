@@ -18,12 +18,14 @@
 <body>
 
 <header>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
         <!-- Link para Home -->
-        <a class="navbar-brand" href="https://developerlucassouza.github.io/lixeiravirtual/index.html">Lixeira
-            Virtual</a>
+        <a class="navbar-brand" href="http://localhost/lixeiravirtual/">
+            <i class="fa-solid fa-trash-can"></i> Lixeira Virtual
+        </a>
 
         <!-- Botão Responsivo -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -117,6 +119,7 @@
             </ul>
 
         </div>
+
     </nav>
 
     <!-- Navbar Techs -->
@@ -124,6 +127,7 @@
         <!-- Menu Burguer Pages -->
         <img src="../../imgs/menuburguer.png" alt="" id="menuburguer">
     </nav>
+
 
     </header>
 

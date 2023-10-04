@@ -1,0 +1,42 @@
+<?php
+    include_once '../../header.php';
+?>
+
+<div class="row">
+    <div class="col-md-3">
+        <div id="itens"></div>
+    </div>
+
+    <div class="col-md-9">
+        <main id="tech">
+        <h1>Tag &lttr&gt HTML</h1>
+        <p>A tag <code>tr</code> é utilizada em tabelas (<code><a href="table.html">&lttable&gt</a></code>) para indicar uma linha da tabela.</p>
+        <p>Dentro das tags <code>tr</code>, são utilizadas as tags <code><a href="td.html">&lttd&gt</a></code> para inserir os dados.</p>
+
+        <div class="code">
+            <pre>
+&lttable>
+    &lt!-- Primeira Linha --&gt   
+    &lttr>
+        &lttd>B1&lt/td>
+        &lttd>A1&lt/td>
+        &lttd>C1&lt/td>
+    &lt/tr>
+
+    &lt!-- Segunda Linha --&gt
+    &lttr>
+        &lttd>A2&lt/td>
+        &lttd>B2&lt/td>
+        &lttd>C2&lt/td>
+    &lt/tr>
+&lt/table></pre>
+        </div>
+        </main>
+    </div>
+</div>
+
+<?php
+    include_once '../../footer.php';
+?>
+
+<script src="../../scripts/html.js" type="text/javascript"></script>

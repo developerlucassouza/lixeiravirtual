@@ -7,7 +7,7 @@ corpo.className = 'js'
 // pages.innerHTML += '<a href="">JS </a>'
 
 // Home
-pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
+pages.innerHTML += '<a href="http://localhost/lixeiravirtual/">Lixeira Virtual</a>'
 pages.innerHTML += '<a href="index.php">JS Home</a>'
 
 // JS Básico

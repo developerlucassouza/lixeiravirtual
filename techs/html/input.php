@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+    include_once '../../header.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag &ltinput&gt HTML - Lixeira Virtual</title>
+<div class="row">
+    <div class="col-md-3">
+        <div id="itens"></div>
+    </div>
 
-    <link rel="stylesheet" href="../../bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../../style.css">
-</head>
-
-<body>
-
-    <header></header>
-
-    <div id="espaco"></div>
-
-    <div id="itens">
-        
-    </div>  
-
-    <main id="tech">
+    <div class="col-md-9">
+        <main id="tech">
         <h1>Tag &ltinput&gt HTML</h1>
         <p>A tag <code>input</code> cria uma área de inserção de dados ou um botão. Em resumo, o <code>input</code> é responsável por parte da interação entre o usuário e o site.</p>
         <p>O <code>input</code> pode receber vários valores no atributo <code>type</code>, onde cada type é um tipo diferente de <code>input</code></p>
@@ -105,14 +93,12 @@
         <p>File <br>
             <input type="file" name="" id="">
         </p>
-    </main>
+        </main>
+    </div>
+</div>
 
-    <script src="../../bootstrap/jquery.js"></script>
-    <script src="../../bootstrap/bootstrap.bundle.js"></script>
+<?php
+    include_once '../../footer.php';
+?>
 
-    <script src="../../scripts/html.js"></script>
-    <script src="../../scripts/auto.js"></script>
-
-</body>
-
-</html>
+<script src="../../scripts/html.js" type="text/javascript"></script>

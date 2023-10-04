@@ -7,7 +7,7 @@ corpo.className = 'mysql'
 // pages.innerHTML += '<a href="">MySQL</a>'
 
 // Home
-pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
+pages.innerHTML += '<a href="http://localhost/lixeiravirtual/">Lixeira Virtual</a>'
 pages.innerHTML += '<a href="index.php">MySQL Home</a>'
 pages.innerHTML += '<p>Comandos Básicos</p>'
 pages.innerHTML += '<a href="xamppmysql.php">Instalação do MySQL com XAMPP</a>'

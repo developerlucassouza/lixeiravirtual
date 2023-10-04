@@ -15,6 +15,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
+        height: 100vh;
         margin: auto;
         padding: 100px 10px;
     }
@@ -48,7 +49,7 @@
         <p>Aqui, você encontrará uma plataforma abrangente e acessível para dominar uma variedade de tecnologias
             essenciais para o mundo da programação.</p>
 
-        <p>Desde as bases do <a href="techs/html/index.html">HTML</a> e <a href="techs/css/index.html">CSS</a> até
+        <p>Desde as bases do <a href="techs/html/">HTML</a> e <a href="techs/css/">CSS</a> até
             linguagens de programação poderosas como JavaScript, C#, Java e muito mais, estamos empenhados em
             capacitá-lo com o conhecimento necessário para se destacar no desenvolvimento de software.</p>
 

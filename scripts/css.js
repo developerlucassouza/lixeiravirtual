@@ -7,7 +7,7 @@ corpo.className = 'css'
 // pages.innerHTML += '<a href="">CSS </a>'
 
 // Home
-pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
+pages.innerHTML += '<a href="http://localhost/lixeiravirtual/">Lixeira Virtual</a>'
 pages.innerHTML += '<a href="index.php">CSS Home</a>'
 
 // Tipos de CSS

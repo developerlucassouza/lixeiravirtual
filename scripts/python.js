@@ -7,7 +7,7 @@ corpo.className = 'python'
 // pages.innerHTML += '<a href="">Python</a>'
 
 // Home
-pages.innerHTML += '<a href="https://developerlucassouza.github.io/lixeiravirtual/">Lixeira Virtual</a>'
+pages.innerHTML += '<a href="http://localhost/lixeiravirtual/">Lixeira Virtual</a>'
 pages.innerHTML += '<a href="index.php">Python Home</a>'
 
 // Python Básico

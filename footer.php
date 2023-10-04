@@ -1,6 +1,8 @@
+<!--
 <footer class="footer bg-dark fixed-bottom p-4">
     <p class="text-center text-light">Desenvolvido por Lucas Souza</p>
 </footer>
+-->
 
 <!-- Bootstrap/jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
