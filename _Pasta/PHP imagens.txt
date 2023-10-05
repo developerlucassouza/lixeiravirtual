@@ -1,0 +1,54 @@
+// Para enviar um arquivo no PHP, o <form> precisa da seguinte propriedade:
+<form enctype="multipart/form-data">
+
+// Considerando no <form>:
+<label for="foto">Foto:</label>
+<input type="file" name="foto" id="foto" class="form-control">
+
+// Para pegar o nome do arquivo no PHP:
+$foto = $_FILES['foto']['name'];
+
+// Criar os caminhos das pastas
+$img_grd = '../img_grd/' . $foto;
+
+// Copia imagem original para a pasta img_grd
+move_uploaded_file($_FILES['foto']['tmp_name'], $img_grd);
+
+// Chama a Classe que instancia o objeto
+// Ver a classe no arquivo PHP Image.class.php.txt
+include_once '../classes/Image.class.php';
+$img = new Image();
+
+// Se a conversão foi bem sucedida, grava os dados no Banco de Dados
+if ($resizeResult) {
+   $sql = 'INSERT INTO tab_pessoas (nome, email, fone, criado_em, foto, ativo)
+           VALUES (:nome, :email, :fone, NOW(), :foto, 1)';
+
+   try {
+                
+      $query = $bd -> prepare($sql);
+      $query -> bindValue(':nome', $nome, PDO::PARAM_STR);
+      $query -> bindValue(':email', $email, PDO::PARAM_STR);
+      $query -> bindValue(':fone', $fone, PDO::PARAM_STR);
+      $query -> bindValue(':foto', $foto, PDO::PARAM_STR);
+      $query -> execute();
+
+   } catch (PDOException $e) {
+      echo $e -> getMessage();
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

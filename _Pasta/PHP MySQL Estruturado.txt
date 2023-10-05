@@ -106,13 +106,89 @@ if (empty($busca)) {
 ===================================================================================
 UPDATE
 $atualizar = 'UPDATE tab_usuarios SET senha = ?, frase = ?
-                              WHERE id_usuario = ?';
-                try {
-                    $query = $bd -> prepare($atualizar);
-                    $query -> execute(array($senha, $frase, $id_usuario));
-                } catch (PDOException $e) {
-                    echo $e -> getMessage();
-                }
+              WHERE id_usuario = ?';
+try {
+   $query = $bd -> prepare($atualizar);
+   $query -> execute(array($senha, $frase, $id_usuario));
+} catch (PDOException $e) {
+   echo $e -> getMessage();
+}
+
+ou, caso só precise ajustar 1 parâmetro:
+
+$sql = 'UPDATE tab_pessoas SET ativo = 1 WHERE id_pessoa = ?';
+
+    try {
+        $query = $bd -> prepare($sql);
+        $query -> bindParam(1, $id_pessoa, PDO::PARAM_INT);
+        $query -> execute();
+        // Colocar aqui o arquivo de Log
+    } catch (PDOException $e) {
+        echo $e -> getMessage();
+    }
+
+===================================================================================
+DELETE
+
+$sql = 'DELETE FROM tab_pessoas WHERE id_pessoa = ?';
+
+    try {
+        $query = $bd -> prepare($sql);
+        $query -> bindParam(1, $id_pessoa, PDO::PARAM_INT);
+        $query -> execute();
+        
+        $hora = date('H:i:s');
+        $data = date('d/m/Y');
+
+        $arquivo = 'log/exclui.txt';
+        $texto = 'Usuário ' . $_SESSION['nome'] . ' - Excluiu a pessoa com ID: ' . $id_pessoa . ' no dia ' . $data . ' às ' . $hora . PHP_EOL;
+        $file = fopen($arquivo, 'a');
+        fwrite($file, $texto);
+        fclose($file);
+
+        header('Location: adm-pessoas.php');
+    } catch (PDOException $e) {
+        echo $e -> getMessage();
+    }
+
+===================================================================================
+INSERT INTO
+
+$sql = 'INSERT INTO tab_pessoas (nome, email, fone, criado_em, foto, ativo)
+        VALUES (:nome, :email, :fone, NOW(), :foto, 1)';
+
+try {
+                
+   $query = $bd -> prepare($sql);
+   $query -> bindValue(':nome', $nome, PDO::PARAM_STR);
+   $query -> bindValue(':email', $email, PDO::PARAM_STR);
+   $query -> bindValue(':fone', $fone, PDO::PARAM_STR);
+   $query -> bindValue(':foto', $foto, PDO::PARAM_STR);
+   $query -> execute();
+
+} catch (PDOException $e) {
+   echo $e -> getMessage();
+}
+
+// Recuperar o último ID gerado
+$ultimo = $bd -> lastInsertId();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
