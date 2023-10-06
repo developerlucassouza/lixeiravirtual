@@ -10,6 +10,7 @@ $foto = $_FILES['foto']['name'];
 
 // Criar os caminhos das pastas
 $img_grd = '../img_grd/' . $foto;
+$img_peq = '../img_peq/' . $foto;
 
 // Copia imagem original para a pasta img_grd
 move_uploaded_file($_FILES['foto']['tmp_name'], $img_grd);
@@ -18,6 +19,11 @@ move_uploaded_file($_FILES['foto']['tmp_name'], $img_grd);
 // Ver a classe no arquivo PHP Image.class.php.txt
 include_once '../classes/Image.class.php';
 $img = new Image();
+
+// Redimensiona a imagem mantendo a original
+$imgPointer = $img->prepareImage($img_grd);
+$img->prepareResize($imgPointer, 50, 50);
+$resizeResult = $img->createThumbNail($imgPointer, $img_peq);
 
 // Se a conversão foi bem sucedida, grava os dados no Banco de Dados
 if ($resizeResult) {
@@ -38,9 +44,59 @@ if ($resizeResult) {
    }
 }
 
+===================================================================================
 
+// Botão bonito para escolher arquivo (com Bootstrap):
+<span>Foto</span>
 
+<div class="custom-file">
+   <input type="file" name="foto" id="foto" class="custom-file-input">
+   <label for="" class="custom-file-label">Selecione a Foto</label>
+</div>
 
+===================================================================================
+Atualizar uma imagem
+
+if (isset($_POST['submit'])) {
+    $id_pessoa = $_POST['id_pessoa'];
+    $foto = $_FILES['foto']['name'];
+
+    // Criar os caminhos das pastas
+    $img_grd = '../img_grd/' . $foto;
+    $img_peq = '../img_peq/' . $foto;
+
+    // Copia imagem original para a pasta img_grd
+    move_uploaded_file($_FILES['foto']['tmp_name'], $img_grd);
+
+    // Chama a Classe que instancia o objeto
+    // Ver a classe no arquivo PHP Image.class.php.txt
+    include_once '../classes/Image.class.php';
+    $img = new Image();
+
+    // Redimensiona a imagem mantendo a original
+    $imgPointer = $img->prepareImage($img_grd);
+    $img->prepareResize($imgPointer, 50, 50);
+    $resizeResult = $img->createThumbNail($imgPointer, $img_peq);
+
+    // Se a conversão foi bem sucedida, grava os dados no Banco de Dados
+    if ($resizeResult) {
+        $sql = 'UPDATE tab_pessoas
+                SET foto = ?
+                WHERE id_pessoa = ?';
+
+        try {
+
+            $query = $bd->prepare($sql);
+            $query -> execute(array($foto, $id_pessoa));
+
+            echo '<script> alert("Imagem Alterada!"); </script>';
+            echo '<meta http-equiv="refresh" content="0;URL=adm-pessoas.php">';
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+}
 
 
 

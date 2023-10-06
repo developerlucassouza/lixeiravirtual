@@ -103,6 +103,24 @@ if (empty($busca)) {
     </table>
 </div>
 
+
+
+
+
+--- Mostrar SELECT baseado apenas no ID:
+$id_pessoa = isset($_GET['id_pessoa']) ? $_GET['id_pessoa'] : null;
+$sql = 'SELECT * FROM tab_pessoas WHERE id_pessoa = :id_pessoa';
+
+try {
+
+    $query = $bd -> prepare($sql);
+    $query -> execute(array(':id_pessoa' => $id_pessoa));
+    $resultado = $query -> fetch(PDO::FETCH_LAZY);
+
+} catch (PDOException $e) {
+    echo $e -> getMessage();
+}
+
 ===================================================================================
 UPDATE
 $atualizar = 'UPDATE tab_usuarios SET senha = ?, frase = ?

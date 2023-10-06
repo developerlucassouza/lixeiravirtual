@@ -7,13 +7,13 @@ Assim, a variável $numero só vai receber a variável 'numero' do método POST 
 O navegador pode ter dificuldades em atualizar o CSS e o JavaScript, para auxiliar nisso, instale a extensão Classic Cache Killer, ou atualize a página com Ctrl + F5
 
 ======================================================================================
-Definir tipo de horário do PHP:
+// Definir tipo de horário do PHP:
 date_default_timezone_set('America/Sao_Paulo');
 
-Pegar horário atual:
+// Pegar horário atual:
 $hora = date('H:i:s');
 
-Pegar data atual:
+// Pegar data atual:
 $data = date('d/m/Y');
 	y = Ano com dois dígitos
 	Y = Ano com quatro dígitos
@@ -63,7 +63,12 @@ include_once 'arquivo.php';
 Direcionar para outra página com PHP:
 header('Location: arquivo.php');
 
-
+======================================================================================
+// Validação de Formulário com PHP
+$nome = $_POST['nome'];
+if (!empty($nome)) {
+	
+}
 
 
 
