@@ -19,6 +19,15 @@ Adicionar o script no final do arquivo
 </script>
 <!-- Fim do lightbox -->
 
+*************
+Acrescentar essas propriedades nos links das imagens:
+*************
+data-toggle="lightbox" 
+data-gallery="example-gallery" (O nome "example-gallery" pode ser modificado para representar a galeria que você quiser, podendo criar mais de uma galeria)
+
+
+
+
 
 
 
@@ -31,10 +40,5 @@ Adicionar o script no final do arquivo
 	});
 </script>
 
-
-
-*************
-Acrescentar essas propriedades nos links das imagens:
-*************
-data-toggle="lightbox" 
-data-gallery="example-gallery" (O nome "example-gallery" pode ser modificado para representar a galeria que você quiser, podendo criar mais de uma galeria)
+// Adicionar ao elemento HTML que quer o tooltip
+data-toggle="tooltip" data-placement="right" title="Excluir"

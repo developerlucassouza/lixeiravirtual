@@ -53,9 +53,9 @@
                     <!-- <a class="dropdown-item" href="#">   </a> -->
                     <!-- <a class="dropdown-item" href="#">Python</a> -->
 
-                    <a class="dropdown-item" href="#"><i class="fa-brands fa-html5"></i> HTML</a>
+                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/html/"><i class="fa-brands fa-html5"></i> HTML</a>
                     
-                    <a class="dropdown-item" href="#"><i class="fa-brands fa-css3-alt"></i> CSS</a>
+                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/css/"><i class="fa-brands fa-css3-alt"></i> CSS</a>
 
                     <!-- <a class="dropdown-item" href="#"><i class="fa-brands fa-js"></i> JavaScript</a> -->
 
@@ -63,7 +63,7 @@
 
                     <!-- <a class="dropdown-item" href="#"><i class="fa-brands fa-php"></i> PHP</a> -->
 
-                    <a class="dropdown-item" href="#"><i class="fa-solid fa-database"></i> MySQL</a>
+                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/mysql/"><i class="fa-solid fa-database"></i> MySQL</a>
 
                     <!-- <a class="dropdown-item" href="#">SQL Server</a> -->
 
@@ -112,7 +112,7 @@
 
                 <!-- Sistemas Operacionais -->
                 <li class="nav-item">
-                    <a href="http://localhost/lixeiravirtual/techs/sistemas_operacionais/index.php" class="nav-link">Sistemas Operacionais</a>
+                    <a href="http://localhost/lixeiravirtual/techs/sistemas-operacionais/" class="nav-link">Sistemas Operacionais</a>
                 <li>
 
                 
@@ -123,7 +123,7 @@
     </nav>
 
     <!-- Navbar Techs -->
-    <nav class="navbar navbar-expand-sm bg-preto celular">
+    <nav class="navbar navbar-expand-sm bg-preto celular" id="navmenuburguer">
         <!-- Menu Burguer Pages -->
         <img src="../../imgs/menuburguer.png" alt="" id="menuburguer">
     </nav>

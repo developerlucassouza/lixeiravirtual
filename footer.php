@@ -15,6 +15,15 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+    $('document').ready(function (){
+        // Colocar menu hamburguer apenas quando for necessário
+        if ($('#itens').length <= 0) {
+            $('#navmenuburguer').css('display', 'none');
+        }
+    }); 
+</script>
+
 
 <script type="text/javascript">
 
