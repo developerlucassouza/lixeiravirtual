@@ -70,10 +70,59 @@ if (!empty($nome)) {
 	
 }
 
+======================================================================================
+Enviar E-mail com PHP
 
+<?php
 
+// Cada OS possue um jeito diferente de criar uma quebra de linha, primeiro vamos organizar isso
+if (PHP_OS == "Linux") {
+    $quebra_linha = "\n";
+} else if (PHP_OS == "WINNT") {
+    $quebra_linha = "\r";
+} else die ("Este script não roda neste servidor");
 
+// Criando as variáveis e resgatando os GETs
+// Este email DEVE existir no provedor
+$origem = "contato@shefarol.com.br";
+$destinatario = $_GET["email"];
+$nome = $_GET["nome"];
+$frase = $_GET["frase"];
+$assunto = "Lembrar Senha";
+$nomeDoSite = "Sistema de Cadastro";
+$linkDoSite = "https://shefarol.com.br/cadastro";
 
+// Criar o corpo do E-mail
+$msg = "<p>";
+$msg .= "Olá <strong>" . $nome . "</strong>, parece que você esqueceu sua senha.<br> ";
+$msg .= "Sua frase de segurança é <strong>" . $frase . "</strong><br>";
+$msg .= "Esperamos ter ajudado!<br><br>";
+$msg .= "Estamos a sua disposição!";
+$msg .= "</p>";
+
+$msg .= "<p>";
+$msg .= $nomeDoSite . "<br>";
+$msg .= "<a href='".$linkDoSite."'></a>";
+$msg .= "</p>";
+
+// Criar o cabeçalho do e-mail
+// 1 - Tenho que saber de onde o email está vindo
+// 2 - Seguir corretamente a quebra de linha
+$header = "MIME-Version: 1-1" . $quebra_linha;
+$header .= "Content-type: text/html; charset=utf-8" . $quebra_linha;
+$header .= "From: " . $origem . $quebra_linha;
+$header .= "Return-Path: " . $origem . $quebra_linha;
+
+// Enviando o e-mail
+if (!mail($destinatario, $assunto, $msg, $header, "-r" . $origem)) {
+    // Se não for PostFix
+    mail($destinatario, $assunto, $msg, $header);
+}
+
+// Chama a página de confirmação
+header('Location: confirma-envio.php');
+
+?>
 
 
 
