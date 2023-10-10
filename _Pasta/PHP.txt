@@ -18,8 +18,11 @@ $data = date('d/m/Y');
 	y = Ano com dois dígitos
 	Y = Ano com quatro dígitos
 
-Pegar data e hora:
+// Pegar data e hora:
 $data_hora = date('d/m/Y - H:i:s');
+
+// Converter padrão americano para padrão br
+date('d/m/Y', strtotime($linha['criado_em']));
 
 ======================================================================================
 Escrevendo em arquivos .txt

@@ -23,6 +23,17 @@ function clicouProcurar(){
         window.alert(txtdigitado)
 }
 
+=====================================================================================
+
+Criar máscara de Telefone
+
+<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+    		$('#fone').mask('(00) 00000-0000');
+	});
+</script>
+
 
 
 

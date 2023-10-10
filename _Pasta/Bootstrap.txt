@@ -127,6 +127,18 @@ Ao invés de criar um main com display:block; margin:auto; e width:80vw;, use um
 
 =====================================================================================
 
+Centralizar Bloco no centro da tela verticalmente
+
+<html lang="pt-br" class="h-100">
+
+<body class="h-100 d-flex flex-column">
+
+<main class="container mt-auto">
+
+O <main> será centralizado
+
+=====================================================================================
+
 Bootstrap Grid
 
 div.container

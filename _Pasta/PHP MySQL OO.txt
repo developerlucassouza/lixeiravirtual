@@ -1,0 +1,179 @@
+======================================================================================
+Arquivo Conexao.class.php
+
+<?php
+
+    class Conexao {
+
+        // Variável de Conexão
+        private static $connect;
+
+        // Método estático públic
+        // Usado para obter uma conexão com o BD
+        public static function getConexao() {
+            // Verifica se a propriedade estática $connect ainda não foi inicializada
+            if (!isset(self::$connect)) {
+
+                self::$connect = new PDO('mysql:host=localhost; dbname=cadastro', 'root', '');
+                return self::$connect;
+
+            } else {
+
+                return self::$connect;
+
+            }
+        }
+    }
+
+?>
+
+======================================================================================
+Arquivo Pessoas.class.php para mostrar Pessoas na <table>
+
+<?php
+
+include_once 'Conexao.class.php';
+
+class Pessoas
+{
+
+    // Calcular a quatidade de registros por página
+    public function paginacao($query, $registrosPorPagina)
+    {
+
+        $posicaoInicial = 0;
+        if (isset($_GET['pagina_no'])) {
+            $posicaoInicial = ($_GET['pagina_no'] - 1) * $registrosPorPagina;
+        }
+
+        $query2 = $query . " LIMIT $posicaoInicial, $registrosPorPagina";
+        return $query2;
+
+    }
+
+
+
+
+
+    // Mostra dados na tela inicial
+    public function mostraDados($query)
+    {
+
+        $mostra = Conexao::getConexao()->prepare($query);
+        $mostra->execute();
+
+        // Mostrar os
+        if ($mostra->rowCount() > 0) {
+            while ($linha = $mostra->fetch(PDO::FETCH_ASSOC)) {
+            ?>
+
+                <tr>
+                    <!-- ID -->
+                    <td class="text-center align-middle">
+                        <?php echo $linha['id_pessoa']; ?>
+                    </td>
+
+                    <!-- Nome -->
+                    <td class="text-center align-middle">
+                        <?php echo $linha['nome']; ?>
+                    </td>
+
+                    <!-- Email -->
+                    <td class="text-center align-middle">
+                        <?php echo $linha['email']; ?>
+                    </td>
+
+                    <!-- Fone -->
+                    <td class="text-center align-middle">
+                        <?php echo $linha['fone']; ?>
+                    </td>
+
+                    <!-- Criado em -->
+                    <td class="text-center align-middle">
+                        <?php echo $linha['criado_em']; ?>
+                    </td>
+
+                    <!-- Foto -->
+                    <td class="text-center align-middle">
+                        <?php echo $linha['foto']; ?>
+                    </td>
+                </tr>
+
+            <?php
+            }
+
+        } else {
+            ?>
+
+            <tr>
+                <td colspan="6" class="alert alert-danger text-danger">
+                    <h5>Não há registros!</h5>
+                </td>
+            </tr>
+
+            <?php
+        }
+
+    }
+
+}
+
+?>
+
+
+
+<!-- Mostrar na Tabela e configurar paginação -->
+<!-- Código dentro da Tabela, após o <tr> de cabeçalho -->
+<?php
+
+        $query = 'SELECT * FROM tab_pessoas WHERE ativo = 1';
+
+        // Quantidade de Registros por página
+        $registrosPorPagina = 4;
+
+        $mostra = new Pessoas();
+        $novaQuery = $mostra->paginacao($query, $registrosPorPagina);
+        $mostra -> mostraDados($novaQuery);
+
+        ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

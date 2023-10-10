@@ -42,3 +42,21 @@ data-gallery="example-gallery" (O nome "example-gallery" pode ser modificado par
 
 // Adicionar ao elemento HTML que quer o tooltip
 data-toggle="tooltip" data-placement="right" title="Excluir"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
