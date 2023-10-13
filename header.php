@@ -14,6 +14,7 @@
 
     <!-- CSS Próprio -->
     <link rel="stylesheet" href="http://localhost/lixeiravirtual/style.css" type="text/css">
+
 </head>
 <body>
 

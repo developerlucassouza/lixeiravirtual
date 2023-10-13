@@ -140,7 +140,6 @@ $sql = 'UPDATE tab_pessoas SET ativo = 1 WHERE id_pessoa = ?';
         $query = $bd -> prepare($sql);
         $query -> bindParam(1, $id_pessoa, PDO::PARAM_INT);
         $query -> execute();
-        // Colocar aqui o arquivo de Log
     } catch (PDOException $e) {
         echo $e -> getMessage();
     }
@@ -154,17 +153,6 @@ $sql = 'DELETE FROM tab_pessoas WHERE id_pessoa = ?';
         $query = $bd -> prepare($sql);
         $query -> bindParam(1, $id_pessoa, PDO::PARAM_INT);
         $query -> execute();
-        
-        $hora = date('H:i:s');
-        $data = date('d/m/Y');
-
-        $arquivo = 'log/exclui.txt';
-        $texto = 'Usuário ' . $_SESSION['nome'] . ' - Excluiu a pessoa com ID: ' . $id_pessoa . ' no dia ' . $data . ' às ' . $hora . PHP_EOL;
-        $file = fopen($arquivo, 'a');
-        fwrite($file, $texto);
-        fclose($file);
-
-        header('Location: adm-pessoas.php');
     } catch (PDOException $e) {
         echo $e -> getMessage();
     }
