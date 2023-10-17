@@ -30,6 +30,7 @@ Arquivo Conexao.class.php
 ======================================================================================
 Arquivo Pessoas.class.php para mostrar Pessoas na <table>
 
+
 <?php
 
 include_once 'Conexao.class.php';
@@ -55,7 +56,7 @@ class Pessoas
 
 
 
-    // Mostra dados na tela inicial
+    // Mostra dados na tela inicial ----------------------------------------------------------------------- SELECT
     public function mostraDados($query)
     {
 
@@ -139,6 +140,102 @@ class Pessoas
 
 
 
+
+
+
+// Função para criar os links de paginação
+        public function link_paginacao($query, $registros_por_pagina){
+            $self = $_SERVER['PHP_SELF'];
+            $mostra = Conexao::getConexao()->prepare($query);
+            $mostra->execute();
+            $total_registros = $mostra->rowCount();
+            if($total_registros > 0){
+                echo '<ul class="pagination justify-content-center">';
+                $total_de_paginas = ceil($total_registros / $registros_por_pagina);
+                $pagina_atual = 1;
+                if(isset($_GET['pagina_no'])){
+                    $pagina_atual = $_GET['pagina_no'];
+                }
+
+
+
+
+
+                // Links Primeira e Voltar
+                if($pagina_atual != 1){
+                    $anterior = $pagina_atual - 1;
+                    echo '
+                    <li class="page-item"><a href="'.$self.'?pagina_no=1" class="page-link"><i class="fas fa-angle-double-left"></i></a></li>
+                    ';
+
+                    echo '
+                    <li class="page-item"><a href="'.$self.'?pagina_no='.$anterior.'" class="page-link"><i class="fas fa-angle-left"></i></a></li>
+                    ';
+                }else{
+                    echo '
+                    <li class="page-item disabled"><a href="#" class="page-link"><i class="fas fa-angle-double-left"></i></a></li>
+                    ';
+
+                    echo '
+                    <li class="page-item disabled"><a href="#" class="page-link"><i class="fas fa-angle-left"></i></a></li>
+                    ';
+                }
+
+
+
+                // Links das Páginas Centrais
+                for ($i = 1; $i <= $total_de_paginas; $i++) {
+                    if ($i == $pagina_atual) {
+                        echo '<li class="page-item active">
+                        <a href="'.$self.'?pagina_no='.$i.'" class="page-link">'.$i.'</a>
+                        </li>';
+                    } else {
+                        echo '<li class="page-item">
+                        <a href="'.$self.'?pagina_no='.$i.'" class="page-link">'.$i.'</a>
+                        </li>';
+                    }
+                }
+
+
+
+                // Links Ultima e Avançar
+                if($pagina_atual < $total_de_paginas){
+                    $proxima = $pagina_atual + 1;
+                    echo '
+                    <li class="page-item"><a href="'.$self.'?pagina_no='.$proxima.'" class="page-link"><i class="fas fa-angle-right"></i></a></li>
+                    ';
+
+                    echo '
+                    <li class="page-item"><a href="'.$self.'?pagina_no='.$total_de_paginas.'" class="page-link"><i class="fas fa-angle-double-right"></i></a></li>
+                    ';
+
+                    
+                }else{
+                    echo '
+                    <li class="page-item disabled"><a href="#" class="page-link"><i class="fas fa-angle-right"></i></a></li>
+                    ';
+
+                    echo '
+                    <li class="page-item disabled"><a href="#" class="page-link"><i class="fas fa-angle-double-right"></i></a></li>
+                    ';
+                }
+
+                echo '</ul>';
+            }
+        }
+
+
+
+<!-- Chamando a Paginação na Tabela -->
+                <tr>
+                    <td colspan="6" class="pb-0">
+                        <div class="text-center">
+                            <?php
+                                $mostra->link_paginacao($query, $registros_por_pagina);
+                            ?>
+                        </div>
+                    </td>
+                </tr>
 
 
 
