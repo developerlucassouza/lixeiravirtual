@@ -1,0 +1,22 @@
+Gerenciador de Tarefas
+Desenvolva um aplicativo da web para gerenciar tarefas pessoais. Neste aplicativo, os usuários podem adicionar, atualizar e excluir tarefas.
+Exemplos:
+https://clickup.com/
+https://todoist.com/pt-BR 
+Pesquisar: Kanban e Scrum
+
+Loja Online Simples
+Crie uma loja online básica onde os usuários possam visualizar produtos, adicionar itens ao carrinho de compras e concluir compras simuladas.
+Use HTML e CSS para criar a interface do cliente, JavaScript para validação e interação, e PHP para gerenciar o carrinho e processar os pedidos.
+Exemplos: Qualquer loja online, como https://www.kabum.com.br/
+
+Calculadora Online
+Crie uma aplicação online que exiba uma calculadora científica e que permita ao usuário realizar cálculos diversos.
+Extra: Adicione funcionalidades de cálculos especializados de física, matemática, química, engenahria ou outros.
+Exemplos:
+https://www.desmos.com/scientific
+https://www.rapidtables.com/calc/math/calculator.html
+
+Tabela Periódica Interativa
+Crie uma aplicação que mostre uma tabela periódica dos elementos, completa e interativa, que permita aos usuários clicar sobre os elementos e obter informações variadas, a seu critério.
+Exemplo: https://ptable.com/
