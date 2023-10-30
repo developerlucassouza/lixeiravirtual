@@ -58,7 +58,7 @@
                     
                     <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/css/"><i class="fa-brands fa-css3-alt"></i> CSS</a>
 
-                    <!-- <a class="dropdown-item" href="#"><i class="fa-brands fa-js"></i> JavaScript</a> -->
+                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/javascript/"><i class="fa-brands fa-js"></i> JavaScript</a>
 
                     <!-- <a class="dropdown-item" href="#"><i class="fa-brands fa-node-js"></i> Node.js</a> -->
 

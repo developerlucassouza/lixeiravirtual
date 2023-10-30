@@ -99,19 +99,20 @@ pages.innerHTML += '<a href="textindent.php">CSS text-indent</a>'
 pages.innerHTML += '<a href="texttransform.php">CSS text-transform</a>'
 pages.innerHTML += '<a href="top.php">CSS top</a>'
 pages.innerHTML += '<a href="transform.php">CSS transform</a>'
-pages.innerHTML += '<a href="transition.php">CSS transition</a>'
-pages.innerHTML += '<a href="transitiondelay.php">CSS transition-delay</a>'
-pages.innerHTML += '<a href="transitionduration.php">CSS transition-duration</a>'
+// pages.innerHTML += '<a href="transition.php">CSS transition</a>'
+// pages.innerHTML += '<a href="transitiondelay.php">CSS transition-delay</a>'
+// pages.innerHTML += '<a href="transitionduration.php">CSS transition-duration</a>'
 
 // V
-pages.innerHTML += '<a href="verticalalign.php">CSS vertical-align</a>'
+//pages.innerHTML += '<a href="verticalalign.php">CSS vertical-align</a>'
 
 // W
 pages.innerHTML += '<a href="width.php">CSS width</a>'
 
 // Z
-pages.innerHTML += '<a href="zindex.php">CSS z-index</a>'
+// pages.innerHTML += '<a href="zindex.php">CSS z-index</a>'
 
+/*
 // Regras
 pages.innerHTML += '<p>Regras CSS</p>'
 pages.innerHTML += '<a href="fontface.php">CSS @font-face</a>'
@@ -131,3 +132,4 @@ pages.innerHTML += '<a href="visited.php">CSS :visited</a>'
 // Extras
 pages.innerHTML += '<p>Extras</p>'
 pages.innerHTML += '<a href="variaveis.php">CSS Variáveis(:root)</a>'
+*/
