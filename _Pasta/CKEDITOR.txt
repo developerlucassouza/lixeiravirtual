@@ -1,0 +1,14 @@
+O ckeditor cria botões de formatação para o textarea
+
+
+
+<!-- Script para o CKEditor -->
+    <script src="https://cdn.ckeditor.com/4.18.0/basic/ckeditor.js"></script>
+
+    <!-- Script de compatibilidade -->
+    <script>
+        CKEDITOR.env.isCompatible = true;
+    </script>
+
+Para fazer funcionar:
+coloque a classe ckeditor no textarea

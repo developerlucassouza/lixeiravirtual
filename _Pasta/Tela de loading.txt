@@ -1,0 +1,48 @@
+--- --- HTML --- ---
+<!-- div do loading -->
+<div id="aguarde">
+   <img src="imagens/04de2e31234507.564a1d23645bf.gif" alt="">
+</div>
+
+<!-- Site -->
+<main class="container mt-3" id="site">
+   <h3 class="alert alert-primary">
+      Simulação de Loading
+   </h3>
+
+   [...]
+
+</main>
+
+--- --- CSS --- ---
+#aguarde {
+   position: absolute;
+
+   height: 256px;
+   width: 256px;
+
+   left: calc(50% - 128px);
+   top: calc(50% - 128px);
+            
+}
+
+#site {
+   display: none;
+}
+
+
+--- --- JavaScript/jQuery --- ---
+$(document).ready(function() {
+
+   $('#aguarde').delay(2000).fadeOut('slow');
+   $('#site').delay(2000).fadeIn('slow');
+
+});
+
+
+
+
+
+
+
+
