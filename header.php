@@ -121,6 +121,10 @@
 
         </div>
 
+        <a href="http://localhost/lixeiravirtual/login.php" class="btn btn-primary float-right mr-3">
+            <i class="fa-solid fa-star"></i> Conteúdo Adicional
+        </a>
+
     </nav>
 
     <!-- Navbar Techs -->
