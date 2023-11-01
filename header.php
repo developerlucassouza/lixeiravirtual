@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="http://localhost/lixeiravirtual/style.css" type="text/css">
 
 </head>
-<body>
-
+<body id="body">
 <header>
     
     <!-- Navbar -->
@@ -121,7 +120,8 @@
 
         </div>
 
-        <a href="http://localhost/lixeiravirtual/login.php" class="btn btn-primary float-right mr-3">
+        <!-- Conteúdo Extra -->
+        <a href="http://localhost/lixeiravirtual/login/login.php" class="btn btn-warning float-right mr-3">
             <i class="fa-solid fa-star"></i> Conteúdo Adicional
         </a>
 
