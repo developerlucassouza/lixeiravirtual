@@ -1,9 +1,10 @@
 <?php
 define('HOST', 'localhost');
-define('DB', 'cadastro');
+//define('DB', 'cadastro');
 define('USER', 'root');
 define('PASS', '');
-$dsn = 'mysql:host=' . HOST . ';dbname=' . DB;
+//$dsn = 'mysql:host=' . HOST . ';dbname=' . DB;
+$dsn = 'mysql:host=' . HOST;
 
 try {
     $bd = new PDO($dsn, USER, PASS);

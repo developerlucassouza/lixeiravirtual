@@ -25,21 +25,19 @@ class Usuarios
                     echo '<script>alert("Senha Incorreta!");</script>';
                 } else {
 
-                    // Logar no sistema
-                    // Criar session
+                    // Criar seção
                     session_start();
                     $_SESSION['id_usuario'] = $resultado['id_usuario'];
                     $_SESSION['nome'] = $resultado['nome'];
                     $_SESSION['email'] = $resultado['email'];
                     $_SESSION['nivel'] = $resultado['nivel'];
-
-                    // Redirecionar
+                    
                     if ($_SESSION['nivel'] == 0) {
-                        header('Location: admin/');
+                        echo '<meta http-equiv="refresh" content="0;url=admin/">';
                     } else {
-                        header('Location: comum.php');
+                        echo '<meta http-equiv="refresh" content="0;url=comum.php">';
                     }
-
+                
                 }
             }
 
