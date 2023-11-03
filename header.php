@@ -1,3 +1,8 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br" class="h-100">
 <head>
@@ -121,9 +126,33 @@
         </div>
 
         <!-- Conteúdo Extra -->
-        <a href="http://localhost/lixeiravirtual/login/login.php" class="btn btn-warning float-right mr-3">
+        <a href="<?php
+                if (!isset($_SESSION["nivel"])) {
+                    echo 'http://localhost/lixeiravirtual/login/login.php';
+                } else if ($_SESSION['nivel'] == 0) {
+                    echo 'http://localhost/lixeiravirtual/login/admin/';
+                } else {
+                    echo 'http://localhost/lixeiravirtual/login/comum.php';
+                }
+            ?>" 
+        
+        class="btn btn-warning float-right mr-3">
             <i class="fa-solid fa-star"></i> Conteúdo Adicional
         </a>
+
+        <!-- Fazer Logoff -->
+        <?php
+            if (isset($_SESSION['nivel'])) {
+                ?>
+
+                    <a href="http://localhost/lixeiravirtual/login/logoff.php"
+                    class="btn btn-danger float-right mr-3">
+                        <i class="fa-solid fa-power-off"></i> Logoff
+                    </a>
+
+                <?php
+            }
+        ?>
 
     </nav>
 

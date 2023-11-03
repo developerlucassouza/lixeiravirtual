@@ -15,6 +15,7 @@ if (isset($_POST['submit'])) {
     } else {
         $insere = new Usuarios();
         $insere->insereUsuario($nome,$email,$senha, 1);
+        echo '<meta http-equiv="refresh" content="0;url=login.php">';
     }
 
 }

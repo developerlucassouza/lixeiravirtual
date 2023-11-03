@@ -26,7 +26,7 @@ class Usuarios
                 } else {
 
                     // Criar seção
-                    session_start();
+                    // session_start();
                     $_SESSION['id_usuario'] = $resultado['id_usuario'];
                     $_SESSION['nome'] = $resultado['nome'];
                     $_SESSION['email'] = $resultado['email'];
@@ -85,6 +85,150 @@ class Usuarios
                 } catch (PDOException $e) {
                     echo $e->getMessage();
                 }
+
+
+
+            }
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+
+
+
+
+    public function mostraUsuarios() {
+        $sql = 'SELECT * FROM tab_usuarios';
+        try {
+
+            $query = Conexao::getConexao()->prepare($sql);
+            $query->execute();
+            return $query->fetchAll(PDO::FETCH_ASSOC);
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+
+
+
+
+    public function mostraUsuario($id_usuario) {
+        $sql = 'SELECT * FROM tab_usuarios
+                WHERE id_usuario = :id_usuario';
+        try {
+
+            $query = Conexao::getConexao()->prepare($sql);
+            $query->bindValue(':id_usuario', $id_usuario);
+            $query->execute();
+            return $query->fetch(PDO::FETCH_ASSOC);
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+
+
+
+
+    public function excluiUsuario($id_usuario) {
+        $sql = 'DELETE FROM tab_usuarios
+                WHERE id_usuario = :id_usuario
+                LIMIT 1'; 
+                
+        try {
+
+            $query = Conexao::getConexao()->prepare($sql);
+            $query->bindValue(':id_usuario', $id_usuario);
+            $query->execute();
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+
+
+
+
+    public function desativaUsuario($id_usuario) {
+        $sql = 'UPDATE tab_usuarios
+                SET ativo = 0
+                WHERE id_usuario = :id_usuario
+                LIMIT 1';
+        try {
+
+            $query = Conexao::getConexao()->prepare($sql);
+            $query->bindValue(':id_usuario', $id_usuario);
+            $query->execute();
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+
+
+
+
+    public function ativaUsuario($id_usuario) {
+        $sql = 'UPDATE tab_usuarios
+                SET ativo = 1
+                WHERE id_usuario = :id_usuario
+                LIMIT 1';
+        try {
+
+            $query = Conexao::getConexao()->prepare($sql);
+            $query->bindValue(':id_usuario', $id_usuario);
+            $query->execute();
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+
+
+
+
+    public function alteraUsuario($id_usuario, $nome, $email, $nivel) {
+        // Verificar se email já foi cadastrado
+        $sql = 'SELECT * FROM tab_usuarios
+                WHERE email = :email AND id_usuario <> :id_usuario';
+        try {
+
+            $query = Conexao::getConexao()->prepare($sql);
+            $query->bindValue(':email', $email);
+            $query->bindValue(':id_usuario', $id_usuario);
+            $query->execute();
+
+            if ($query->rowCount() > 0) {
+                echo '<script>alert("Email já cadastrado!");</script>';
+            } else {
+
+
+                $sql = 'UPDATE tab_usuarios
+                        SET nome = :nome, email = :email, nivel = :nivel
+                        WHERE id_usuario = :id_usuario
+                        LIMIT 1';  
+                
+                try {
+
+                    $query = Conexao::getConexao()->prepare($sql);
+                    $query->bindValue(':nome', $nome);
+                    $query->bindValue(':email', $email);
+                    $query->bindValue(':nivel', $nivel);
+                    $query->bindValue(':id_usuario', $id_usuario);
+                    $query->execute();
+
+                } catch (PDOException $e) {
+                    echo $e->getMessage();
+                }
+                
 
 
 

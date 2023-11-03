@@ -93,8 +93,8 @@
 
     table {
         border-collapse: collapse;
-        margin: 20px;
-        overflow-x: auto;
+        /* margin: 20px;
+        overflow-x: auto; */
     }
 
     th {
@@ -295,6 +295,10 @@
     span.user {
         color: green;
         font-weight: bolder;
+    }
+
+    table.db {
+        margin: 20px;
     }
 
     table.db tbody td {
