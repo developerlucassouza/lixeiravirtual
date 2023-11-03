@@ -238,6 +238,62 @@ class Usuarios
             echo $e->getMessage();
         }
     }
+
+
+
+
+
+    public function redefinirSenha($id_usuario) {
+        // Criptografar senha
+        $senha = hash('sha256', '123');
+
+        $sql = 'UPDATE tab_usuarios
+                SET senha = :senha
+                WHERE id_usuario = :id_usuario
+                LIMIT 1';
+        try {
+
+            $query = Conexao::getConexao()->prepare($sql);
+            $query->bindValue(':senha', $senha);
+            $query->bindValue(':id_usuario', $id_usuario);
+            $query->execute();
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+
+
+
+
+    public function alteraSenha($id_usuario, $senha, $nsenha) {
+        $senha = hash('sha256', $senha);
+        $nsenha = hash('sha256', $nsenha);
+
+        $usuario = $this->mostraUsuario($id_usuario);
+
+        // Verifica se a senha está correta
+        if ($senha != $usuario['senha']) {
+            echo '<script>alert("Senha Incorreta!");</script>';
+        } else {
+            $sql = 'UPDATE tab_usuarios
+                    SET senha = :senha
+                    WHERE id_usuario = :id_usuario
+                    LIMIT 1';
+
+            try {
+
+                $query = Conexao::getConexao()->prepare($sql);
+                $query->bindValue(':senha', $nsenha);
+                $query->bindValue(':id_usuario', $id_usuario);
+                $query->execute();
+                 
+            } catch (PDOException $e) {
+                echo $e->getMessage();
+            }
+        }
+    }
 }
 ?>
 

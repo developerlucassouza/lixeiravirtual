@@ -20,6 +20,7 @@ if (isset($_POST['submit'])) {
     } else {
         $altera = new Usuarios();
         $altera->alteraUsuario($_GET['id_usuario'], $nome, $email, $nivel);
+        echo '<script>alert("Usuário alterado com sucesso!");</script>';
     }
 }
 
@@ -59,7 +60,7 @@ if (isset($_POST['submit'])) {
             <i class="fa-solid fa-pen"></i> Alterar
         </button>
 
-        <a href="#" class="btn btn-success mt-3">
+        <a href="redefinir-senha.php?id_usuario=<?php echo $_GET['id_usuario']; ?>" class="btn btn-success mt-3">
             <i class="fa-solid fa-lock"></i> Redefinir Senha
         </a>
 

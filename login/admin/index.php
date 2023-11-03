@@ -30,15 +30,68 @@ $resultados = $mostra->mostraUsuarios();
     </div>
 </div>
 
+<!-- Modal para inserir usuário-->
+<div class="modal fade" id="insereModal" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header alert alert-primary">
+                <h5 class="modal-title" id="TituloModalCentralizado"><i class="fa-solid fa-plus"></i> Inserir Usuário
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="insere.php" method="POST" class="p-0 text-dark">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control" autofocus>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control">
+
+                    <label for="nivel">Nível</label>
+                    <select name="nivel" id="nivel" class="form-control">
+                        <option value="1">Comum</option>
+                        <option value="0">Administrador</option>
+                    </select>
+
+                    <p class="mt-3 text-center">A senha padrão será "123"</p>
+
+                    <button type="submit" name="submit" class="btn btn-primary mt-3">
+                        <i class="fa-solid fa-plus"></i> Inserir
+                    </button>
+
+                    <!-- <a href="./" class="btn btn-secondary mt-3">
+                        <i class="fa-solid fa-arrow-left"></i> Voltar
+                    </a> -->
+
+                    <button type="button" class="btn btn-secondary mt-3" data-dismiss="modal">
+                        <i class="fa-solid fa-arrow-left"></i> Voltar
+                    </button>
+                </form>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+
 
 <main class="container mt-3">
 
     <h2 class="alert alert-primary">
-        Área de Administrador
+        <i class="fa-solid fa-lock"></i> Área de Administrador
     </h2>
 
-    <a href="insere.php" class="btn btn-primary">
+    <a href="javascript: $('#insereModal').modal();" class="btn btn-primary">
         <i class="fa-solid fa-plus"></i> Inserir Usuário
+    </a>
+
+    <a href="../altera-senha.php" class="btn btn-warning">
+        <i class="fa-solid fa-lock"></i> Alterar Senha
     </a>
 
     <div class="table-responsive mt-3">
@@ -86,34 +139,53 @@ $resultados = $mostra->mostraUsuarios();
 
                     <!-- Excluir -->
                     <td>
-                        <a href="javascript:
-                        $('#btnExcluirModal').attr('href', 'excluir.php?id_usuario=<?php echo $usuario['id_usuario']; ?>');
-                        $('#excluirModal').modal();
-                        " id="<?php echo $usuario['id_usuario']; ?>" class="btnExcluir">
-                            <i class="fa-solid fa-trash"></i>
-                        </a>
+                        <?php
+                            if  ($_SESSION['id_usuario'] == $usuario['id_usuario']) {
+                                ?>
+                                    <i class="fa-solid fa-hand text-warning"></i>
+                                <?php
+                            } else {
+                                ?>
+                                    <a href="javascript:
+                                    $('#btnExcluirModal').attr('href', 'excluir.php?id_usuario=<?php echo $usuario['id_usuario']; ?>');
+                                    $('#excluirModal').modal();
+                                    " id="<?php echo $usuario['id_usuario']; ?>" class="btnExcluir">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
+                                <?php
+                            }
+                        ?>
                     </td>
 
                     <!-- Ativo -->
                     <td>
-                        <?php
-                        if ($usuario['ativo'] == 1) {
-                            ?>
-                            <a href="desativa.php?id_usuario=<?php echo $usuario['id_usuario']; ?>">
-                                <i class="fa-solid fa-check text-success"></i>
-                            </a>
-                            <?php
-                        } else if ($usuario['ativo'] == 0) {
-                            ?>
-                                <a href="ativa.php?id_usuario=<?php echo $usuario['id_usuario']; ?>">
-                                    <i class="fa-solid fa-xmark text-danger"></i>
-                                </a>
-                            <?php
-                        } else {
-                            echo 'Erro! Verifique o Banco de Dados!';
-                        }
-                        ?>
+
+                    <?php
+                            if ($_SESSION['id_usuario'] == $usuario['id_usuario']) {
+                                ?>
+                                    <i class="fa-solid fa-hand text-warning"></i>
+                                <?php
+                            } else if ($usuario['ativo'] == 1) {
+                                ?>
+                                    <a href="desativa.php?id_usuario=<?php echo $usuario['id_usuario']; ?>">
+                                        <i class="fa-solid fa-check text-success"></i>
+                                    </a>
+                                <?php
+                            } else if ($usuario['ativo'] == 0) {
+                                ?>
+                                    <a href="ativa.php?id_usuario=<?php echo $usuario['id_usuario']; ?>">
+                                        <i class="fa-solid fa-xmark text-danger"></i>
+                                    </a>
+                                <?php
+                            } else {
+                                echo 'Erro! Verifique o Banco de Dados!';
+                            }
+                            ?>    
                     </td>
+
+
+
+                        
                 </tr>
                 <?php
             }
