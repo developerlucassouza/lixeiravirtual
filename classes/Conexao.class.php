@@ -31,6 +31,13 @@ try {
         nivel int not null,
         ativo int not null
     );
+    INSERT INTO tab_usuarios(nome, email, senha, nivel, ativo)
+    VALUES( "Administrador",
+            "admin@gmail.com",
+            "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+            0,
+            1
+        );
     ';
     try {
         $query = $bd->prepare($sql);

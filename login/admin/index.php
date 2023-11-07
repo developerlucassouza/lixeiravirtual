@@ -86,12 +86,18 @@ $resultados = $mostra->mostraUsuarios();
         <i class="fa-solid fa-lock"></i> Área de Administrador
     </h2>
 
+
+
+    <a href="../altera-senha.php" class="btn btn-warning">
+        <i class="fa-solid fa-lock"></i> Alterar Senha
+    </a>
+    
     <a href="javascript: $('#insereModal').modal();" class="btn btn-primary">
         <i class="fa-solid fa-plus"></i> Inserir Usuário
     </a>
 
-    <a href="../altera-senha.php" class="btn btn-warning">
-        <i class="fa-solid fa-lock"></i> Alterar Senha
+    <a href="../comum.php" class="btn btn-info float-right">
+        <i class="fa-solid fa-user"></i> Área de Usuário Comum
     </a>
 
     <div class="table-responsive mt-3">

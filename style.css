@@ -37,7 +37,8 @@
 
     body {
         background-color: #274360;
-        /* background-image: linear-gradient(var(--bazul), var(--cssescuro)); */
+        background-image: url(imgs/fundo-tech.jpg);
+
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         overflow-x: hidden;
