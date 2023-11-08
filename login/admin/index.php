@@ -137,14 +137,14 @@ $resultados = $mostra->mostraUsuarios();
                     </td>
 
                     <!-- Alterar -->
-                    <td>
+                    <td class="text-center">
                         <a href="alterar.php?id_usuario=<?php echo $usuario['id_usuario']; ?>">
                             <i class="fa-solid fa-pen"></i>
                         </a>
                     </td>
 
                     <!-- Excluir -->
-                    <td>
+                    <td class="text-center">
                         <?php
                             if  ($_SESSION['id_usuario'] == $usuario['id_usuario']) {
                                 ?>
@@ -164,7 +164,7 @@ $resultados = $mostra->mostraUsuarios();
                     </td>
 
                     <!-- Ativo -->
-                    <td>
+                    <td class="text-center">
 
                     <?php
                             if ($_SESSION['id_usuario'] == $usuario['id_usuario']) {

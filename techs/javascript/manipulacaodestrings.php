@@ -66,13 +66,13 @@ let sliced = str.slice(0, 4);
 
             <h2>Localizar Substrings</h2>
             <p>Com o método <code>.indexOf()</code> você pode pesquisar uma <code>substring</code>, retornando a posição em que ela começa.</p>
-            <p>(Caso não exista esta <code>substring</code>, será retornado -1;</p>
+            <p>(Caso não exista esta <code>substring</code>, será retornado -1).</p>
             <div class="code">
                 <pre>
 let str = "Hello World";
 
 let index = str.indexOf("World");
-<span class="comentario">// Resultado: 6</span></pre>
+<span class="comentario">// Resultado: 6</span>
 
 let index2 = str.indexOf("JavaScript");
 <span class="comentario">// Resultado: -1</span></pre>

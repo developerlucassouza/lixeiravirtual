@@ -27,6 +27,45 @@
 
 <script type="text/javascript">
 
+    // Pesquisa do navbar
+    try {
+        
+        $('#btnSearch').click(function() {
+            let pesquisa = $('#txtSearch').val();
+            pesquisa = pesquisa.trim().toLowerCase();
+            
+            switch (pesquisa) {
+                case "html":
+                    open('http://localhost/lixeiravirtual/techs/html/', '_self');
+                    break;
+
+                case "css":
+                    open('http://localhost/lixeiravirtual/techs/css/', '_self');
+                    break;
+
+                case "js":
+                case "javascript":
+                    open('http://localhost/lixeiravirtual/techs/javascript/', '_self');
+                    break;
+
+                case "mysql":
+                    open('http://localhost/lixeiravirtual/techs/mysql/', '_self');
+                    break;
+
+                default:
+                open('http://localhost/lixeiravirtual/', '_self');
+                    break;
+
+            }
+
+        });
+
+    } catch (ERRO) {
+        console.log(ERRO, message);
+    }
+
+
+
     // Menu Hamburguer e Afins
     try {
         // === Menu Hamburguer das Páginas ===
