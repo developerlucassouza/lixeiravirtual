@@ -103,19 +103,19 @@ $resultados = $mostra->mostraUsuarios();
     <div class="table-responsive mt-3">
         <table class="table table-bordered table-striped table-hover bg-white text-dark">
             <tr>
-                <th>ID</th>
+                <th class="text-center">ID</th>
                 <th class="text-left">Nome</th>
                 <th class="text-left">Email</th>
                 <th>Nível</th>
-                <th>Alterar</th>
-                <th>Excluir</th>
-                <th>Ativo</th>
+                <th class="text-center">Alterar</th>
+                <th class="text-center">Excluir</th>
+                <th class="text-center">Ativo</th>
             </tr>
             <?php
             foreach ($resultados as $usuario) {
                 ?>
                 <tr>
-                    <td>
+                    <td class="text-center">
                         <?php echo $usuario['id_usuario']; ?>
                     </td>
                     <td class="text-left">
