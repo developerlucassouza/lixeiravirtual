@@ -1,0 +1,7 @@
+Caixa Branca ou Teste Estrutural
+
+Técnica que avalia o comportamento interno do software
+
+Trabalha diretamente sobre o código para avaliar:
+- Teste de Condição
+- Teste de Fluxo de Dados
