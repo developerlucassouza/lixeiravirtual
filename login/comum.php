@@ -79,51 +79,55 @@ include_once '../header.php';
                     </a>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <!-- <div class="col-md-4">
                 <div class="teste">
                     <h3><i class="fa-brands fa-html5"></i> HTML</h3>
                     <a href="">
                         <img src="imgs/teste.png" alt="">
                     </a>
                 </div>
-            </div>
-            <div class="col-md-4">
+            </div> -->
+
+            <!-- <div class="col-md-4">
                 <div class="teste">
                     <h3><i class="fa-brands fa-html5"></i> HTML</h3>
                     <a href="">
                         <img src="imgs/teste.png" alt="">
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 
 
         <div class="row mt-5">
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="teste">
                     <h3><i class="fa-brands fa-html5"></i> HTML</h3>
                     <a href="">
                         <img src="imgs/teste.png" alt="">
                     </a>
                 </div>
-            </div>
-            <div class="col-md-4">
+            </div> -->
+
+            <!-- <div class="col-md-4">
                 <div class="teste">
                     <h3><i class="fa-brands fa-html5"></i> HTML</h3>
                     <a href="">
                         <img src="imgs/teste.png" alt="">
                     </a>
                 </div>
-            </div>
-            <div class="col-md-4">
+            </div> -->
+
+            <!-- <div class="col-md-4">
                 <div class="teste">
                     <h3><i class="fa-brands fa-html5"></i> HTML</h3>
                     <a href="">
                         <img src="imgs/teste.png" alt="">
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
