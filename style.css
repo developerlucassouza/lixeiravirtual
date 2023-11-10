@@ -209,6 +209,30 @@
         margin: 10px 20px;
     }
 
+    main#teste article {
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        padding: 20px;
+        margin: 20px 0px;
+    }
+
+    main#teste article label {
+        border: 1px solid black;
+        border-radius: 50px;
+        display: block;
+        margin: 5px auto;
+        padding: 5px;
+        padding-left: 20px;
+        transition: 0.5s;
+        width: 90%;
+    }
+
+    main#teste article label:hover {
+        background-color: #CCCCCC;
+        transform: scale(1.01);
+    }
+
     /* Classes */
 
     .ml-20 {
@@ -228,6 +252,10 @@
 
     div.code pre {
         color: rgb(0, 150, 200);
+    }
+
+    div.modal {
+        color: black;
     }
 
     div.output {

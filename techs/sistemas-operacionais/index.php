@@ -3,8 +3,11 @@ include_once '../../header.php';
 ?>
 
 <style>
+    body {
+        padding-bottom: 100px;
+    }
     h2 {
-        background-color: blue;
+        background-color: black;
         color: white;
         margin: 0;
         padding: 10px;
@@ -22,12 +25,18 @@ include_once '../../header.php';
         width: 80%;
     }
 
+    #sos {
+        margin-top: 100px;
+    }
+
     @media screen and (orientation: portrait) {
         main {
             max-width: 90vw;
         }
     }
 </style>
+
+<div id="espaco"></div>
 
 <main id="sos" class="container">
 

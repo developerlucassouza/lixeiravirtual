@@ -17,6 +17,18 @@ include_once '../header.php';
         margin: 10px 0;
         text-align: center;
     }
+
+
+
+
+
+    div.teste h3 {
+        text-align: center;
+    }
+    
+    div.teste img {
+        width: 100%;
+    }
 </style>
 
 <main class="container mt-3">
@@ -47,6 +59,73 @@ include_once '../header.php';
     <a href="manuais/HTML e CSS.pdf" class="alert alert-light d-block">
         <i class="fa-brands fa-html5"></i> HTML e CSS <i class="fa-solid fa-note-sticky float-right"></i>
     </a>
+
+
+
+    <!-- Avaliações -->
+    <h2 class="alert alert-primary mt-5">
+        <i class="fa-solid fa-check"></i> Exercícios
+    </h2>
+
+    <p class="text-center">Faça exercícios avaliativos para testar suas habilidades em suas tecnologias favoritas.</p>
+
+    <div class="testes">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="teste">
+                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <a href="testes/html.php">
+                        <img src="imgs/teste.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="teste">
+                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <a href="">
+                        <img src="imgs/teste.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="teste">
+                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <a href="">
+                        <img src="imgs/teste.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="teste">
+                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <a href="">
+                        <img src="imgs/teste.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="teste">
+                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <a href="">
+                        <img src="imgs/teste.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="teste">
+                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <a href="">
+                        <img src="imgs/teste.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -112,7 +191,8 @@ include_once '../header.php';
 
             <!-- Curso em Vídeo PHP -->
             <div class="col-md-4">
-                <a href="https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_" target="_blank">
+                <a href="https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_"
+                    target="_blank">
                     <img src="imgs/curso-em-video-php.jpg" alt="">
                 </a>
                 <p>Curso em Vídeo - PHP Moderno</p>
@@ -124,7 +204,8 @@ include_once '../header.php';
         <div class="row mt-3">
             <!-- Matheus Battisti React.js -->
             <div class="col-md-4">
-                <a href="https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&pp=iAQB" target="_blank">
+                <a href="https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&pp=iAQB"
+                    target="_blank">
                     <img src="imgs/matheus-battisti-react.jpg" alt="">
                 </a>
                 <p>Matheus Battisti - React.js</p>
@@ -132,7 +213,8 @@ include_once '../header.php';
 
             <!-- Matheus Battisti Angular -->
             <div class="col-md-4">
-                <a href="https://www.youtube.com/watch?v=vJt_K1bFUeA&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw&pp=iAQB" target="_blank">
+                <a href="https://www.youtube.com/watch?v=vJt_K1bFUeA&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw&pp=iAQB"
+                    target="_blank">
                     <img src="imgs/matheus-battisti-angular.jpg" alt="">
                 </a>
                 <p>Matheus Battisti - Angular</p>
@@ -140,7 +222,8 @@ include_once '../header.php';
 
             <!-- Matheus Battisti Vue.js -->
             <div class="col-md-4">
-                <a href="https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL&pp=iAQB" target="_blank">
+                <a href="https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL&pp=iAQB"
+                    target="_blank">
                     <img src="imgs/matheus-battisti-vue.jpg" alt="">
                 </a>
                 <p>Matheus Battisti - Vue.js</p>
@@ -150,7 +233,8 @@ include_once '../header.php';
         <div class="row mt-3">
             <!-- Matheus Battisti Laravel -->
             <div class="col-md-4">
-                <a href="https://www.youtube.com/watch?v=qH7rsZBENJo&list=PLnDvRpP8BnewYKI1n2chQrrR4EYiJKbUG&pp=iAQB" target="_blank">
+                <a href="https://www.youtube.com/watch?v=qH7rsZBENJo&list=PLnDvRpP8BnewYKI1n2chQrrR4EYiJKbUG&pp=iAQB"
+                    target="_blank">
                     <img src="imgs/matheus-battisti-laravel.jpg" alt="">
                 </a>
                 <p>Matheus Battisti - Laravel</p>
@@ -158,7 +242,8 @@ include_once '../header.php';
 
             <!-- Matheus Battisti Next.js -->
             <div class="col-md-4">
-                <a href="https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft&pp=iAQB" target="_blank">
+                <a href="https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft&pp=iAQB"
+                    target="_blank">
                     <img src="imgs/matheus-battisti-next.jpg" alt="">
                 </a>
                 <p>Matheus Battisti - Next.js</p>
