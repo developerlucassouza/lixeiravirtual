@@ -590,3 +590,45 @@ body.js {
 .bg-vermelho {
     background-color: var(--bvermelho);
 }
+
+
+
+/* Cores de Fundo Techs */
+.bg-html-escuro {
+    background-color: var(--htmlescuro);
+}
+
+.bg-html-claro {
+    background-color: var(--htmlclaro);
+}
+
+.bg-css-escuro {
+    background-color: var(--cssescuro);
+}
+
+.bg-css-claro {
+    background-color: var(--cssclaro);
+}
+
+.bg-js-amarelo {
+    background-color: var(--jsamarelo);
+}
+
+.bg-js-preto {
+    background-color: var(--jspreto);
+}
+
+
+
+/* Cores das Letras Techs */
+.text-html-escuro {
+    color: var(--htmlescuro);
+}
+
+.text-html-claro {
+    color: var(--htmlclaro);
+}
+
+.text-js-preto {
+    color: var(--jspreto);
+}

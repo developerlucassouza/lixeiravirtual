@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
             <i class="fa-solid fa-pen"></i> Alterar
         </button>
 
-        <a href="<?php if ($_SESSION['nivel'] == 0) { echo 'admin/'; } else { echo 'comum.php'; } ?>" class="btn btn-secondary mt-3">
+        <a href="javascript: history.go(-1);" class="btn btn-secondary mt-3">
             <i class="fa-solid fa-arrow-left"></i> Voltar
         </a>
     </form>

@@ -7,7 +7,7 @@ include_once '../../header.php';
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-success">
+            <div class="modal-header" id="corModalResultado">
                 <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
@@ -129,10 +129,25 @@ include_once '../../header.php';
         txt.innerHTML = `<h3 class="text-center">${acertos}/10</h3>`;
 
         if (acertos >= 8) {
+            $('#corModalResultado').removeClass('bg-success');
+            $('#corModalResultado').removeClass('bg-warning');
+            $('#corModalResultado').removeClass('bg-danger');
+
+            $('#corModalResultado').addClass('bg-success');
             txt.innerHTML += '<p>Meus parabéns, seu resultado foi excelente!<br>Continue estudando para não perder o ritmo!</p>';
         } else if (acertos >= 6) {
+            $('#corModalResultado').removeClass('bg-success');
+            $('#corModalResultado').removeClass('bg-warning');
+            $('#corModalResultado').removeClass('bg-danger');
+
+            $('#corModalResultado').addClass('bg-warning');
             txt.innerHTML += '<p>Seu resultado está satisfatório.<br>Acesse <a href="http://localhost/lixeiravirtual/techs/html/">Curso de HTML</a> para aprimorar seus resultados.</p>';
         } else {
+            $('#corModalResultado').removeClass('bg-success');
+            $('#corModalResultado').removeClass('bg-warning');
+            $('#corModalResultado').removeClass('bg-danger');
+            
+            $('#corModalResultado').addClass('bg-danger');
             txt.innerHTML += '<p>Seu resultado está abaixo da média.<br>Acesse <a href="http://localhost/lixeiravirtual/techs/html/">Curso de HTML</a> para melhorar seus resultados.</p>';
         }
 

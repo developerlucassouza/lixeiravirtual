@@ -73,30 +73,30 @@ include_once '../header.php';
         <div class="row mt-5">
             <div class="col-md-4">
                 <div class="teste">
-                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <h3 class="bg-html-escuro"><i class="fa-brands fa-html5"></i> HTML</h3>
                     <a href="testes/html.php">
-                        <img src="imgs/teste.png" alt="">
+                        <img src="imgs/teste1.png" alt="">
                     </a>
                 </div>
             </div>
 
-            <!-- <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="teste">
-                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
-                    <a href="">
-                        <img src="imgs/teste.png" alt="">
+                    <h3 class="bg-css-escuro"><i class="fa-brands fa-css3-alt"></i> CSS</h3>
+                    <a href="testes/css.php">
+                        <img src="imgs/teste1.png" alt="">
                     </a>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="teste">
-                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
-                    <a href="">
-                        <img src="imgs/teste.png" alt="">
+                    <h3 class="bg-js-amarelo text-js-preto"><i class="fa-brands fa-square-js"></i> JavaScript</h3>
+                    <a href="testes/javascript.php">
+                        <img src="imgs/teste1.png" alt="">
                     </a>
                 </div>
-            </div> -->
+            </div>
         </div>
 
 
