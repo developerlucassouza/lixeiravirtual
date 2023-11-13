@@ -31,7 +31,7 @@ pages.innerHTML += '<a href="for.php">JS for</a>'
 pages.innerHTML += '<a href="while.php">JS while</a>'
 pages.innerHTML += '<a href="dowhile.php">JS do while</a>'
 pages.innerHTML += '<a href="breakecontinue.php">JS break e continue</a>'
-pages.innerHTML += '<a href="#">JS Arrays</a>'
+pages.innerHTML += '<a href="arrays.php">JS Arrays</a>'
 pages.innerHTML += '<a href="#">JS Funções</a>'
 pages.innerHTML += '<a href="#">JS Tratamento de Erros</a>'
 

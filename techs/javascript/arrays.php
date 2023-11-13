@@ -9,7 +9,7 @@
 
     <div class="col-md-9">
         <main id="tech">
-            <h1>Título</h1>
+            <h1>Arrays JS</h1>
         </main>
     </div>
 </div>
