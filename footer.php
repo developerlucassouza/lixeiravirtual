@@ -20,6 +20,8 @@
         // Colocar menu hamburguer apenas quando for necessário
         if ($('#itens').length <= 0) {
             $('#navmenuburguer').css('display', 'none');
+            let altura = $('#navbar').css('height');
+            $('#espaco').css('height', altura);
         }
     }); 
 </script>
@@ -27,44 +29,40 @@
 
 <script type="text/javascript">
 
-    // Pesquisa do navbar
+    // Responsividade
     try {
-        
-        $('#btnSearch').click(function() {
-            let pesquisa = $('#txtSearch').val();
-            pesquisa = pesquisa.trim().toLowerCase();
-            
-            switch (pesquisa) {
-                case "html":
-                    open('http://localhost/lixeiravirtual/techs/html/', '_self');
-                    break;
 
-                case "css":
-                    open('http://localhost/lixeiravirtual/techs/css/', '_self');
-                    break;
+        if ($(window).width() <= 763) {
+            let valor = 56;
 
-                case "js":
-                case "javascript":
-                    open('http://localhost/lixeiravirtual/techs/javascript/', '_self');
-                    break;
-
-                case "mysql":
-                    open('http://localhost/lixeiravirtual/techs/mysql/', '_self');
-                    break;
-
-                default:
-                open('http://localhost/lixeiravirtual/', '_self');
-                    break;
-
+            if ($('#logoff').length) {
+                valor += 38;
             }
 
-        });
+            if ($('#navmenuburguer').length) {
+                valor += 64;
+            }
+
+            $('#espaco').css('height', valor + 'px');
+        }
 
     } catch (ERRO) {
         console.log(ERRO, message);
     }
 
+    // Desligar menu de itens quando clicar no botão bootstrap responsivo do navbar
+    $('#btnResponsivo').click(function () {
+        if ($(window).width() <= 763) {
+            $('div#itens').css('display', 'none');
 
+            if ($('#navmenuburguer').css('display') == 'block') {
+                $('#navmenuburguer').css('display', 'none');
+            } else {
+                $('#navmenuburguer').css('display', 'block');
+            }
+
+        }
+    });
 
     // Menu Hamburguer e Afins
     try {

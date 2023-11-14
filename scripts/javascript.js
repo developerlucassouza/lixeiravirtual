@@ -33,7 +33,7 @@ pages.innerHTML += '<a href="dowhile.php">JS do while</a>'
 pages.innerHTML += '<a href="breakecontinue.php">JS break e continue</a>'
 pages.innerHTML += '<a href="arrays.php">JS Arrays</a>'
 pages.innerHTML += '<a href="funcoes.php">JS Funções</a>'
-pages.innerHTML += '<a href="#">JS Tratamento de Erros</a>'
+pages.innerHTML += '<a href="tratamentodeerros.php">JS Tratamento de Erros</a>'
 
 // DOM
 // pages.innerHTML += '<p>DOM</p>'

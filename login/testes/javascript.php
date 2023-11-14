@@ -26,7 +26,7 @@ include_once '../../header.php';
 
 <main id="teste" class="container">
     <h2 class="alert alert-light">
-        Exercícios de CSS
+        Exercícios de JavaScript
     </h2>
 
     <article>
@@ -141,14 +141,14 @@ include_once '../../header.php';
             $('#corModalResultado').removeClass('bg-danger');
 
             $('#corModalResultado').addClass('bg-warning');
-            txt.innerHTML += '<p>Seu resultado está satisfatório.<br>Acesse <a href="http://localhost/lixeiravirtual/techs/css/">Curso de CSS</a> para aprimorar seus resultados.</p>';
+            txt.innerHTML += '<p>Seu resultado está satisfatório.<br>Acesse <a href="http://localhost/lixeiravirtual/techs/javascript/">Curso de JavaScript</a> para aprimorar seus resultados.</p>';
         } else {
             $('#corModalResultado').removeClass('bg-success');
             $('#corModalResultado').removeClass('bg-warning');
             $('#corModalResultado').removeClass('bg-danger');
             
             $('#corModalResultado').addClass('bg-danger');
-            txt.innerHTML += '<p>Seu resultado está abaixo da média.<br>Acesse <a href="http://localhost/lixeiravirtual/techs/css/">Curso de CSS</a> para melhorar seus resultados.</p>';
+            txt.innerHTML += '<p>Seu resultado está abaixo da média.<br>Acesse <a href="http://localhost/lixeiravirtual/techs/javascript/">Curso de JavaScript</a> para melhorar seus resultados.</p>';
         }
 
         $('#resultado').modal();

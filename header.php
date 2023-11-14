@@ -2,6 +2,41 @@
 if (!isset($_SESSION)) {
     session_start();
 }
+
+if (isset($_POST['submitSearch'])){
+    $pesquisa = $_POST['txtSearch'];
+    $pesquisa = strtolower($pesquisa);
+    $pesquisa = trim($pesquisa);
+
+    $caminho = 'http://localhost/lixeiravirtual/';
+
+    switch ($pesquisa) {
+        case 'html':
+            //echo '<meta http-equiv="refresh" content="3;url=index.php">';
+            header('Location: ' . $caminho . 'techs/html/');
+            break;
+
+        case 'css':
+            //echo '<meta http-equiv="refresh" content="3;url=index.php">';
+            header('Location: ' . $caminho . 'techs/css/');
+            break;
+
+        case 'js':
+        case 'javascript':
+            //echo '<meta http-equiv="refresh" content="3;url=index.php">';
+            header('Location: ' . $caminho . 'techs/javascript/');
+            break;
+
+        case 'mysql':
+            //echo '<meta http-equiv="refresh" content="3;url=index.php">';
+            header('Location: ' . $caminho . 'techs/mysql/');
+            break;
+
+        default:
+            header('Location: ' . $caminho . 'erro/erro-pesquisa.php');
+            break;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" class="h-100">
@@ -9,6 +44,7 @@ if (!isset($_SESSION)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="shortcut icon" href="http://localhost/lixeiravirtual/imgs/lixeira-icon.png" type="image/x-icon">
     <title>Lixeira Virtual</title>
 
     <!-- Bootstrap -->
@@ -25,7 +61,7 @@ if (!isset($_SESSION)) {
 <header>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
 
         <!-- Link para Home -->
         <a class="navbar-brand" href="http://localhost/lixeiravirtual/">
@@ -33,16 +69,17 @@ if (!isset($_SESSION)) {
         </a>
 
         <!-- Botão Responsivo -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" id="btnResponsivo"
+        type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Search -->
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search" id="txtSearch">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="btnSearch">Search</button>
+            <form method="POST" class="form-inline my-2 my-lg-0" autocomplete="off">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search" name="txtSearch" id="txtSearch">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submitSearch" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
 
             <!-- Itens da Navbar -->
@@ -66,7 +103,7 @@ if (!isset($_SESSION)) {
 
                     <!-- <a class="dropdown-item" href="#"><i class="fa-brands fa-node-js"></i> Node.js</a> -->
 
-                    <!-- <a class="dropdown-item" href="#"><i class="fa-brands fa-php"></i> PHP</a> -->
+                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/php/"><i class="fa-brands fa-php"></i> PHP</a>
 
                     <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/mysql/"><i class="fa-solid fa-database"></i> MySQL</a>
 
@@ -135,8 +172,7 @@ if (!isset($_SESSION)) {
                     echo 'http://localhost/lixeiravirtual/login/comum.php';
                 }
             ?>" 
-        
-        class="btn btn-warning float-right mr-3">
+        class="btn text-warning float-right mr-3" >
             <i class="fa-solid fa-star"></i> Conteúdo Adicional
         </a>
 
@@ -146,7 +182,7 @@ if (!isset($_SESSION)) {
                 ?>
 
                     <a href="http://localhost/lixeiravirtual/login/logoff.php"
-                    class="btn btn-danger float-right mr-3">
+                    class="btn text-danger float-right mr-3" id="logoff">
                         <i class="fa-solid fa-power-off"></i> Logoff
                     </a>
 

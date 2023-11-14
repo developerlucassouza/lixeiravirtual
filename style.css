@@ -18,6 +18,8 @@
     --jspreto: #2E302C;
     --mysqlazul: #00758F;
     --mysqllaranja: #F29111;
+    --phpazul: #8694C1;
+    --phppreto: #1D202E;
     --pythonazul: #357FB9;
     --pythonamarelo: #FFC42D;
 }
@@ -94,8 +96,7 @@
 
     table {
         border-collapse: collapse;
-        /* margin: 20px;
-        overflow-x: auto; */
+        /* margin-left: 40px; */
     }
 
     th {
@@ -196,7 +197,7 @@
     main#tech {
         /* background-color: rgb(230, 230, 230); */
         background-color: white;
-        /*border-radius: 10px;*/
+        border-radius: 10px;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         color: black;
         display: block;
@@ -367,6 +368,18 @@
 
     /* ID */
 
+    #btnSearch {
+        border-radius: 0px 50px 50px 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #txtSearch {
+        border-radius: 50px 0px 0px 50px;
+        margin-right: 0 !important;
+        padding-left: 20px;
+    }
+
     div#espaco {
         height: 56px;
     }
@@ -374,7 +387,7 @@
     div#itens {
         position: fixed;
         height: calc(100vh - 56px);
-        padding-bottom: 120px;
+        padding-bottom: 40px;
         width: 20vw;
     }
 
@@ -407,6 +420,10 @@
         margin-bottom: 500px;
     } */
 
+    nav#navmenuburguer {
+        display: none;
+    }
+
     /* Classes */
 
     .celular {
@@ -438,10 +455,10 @@
 
     div#itens {
         display: none;
-        height: 70vh;
-        position: fixed;
-        width: 80vw;
-        z-index: 99;
+        height: 100vh;
+        position: absolute;
+        width: 100vw;
+        z-index: 98;
     }
 
     div#navbartechs {
@@ -466,6 +483,10 @@
         overflow-y: auto;
         width: 90vw;
     } */
+
+    nav#navmenuburguer {
+        display: block;
+    }
 
     /* Classes */
 
@@ -555,6 +576,11 @@ body.python {
 body.js {
     background-color: var(--jsamarelo);
     background-image: linear-gradient(var(--jsamarelo));
+}
+
+body.php {
+    background-color: var(--phpazul);
+    background-image: linear-gradient(var(--phpazul));
 }
 
 

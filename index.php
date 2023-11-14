@@ -47,11 +47,12 @@
     <h1>Lixeira Virtual</h1>
 
     <div class="texto">
+        <!-- <div id="espaco"></div> -->
         <p>Aqui, você encontrará uma plataforma abrangente e acessível para dominar uma variedade de tecnologias
             essenciais para o mundo da programação.</p>
 
         <p>Desde as bases do <a href="techs/html/">HTML</a> e <a href="techs/css/">CSS</a> até
-            linguagens de programação poderosas como JavaScript, C#, Java e muito mais, estamos empenhados em
+            linguagens de programação poderosas como <a href="techs/javascript/">JavaScript</a>, C#, Java e muito mais, estamos empenhados em
             capacitá-lo com o conhecimento necessário para se destacar no desenvolvimento de software.</p>
 
         <i class="fa-regular fa-trash-can lixeira"></i>

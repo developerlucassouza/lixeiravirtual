@@ -151,7 +151,7 @@ if (isset($_POST['submitInsere'])) {
     </a>
 
     <a href="../comum.php" class="btn btn-info float-right">
-        <i class="fa-solid fa-user"></i> Área de Usuário Comum
+        <i class="fa-solid fa-user"></i> Área Usuário Comum
     </a>
 
 
