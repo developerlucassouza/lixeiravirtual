@@ -88,7 +88,11 @@
 
         <div class="row">
             <div class="col-lg-4">
-
+                <div class="tech">
+                    <h2>PHP</h2>
+                    <img src="imgs/logo_php.png" alt="logo_php">
+                    <a href="techs/php/">Aprenda PHP</a>
+                </div>
             </div>
             <div class="col-lg-4">
                 <div class="tech">

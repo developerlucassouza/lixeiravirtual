@@ -18,4 +18,4 @@
     include_once '../../footer.php';
 ?>
 
-<script src="../../scripts/javascript.js" type="text/javascript"></script>
+<script src="../../scripts/php.js" type="text/javascript"></script>
