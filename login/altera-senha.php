@@ -1,6 +1,7 @@
 <?php
 include_once '../header.php';
 include_once '../classes/Usuarios.class.php';
+include_once 'verifica-login.php';
 
 if (isset($_POST['submit'])) {
     $senha = $_POST['senha'];
