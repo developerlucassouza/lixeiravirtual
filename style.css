@@ -7,7 +7,8 @@
     --blaranja: #FF4500;
     --bpreto: #202020;
     --broxo: #FF4500;
-    --bverde: #32CD32;
+    /* --bverde: #32CD32; */
+    --bverde: #2ab02a;
     --bvermelho: #FF0000;
 
     --cssclaro: #0089CA;
@@ -80,6 +81,7 @@
     }
 
     hr {
+        background-color: blue;
         margin: 10px 0;
     }
 
@@ -149,18 +151,22 @@
     }
 
     div#navbartechs {
-        border-radius: 0;
+        border-radius: 10px;
         padding: 0;
     }
 
     div#navbartechs a:link,
     div#navbartechs a:visited {
+        border-radius: 10px;
        color: lightgray;
     }
 
     div#navbartechs a:hover,
     div#navbartechs a:active {
-        background-color: #333333;
+        /*background-color: #333333;*/
+        background-color: var(--bverde);
+        /* color: (var(--bpreto));
+        font-weight: bold; */
     }
 
     main#so {

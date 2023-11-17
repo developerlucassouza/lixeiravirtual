@@ -62,6 +62,12 @@
             }
 
         }
+
+        if ($('#itens').length <= 0) {
+            $('#navmenuburguer').css('display', 'none');
+            // let altura = $('#navbar').css('height');
+            // $('#espaco').css('height', altura);
+        }
     });
 
     // Menu Hamburguer e Afins
