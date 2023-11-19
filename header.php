@@ -32,6 +32,10 @@ if (isset($_POST['submitSearch'])){
             header('Location: ' . $caminho . 'techs/mysql/');
             break;
 
+        case 'php':
+            header('Location: ' . $caminho . 'techs/php/');
+            break;
+
         default:
             header('Location: ' . $caminho . 'erro/erro-pesquisa.php');
             break;
