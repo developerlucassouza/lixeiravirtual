@@ -218,7 +218,7 @@
 
     main#teste article {
         background-color: white;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         color: black;
         padding: 20px;
         margin: 20px 0px;
@@ -650,6 +650,22 @@ body.php {
     background-color: var(--jspreto);
 }
 
+.bg-mysql-azul {
+    background-color: var(--mysqlazul);
+}
+
+.bg-mysql-laranja {
+    background-color: var(--mysqllaranja);
+}
+
+.bg-php-preto {
+    background-color: var(--phppreto);
+}
+
+.bg-php-azul {
+    background-color: var(--phpazul);
+}
+
 
 
 /* Cores das Letras Techs */
@@ -663,4 +679,8 @@ body.php {
 
 .text-js-preto {
     color: var(--jspreto);
+}
+
+.text-php-preto {
+    color: var(--phppreto);
 }

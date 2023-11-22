@@ -5,6 +5,8 @@ include_once 'verifica-login.php';
 
 <style type="text/css">
     div.teste h3 {
+        border-radius: 5px;
+        padding: 5px;
         text-align: center;
     }
     
@@ -74,23 +76,23 @@ include_once 'verifica-login.php';
 
 
         <div class="row mt-5">
-            <!-- <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="teste">
-                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
-                    <a href="">
-                        <img src="imgs/teste.png" alt="">
+                    <h3 class="bg-mysql-laranja"><i class="fa-solid fa-database"></i> MySQL</h3>
+                    <a href="testes/mysql.php">
+                        <img src="imgs/teste1.png" alt="">
                     </a>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="teste">
-                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
-                    <a href="">
-                        <img src="imgs/teste.png" alt="">
+                    <h3 class="bg-php-azul text-php-preto"><i class="fa-brands fa-php"></i> PHP</h3>
+                    <a href="testes/php.php">
+                        <img src="imgs/teste1.png" alt="">
                     </a>
                 </div>
-            </div> -->
+            </div>
 
             <!-- <div class="col-md-4">
                 <div class="teste">
