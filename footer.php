@@ -16,7 +16,7 @@
     crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-    $('document').ready(function (){
+    $('document').ready(function () {
         // Colocar menu hamburguer apenas quando for necessário
         if ($('#itens').length <= 0) {
             $('#navmenuburguer').css('display', 'none');
@@ -49,6 +49,11 @@
     } catch (ERRO) {
         console.log(ERRO, message);
     }
+
+    // Atualizar tela ao mudar o tamanho da janela
+    window.addEventListener('resize', function () {
+        location.reload();
+    });
 
     // Desligar menu de itens quando clicar no botão bootstrap responsivo do navbar
     $('#btnResponsivo').click(function () {

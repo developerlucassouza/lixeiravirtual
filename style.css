@@ -40,7 +40,8 @@
 
     body {
         background-color: #274360;
-        background-image: url(imgs/fundo-tech.jpg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('imgs/fundo-tech.jpg');
+
 
         color: white;
         font-family: Arial, Helvetica, sans-serif;
@@ -299,12 +300,14 @@
         padding: 15px;
         text-align: center;
         text-decoration: none;
+        transition: 1s;
         width: 100%;
         max-width: 300px;
     }
 
     div.tech a:hover {
         background-color: black;
+        box-shadow: 0px 0px 20px white;
     }
 
     div.tech h2 {
@@ -561,13 +564,12 @@
 
 body.html {
     background-color: var(--htmlescuro);
-    /* background-image: linear-gradient(var(--htmlescuro)); */
-    background-image: linear-gradient(to bottom, var(--htmlescuro), var(--htmlclaro), var(--htmlescuro));
+    background-image: linear-gradient(var(--htmlescuro));
 }
 
 body.mysql {
     background-color: var(--mysqllaranja);
-    background-image: linear-gradient(#FF5700, var(--mysqllaranja), #FF5700);
+    background-image: linear-gradient(var(--mysqllaranja));
 }
 
 body.css {
