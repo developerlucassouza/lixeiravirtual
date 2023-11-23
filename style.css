@@ -218,7 +218,7 @@
 
     main#teste article {
         background-color: white;
-        /* border-radius: 10px; */
+        border-radius: 10px;
         color: black;
         padding: 20px;
         margin: 20px 0px;
@@ -561,12 +561,13 @@
 
 body.html {
     background-color: var(--htmlescuro);
-    background-image: linear-gradient(var(--htmlescuro));
+    /* background-image: linear-gradient(var(--htmlescuro)); */
+    background-image: linear-gradient(to bottom, var(--htmlescuro), var(--htmlclaro), var(--htmlescuro));
 }
 
 body.mysql {
     background-color: var(--mysqllaranja);
-    background-image: linear-gradient(var(--mysqllaranja));
+    background-image: linear-gradient(#FF5700, var(--mysqllaranja), #FF5700);
 }
 
 body.css {

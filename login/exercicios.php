@@ -49,7 +49,7 @@ include_once 'verifica-login.php';
                 <div class="teste">
                     <h3 class="bg-html-escuro"><i class="fa-brands fa-html5"></i> HTML</h3>
                     <a href="testes/html.php">
-                        <img src="imgs/teste1.png" alt="">
+                        <img src="imgs/teste2.png" alt="">
                     </a>
                 </div>
             </div>
@@ -58,7 +58,7 @@ include_once 'verifica-login.php';
                 <div class="teste">
                     <h3 class="bg-css-escuro"><i class="fa-brands fa-css3-alt"></i> CSS</h3>
                     <a href="testes/css.php">
-                        <img src="imgs/teste1.png" alt="">
+                        <img src="imgs/teste2.png" alt="">
                     </a>
                 </div>
             </div>
@@ -67,7 +67,7 @@ include_once 'verifica-login.php';
                 <div class="teste">
                     <h3 class="bg-js-amarelo text-js-preto"><i class="fa-brands fa-square-js"></i> JavaScript</h3>
                     <a href="testes/javascript.php">
-                        <img src="imgs/teste1.png" alt="">
+                        <img src="imgs/teste2.png" alt="">
                     </a>
                 </div>
             </div>
@@ -80,7 +80,7 @@ include_once 'verifica-login.php';
                 <div class="teste">
                     <h3 class="bg-mysql-laranja"><i class="fa-solid fa-database"></i> MySQL</h3>
                     <a href="testes/mysql.php">
-                        <img src="imgs/teste1.png" alt="">
+                        <img src="imgs/teste2.png" alt="">
                     </a>
                 </div>
             </div>
@@ -89,7 +89,7 @@ include_once 'verifica-login.php';
                 <div class="teste">
                     <h3 class="bg-php-azul text-php-preto"><i class="fa-brands fa-php"></i> PHP</h3>
                     <a href="testes/php.php">
-                        <img src="imgs/teste1.png" alt="">
+                        <img src="imgs/teste2.png" alt="">
                     </a>
                 </div>
             </div>
