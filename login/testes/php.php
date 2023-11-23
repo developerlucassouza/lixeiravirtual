@@ -49,7 +49,7 @@ include_once '../../header.php';
 
     <article>
         <p>2. Como se inicia um bloco de código PHP?</p>
-        <label for="q21"><input type="radio" name="q2" id="q21"> &lt?php</label>
+        <label for="q21"><input type="radio" name="q2" id="q21"> &lt?python</label>
         <label for="q22"><input type="radio" name="q2" id="q22" class="certa"> &lt?php</label>
         <label for="q23"><input type="radio" name="q2" id="q23"> &lt?</label>
         <label for="q24"><input type="radio" name="q2" id="q24"> &lt?html</label>
@@ -89,10 +89,34 @@ include_once '../../header.php';
 
     <article>
         <p>7. Qual função é usada para realizar uma requisição HTTP GET no PHP?</p>
-        <label for="q71"><input type="radio" name="q7" id="q71"> </label>
-        <label for="q72"><input type="radio" name="q7" id="q72"> </label>
-        <label for="q73"><input type="radio" name="q7" id="q73"> </label>
-        <label for="q74"><input type="radio" name="q7" id="q74"> </label>
+        <label for="q71"><input type="radio" name="q7" id="q71"> http_get()</label>
+        <label for="q72"><input type="radio" name="q7" id="q72"> curl_get()</label>
+        <label for="q73"><input type="radio" name="q7" id="q73"> get_request()</label>
+        <label for="q74"><input type="radio" name="q7" id="q74" class="certa"> file_get_contents()</label>
+    </article>
+
+    <article>
+        <p>8. O que a função "unset()" faz no PHP?</p>
+        <label for="q81"><input type="radio" name="q8" id="q81"> Define uma variável.</label>
+        <label for="q82"><input type="radio" name="q8" id="q82" class="certa"> Remove uma variável.</label>
+        <label for="q83"><input type="radio" name="q8" id="q83"> Limpa o cache do servidor.</label>
+        <label for="q84"><input type="radio" name="q8" id="q84"> Encerra a execução do script.</label>
+    </article>
+
+    <article>
+        <p>9. Como se realiza uma iteração por meio de um array em PHP?</p>
+        <label for="q91"><input type="radio" name="q9" id="q91" class="certa"> foreach</label>
+        <label for="q92"><input type="radio" name="q9" id="q92"> loop</label>
+        <label for="q93"><input type="radio" name="q9" id="q93"> for</label>
+        <label for="q94"><input type="radio" name="q9" id="q94"> while_array</label>
+    </article>
+
+    <article>
+        <p>10. Qual é o operador de concatenação de strings no PHP?</p>
+        <label for="q101"><input type="radio" name="q10" id="q101"> +</label>
+        <label for="q102"><input type="radio" name="q10" id="q102"> &</label>
+        <label for="q103"><input type="radio" name="q10" id="q103" class="certa"> .</label>
+        <label for="q104"><input type="radio" name="q10" id="q104"> :</label>
     </article>
 
     <button class="btn btn-info mb-5" onclick="verResultado()">Ver meu resultado!</button>
