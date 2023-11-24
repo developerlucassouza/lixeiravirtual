@@ -34,6 +34,9 @@ include_once 'verifica-login.php';
         <i class="fa-solid fa-book-bookmark"></i> Cursos
     </a>
 
+    <a href="sugestoes.php" class="alert alert-primary d-block mt-3">
+        <i class="fa-solid fa-question"></i> Dar Sugestões
+    </a>
     
 
 

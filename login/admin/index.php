@@ -168,6 +168,10 @@ if (isset($_POST['submitInsere'])) {
         <i class="fa-solid fa-plus"></i> Inserir Usuário
     </a>
 
+    <a href="visualizar-sugestoes.php" class="btn btn-success">
+        <i class="fa-solid fa-question"></i> Sugestões
+    </a>
+
     <div class="table-responsive mt-3">
         <table class="table table-bordered table-striped table-hover bg-white text-dark">
             <tr>

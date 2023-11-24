@@ -137,6 +137,11 @@
         console.log(ERRO.message);
     }
 
+    // Funcionamento dos botões de sugestão do visualizar-sugestoes.php
+    // $('div.sugTop').click(function() {
+    //     $(this).slideToggle();
+    // });
+
 
 </script>
 </body>

@@ -22,7 +22,7 @@ try {
     // Criar a Tabela caso não exista
     $sql = '
     USE lixeiravirtual;
-    CREATE TABLE tab_usuarios(
+    CREATE TABLE IF NOT EXISTS tab_usuarios(
         id_usuario int NOT NULL AUTO_INCREMENT,
         primary key(id_usuario),
         nome varchar(50) not null,
@@ -31,14 +31,40 @@ try {
         nivel int not null,
         ativo int not null
     );
-    INSERT INTO tab_usuarios(nome, email, senha, nivel, ativo)
-    VALUES( "Administrador",
+
+    INSERT IGNORE INTO tab_usuarios(id_usuario, nome, email, senha, nivel, ativo)
+    VALUES( 1,
+            "Administrador",
             "admin@gmail.com",
             "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
             0,
             1
         );
     ';
+    try {
+        $query = $bd->prepare($sql);
+        $query->execute();
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+
+    // Criar tabela de sugestões
+    $sql = '
+    CREATE TABLE IF NOT EXISTS tab_sugestoes (
+        id_sugestao int NOT NULL AUTO_INCREMENT,
+        id_usuario int NOT NULL,
+        titulo varchar(100) NOT NULL,
+        sugestao varchar(1000) NOT NULL,
+        data date NOT NULL,
+        
+        primary key(id_sugestao)
+    );
+
+    ALTER TABLE tab_sugestoes
+    ADD FOREIGN KEY (id_usuario)
+    REFERENCES tab_usuarios(id_usuario);
+    ';
+
     try {
         $query = $bd->prepare($sql);
         $query->execute();
@@ -62,7 +88,7 @@ class Conexao {
         // Verifica se a propriedade estática $conecct ainda não foi inicializada
         if(!isset(self::$connect)){
             // Criando uma instância da classe PDO
-            self::$connect = new PDO('mysql:host=localhost;dbname=lixeiravirtual','root', '');
+            self::$connect = new PDO('mysql:host='.HOST.';dbname=lixeiravirtual',USER, PASS);
             // Retorna a instância da conexão
             return self::$connect;
         }else{

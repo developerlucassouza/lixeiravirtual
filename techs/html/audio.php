@@ -10,6 +10,7 @@
     <div class="col-md-9">
         <main id="tech">
         <h1>Tag &ltaudio&gt HTML</h1>
+        <?php echo $caminho; ?>
         <p>A tag <code>audio</code> serve para adicionar um áudio ao seu site. Utilize o parâmetro <code>src</code> para indicar o caminho do áudio, e adicione na tag a propriedade <code>controls</code> para mostrar os controle do audio.</p>
 
         <div class="code">

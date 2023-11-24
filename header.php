@@ -1,4 +1,6 @@
 <?php
+$caminho = 'http://localhost/lixeiravirtual/';
+
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -8,12 +10,10 @@ if (isset($_POST['submitSearch'])){
     $pesquisa = strtolower($pesquisa);
     $pesquisa = trim($pesquisa);
 
-    $caminho = 'http://localhost/lixeiravirtual/';
-
     switch ($pesquisa) {
         case 'html':
             //echo '<meta http-equiv="refresh" content="3;url=index.php">';
-            header('Location: ' . $caminho . 'techs/html/');
+            header('Location: '. $caminhho .' techs/html/');
             break;
 
         case 'css':
@@ -167,7 +167,35 @@ if (isset($_POST['submitSearch'])){
         </div>
 
         <!-- Conteúdo Extra -->
-        <a href="<?php
+        <?php
+            if (!isset($_SESSION['nivel'])) {
+                ?>
+                    <a href="http://localhost/lixeiravirtual/login/login.php" class="btn text-light float-right mr-3">
+                        <i class="fa-solid fa-right-to-bracket text-info"></i> Login
+                    </a>
+                    <a href="http://localhost/lixeiravirtual/login/cadastrar.php" class="btn text-light float-right mr-3">
+                        <i class="fa-solid fa-right-to-bracket text-info"></i> Cadastrar-se
+                    </a>
+                <?php
+            } else if ($_SESSION['nivel'] == 0) {
+                ?>
+                    <a href="http://localhost/lixeiravirtual/login/admin/" class="btn text-primary float-right mr-3">
+                        <i class="fa-solid fa-user"></i> <?php echo $_SESSION['nome']; ?>
+                    </a>
+                <?php
+            } else {
+                ?>
+                    <a href="http://localhost/lixeiravirtual/login/comum.php" class="btn text-primary float-right mr-3">
+                        <i class="fa-solid fa-user"></i> <?php echo $_SESSION['nome']; ?>
+                    </a>
+                <?php
+            }
+        ?>
+        
+
+
+
+        <!-- <a href="<?php
                 if (!isset($_SESSION["nivel"])) {
                     echo 'http://localhost/lixeiravirtual/login/login.php';
                 } else if ($_SESSION['nivel'] == 0) {
@@ -178,7 +206,7 @@ if (isset($_POST['submitSearch'])){
             ?>" 
         class="btn text-warning float-right mr-3" >
             <i class="fa-solid fa-star"></i> Conteúdo Adicional
-        </a>
+        </a> -->
 
         <!-- Fazer Logoff -->
         <?php
