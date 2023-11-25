@@ -1,5 +1,10 @@
 <?php
-$caminho = 'http://localhost/lixeiravirtual/';
+//$caminho = 'http://localhost/lixeiravirtual/';
+$url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$pasta = 'lixeiravirtual/';
+$pos = strpos($url, $pasta);
+$num = $pos + strlen($pasta);
+$caminho = substr($url, 0, $num);
 
 if (!isset($_SESSION)) {
     session_start();
@@ -13,7 +18,7 @@ if (isset($_POST['submitSearch'])){
     switch ($pesquisa) {
         case 'html':
             //echo '<meta http-equiv="refresh" content="3;url=index.php">';
-            header('Location: '. $caminhho .' techs/html/');
+            header('Location: ' . $caminho . 'techs/html/');
             break;
 
         case 'css':
@@ -48,7 +53,7 @@ if (isset($_POST['submitSearch'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache" />
-    <link rel="shortcut icon" href="http://localhost/lixeiravirtual/imgs/lixeira-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo $caminho ?>imgs/lixeira-icon.png" type="image/x-icon">
     <title>Lixeira Virtual</title>
 
     <!-- Bootstrap -->
@@ -58,7 +63,7 @@ if (isset($_POST['submitSearch'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS Próprio -->
-    <link rel="stylesheet" href="http://localhost/lixeiravirtual/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo $caminho ?>style.css" type="text/css">
 
 </head>
 <body id="body">
@@ -68,7 +73,7 @@ if (isset($_POST['submitSearch'])){
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
 
         <!-- Link para Home -->
-        <a class="navbar-brand" href="http://localhost/lixeiravirtual/">
+        <a class="navbar-brand" href="<?php echo $caminho ?>">
             <i class="fa-solid fa-trash-can"></i> Lixeira Virtual
         </a>
 
@@ -99,17 +104,17 @@ if (isset($_POST['submitSearch'])){
                     <!-- <a class="dropdown-item" href="#">   </a> -->
                     <!-- <a class="dropdown-item" href="#">Python</a> -->
 
-                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/html/"><i class="fa-brands fa-html5"></i> HTML</a>
+                    <a class="dropdown-item" href="<?php echo $caminho ?>techs/html/"><i class="fa-brands fa-html5"></i> HTML</a>
                     
-                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/css/"><i class="fa-brands fa-css3-alt"></i> CSS</a>
+                    <a class="dropdown-item" href="<?php echo $caminho ?>techs/css/"><i class="fa-brands fa-css3-alt"></i> CSS</a>
 
-                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/javascript/"><i class="fa-brands fa-js"></i> JavaScript</a>
+                    <a class="dropdown-item" href="<?php echo $caminho ?>techs/javascript/"><i class="fa-brands fa-js"></i> JavaScript</a>
 
                     <!-- <a class="dropdown-item" href="#"><i class="fa-brands fa-node-js"></i> Node.js</a> -->
 
-                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/php/"><i class="fa-brands fa-php"></i> PHP</a>
+                    <a class="dropdown-item" href="<?php echo $caminho ?>techs/php/"><i class="fa-brands fa-php"></i> PHP</a>
 
-                    <a class="dropdown-item" href="http://localhost/lixeiravirtual/techs/mysql/"><i class="fa-solid fa-database"></i> MySQL</a>
+                    <a class="dropdown-item" href="<?php echo $caminho ?>techs/mysql/"><i class="fa-solid fa-database"></i> MySQL</a>
 
                     <!-- <a class="dropdown-item" href="#">SQL Server</a> -->
 
@@ -158,7 +163,7 @@ if (isset($_POST['submitSearch'])){
 
                 <!-- Sistemas Operacionais -->
                 <li class="nav-item">
-                    <a href="http://localhost/lixeiravirtual/techs/sistemas-operacionais/" class="nav-link">Sistemas Operacionais</a>
+                    <a href="<?php echo $caminho ?>techs/sistemas-operacionais/" class="nav-link">Sistemas Operacionais</a>
                 <li>
 
                 
@@ -170,22 +175,22 @@ if (isset($_POST['submitSearch'])){
         <?php
             if (!isset($_SESSION['nivel'])) {
                 ?>
-                    <a href="http://localhost/lixeiravirtual/login/login.php" class="btn text-light float-right mr-3">
+                    <a href="<?php echo $caminho ?>login/login.php" class="btn text-light float-right mr-3">
                         <i class="fa-solid fa-right-to-bracket text-info"></i> Login
                     </a>
-                    <a href="http://localhost/lixeiravirtual/login/cadastrar.php" class="btn text-light float-right mr-3">
+                    <a href="<?php echo $caminho ?>login/cadastrar.php" class="btn text-light float-right mr-3">
                         <i class="fa-solid fa-right-to-bracket text-info"></i> Cadastrar-se
                     </a>
                 <?php
             } else if ($_SESSION['nivel'] == 0) {
                 ?>
-                    <a href="http://localhost/lixeiravirtual/login/admin/" class="btn text-primary float-right mr-3">
+                    <a href="<?php echo $caminho ?>login/admin/" class="btn text-primary float-right mr-3">
                         <i class="fa-solid fa-user"></i> <?php echo $_SESSION['nome']; ?>
                     </a>
                 <?php
             } else {
                 ?>
-                    <a href="http://localhost/lixeiravirtual/login/comum.php" class="btn text-primary float-right mr-3">
+                    <a href="<?php echo $caminho ?>login/comum.php" class="btn text-primary float-right mr-3">
                         <i class="fa-solid fa-user"></i> <?php echo $_SESSION['nome']; ?>
                     </a>
                 <?php
@@ -195,25 +200,13 @@ if (isset($_POST['submitSearch'])){
 
 
 
-        <!-- <a href="<?php
-                if (!isset($_SESSION["nivel"])) {
-                    echo 'http://localhost/lixeiravirtual/login/login.php';
-                } else if ($_SESSION['nivel'] == 0) {
-                    echo 'http://localhost/lixeiravirtual/login/admin/';
-                } else {
-                    echo 'http://localhost/lixeiravirtual/login/comum.php';
-                }
-            ?>" 
-        class="btn text-warning float-right mr-3" >
-            <i class="fa-solid fa-star"></i> Conteúdo Adicional
-        </a> -->
 
         <!-- Fazer Logoff -->
         <?php
             if (isset($_SESSION['nivel'])) {
                 ?>
 
-                    <a href="http://localhost/lixeiravirtual/login/logoff.php"
+                    <a href="<?php echo $caminho ?>login/logoff.php"
                     class="btn text-danger float-right mr-3" id="logoff">
                         <i class="fa-solid fa-power-off"></i> Logoff
                     </a>
@@ -227,7 +220,7 @@ if (isset($_POST['submitSearch'])){
     <!-- Navbar Techs -->
     <nav class="navbar navbar-expand-sm bg-preto celular" id="navmenuburguer">
         <!-- Menu Burguer Pages -->
-        <img src="../../imgs/menuburguer.png" alt="" id="menuburguer">
+        <img src="<?php echo $caminho ?>imgs/menuburguer.png" alt="" id="menuburguer">
     </nav>
 
 
