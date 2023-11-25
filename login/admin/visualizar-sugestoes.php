@@ -60,6 +60,7 @@ if (isset($_POST['submit'])) {
     div.sugTop,
     div.sugBot {
         padding: 10px;
+        margin: 0 !important;
     }
 
     div.sugTop {
@@ -67,7 +68,8 @@ if (isset($_POST['submit'])) {
     }
 
     div.sugBot {
-        background-color: #CCCCCC;
+        color: #333333;
+        display: none;
     }
 </style>
 
@@ -86,7 +88,7 @@ if (isset($_POST['submit'])) {
     foreach ($sugestoes as $sug) {
         ?>
 
-        <div class="sugTop">
+        <div class="alert text-light sugTop">
             <span>
                 <?php echo $sug['id_sugestao'] ?> -
                 <?php echo $sug['titulo'] ?>
@@ -102,21 +104,23 @@ if (isset($_POST['submit'])) {
                 </a>
                 </form>
             </span>
-        </div>
 
-        <div class="sugBot">
-            <span>
-                <?php echo $sug['sugestao'] ?>
-            </span><br>
-            <span>Data da Sugestão:
-                <?php echo $sug['data'] ?>
-            </span><br>
-            <span>Sugestão de: <strong>
-                    <?php echo $sug['nome'] ?>
-                </strong></span>
+            <br>
+
+            <span><strong><?php echo $sug['nome'] ?></strong></span>
             <span class="float-right">Email: <strong>
                     <?php echo $sug['email'] ?>
                 </strong></span>
+        </div>
+
+        <div class="alert alert-dark sugBot">
+            <span>
+                <?php echo $sug['sugestao'] ?>
+            </span><br>
+            <div class="mt-3">- Data da Sugestão:<strong>
+                <?php echo date('d/m/Y', strtotime($sug['data'])); ?>
+            </strong></div>
+            
         </div>
 
         <hr>

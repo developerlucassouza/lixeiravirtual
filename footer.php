@@ -23,6 +23,13 @@
             let altura = $('#navbar').css('height');
             $('#espaco').css('height', altura);
         }
+
+
+
+        // Funcionamento dos botões de sugestão do visualizar-sugestoes.php
+        $('.sugTop').click(function () {
+            $(this).next('.sugBot').toggle();
+        });
     }); 
 </script>
 
@@ -137,10 +144,9 @@
         console.log(ERRO.message);
     }
 
-    // Funcionamento dos botões de sugestão do visualizar-sugestoes.php
-    // $('div.sugTop').click(function() {
-    //     $(this).slideToggle();
-    // });
+
+
+
 
 
 </script>
