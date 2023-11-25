@@ -58,9 +58,9 @@
     }
 
     // Atualizar tela ao mudar o tamanho da janela
-    window.addEventListener('resize', function () {
-        location.reload();
-    });
+    // window.addEventListener('resize', function () {
+    //     location.reload();
+    // });
 
     // Desligar menu de itens quando clicar no botão bootstrap responsivo do navbar
     $('#btnResponsivo').click(function () {
