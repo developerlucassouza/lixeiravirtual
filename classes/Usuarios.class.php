@@ -43,7 +43,7 @@ class Usuarios
                                 </button>
                             </div>
                             <div class="modal-body text-dark">
-                                Email não cadastrado! Faça seu primeiro cadastro!
+                                Email não cadastrado! Faça cadastre-se!
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -161,7 +161,7 @@ class Usuarios
                                 </button>
                             </div>
                             <div class="modal-body text-dark">
-                                Email já cadatsrado!
+                                Email já cadastrado!
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
