@@ -562,7 +562,7 @@
 
 /* Cores de Fundo do body */
 
-body.html {
+/* body.html {
     background-color: var(--htmlescuro);
     background-image: linear-gradient(var(--htmlescuro));
 }
@@ -590,7 +590,7 @@ body.js {
 body.php {
     background-color: var(--phpazul);
     background-image: linear-gradient(var(--phpazul));
-}
+} */
 
 
 
