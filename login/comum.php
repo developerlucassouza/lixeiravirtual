@@ -14,7 +14,7 @@ include_once 'verifica-login.php';
     if ($_SESSION['nivel'] == 0) {
         ?>
         <a href="admin/" class="btn btn-info float-right">
-            <i class="fa-solid fa-lock"></i> Área de Administrador
+            <i class="fa-solid fa-lock"></i> Área ADM
         </a>
         <?php
     }
@@ -40,7 +40,7 @@ include_once 'verifica-login.php';
         <i class="fa-solid fa-question"></i> Dar Sugestões
     </a>
     
-
+    <img src="../imgs/lixeira2.png" class="d-block mx-auto" alt="">
 
 
     

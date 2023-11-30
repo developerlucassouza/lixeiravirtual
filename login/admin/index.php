@@ -154,7 +154,7 @@ if (isset($_POST['submitInsere'])) {
     </a>
 
     <a href="../comum.php" class="btn btn-info float-right">
-        <i class="fa-solid fa-user"></i> Área Usuário Comum
+        <i class="fa-solid fa-user"></i> Área Comum
     </a>
 
 
@@ -167,15 +167,15 @@ if (isset($_POST['submitInsere'])) {
 
 
 
-    <a href="./" class="btn btn-danger">
+    <a href="./" class="btn btn-danger mt-3">
         <i class="fa-solid fa-rotate-right"></i> Atualizar Página
     </a>
 
-    <a href="javascript: $('#insereModal').modal();" class="btn btn-primary">
+    <a href="javascript: $('#insereModal').modal();" class="btn btn-primary mt-3">
         <i class="fa-solid fa-plus"></i> Inserir Usuário
     </a>
 
-    <a href="visualizar-sugestoes.php" class="btn btn-success">
+    <a href="visualizar-sugestoes.php" class="btn btn-success mt-3">
         <i class="fa-solid fa-question"></i> Sugestões
     </a>
 
@@ -262,7 +262,7 @@ if (isset($_POST['submitInsere'])) {
                                     $('#btnExcluirModal').attr('href', 'excluir.php?id_usuario=<?php echo $usuario['id_usuario']; ?>');
                                     $('#excluirModal').modal();
                                     " id="<?php echo $usuario['id_usuario']; ?>" class="btnExcluir">
-                                <i class="fa-solid fa-trash"></i>
+                                <i class="fa-solid fa-trash text-dark"></i>
                             </a>
                             <?php
                         }
@@ -304,6 +304,8 @@ if (isset($_POST['submitInsere'])) {
             ?>
         </table>
     </div>
+
+    <img src="../../imgs/lixeira2.png" class="d-block mx-auto" alt="">
 
 </main>
 
