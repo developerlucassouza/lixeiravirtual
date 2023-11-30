@@ -51,7 +51,7 @@ if ($resizeResult) {
 
 <div class="custom-file">
    <input type="file" name="foto" id="foto" class="custom-file-input">
-   <label for="" class="custom-file-label">Selecione a Foto</label>
+   <label for="foto" class="custom-file-label">Selecione a Foto</label>
 </div>
 
 ===================================================================================
