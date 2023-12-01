@@ -25,6 +25,10 @@ Acrescentar essas propriedades nos links das imagens:
 data-toggle="lightbox" 
 data-gallery="example-gallery" (O nome "example-gallery" pode ser modificado para representar a galeria que você quiser, podendo criar mais de uma galeria)
 
+A imagem tem que estar dentro de um link
+<a data-toggle="lightbox" data-gallery="example-gallery" href="LINK DA IMAGEM">
+   <img src="LINK DA IMAGEM">
+</a>
 
 
 
