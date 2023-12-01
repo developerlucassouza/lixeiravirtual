@@ -3,25 +3,6 @@ include_once 'restringe-comum.php';
 include_once '../../header.php';
 include_once '../../classes/Usuarios.class.php';
 
-$mostra = new Usuarios();
-$resultados = $mostra->mostraUsuarios();
-
-if (isset($_GET['orderby'])) {
-
-    if ($_GET['orderby'] == 'nome') {
-        $resultados = $mostra->mostraUsuariosPorNome();
-    }
-
-    if ($_GET['orderby'] == 'email') {
-        $resultados = $mostra->mostraUsuariosPorEmail();
-    }
-
-    if ($_GET['orderby'] == 'nivel') {
-        $resultados = $mostra->mostraUsuariosPorNivel();
-    }
-
-}
-
 // Inserir Usuário
 if (isset($_POST['submitInsere'])) {
     $nome = $_POST['nome'];
@@ -39,6 +20,27 @@ if (isset($_POST['submitInsere'])) {
         $insere = new Usuarios();
         $insere->insereUsuario($nome, $email, '123', $nivel);
     }
+}
+
+
+
+$mostra = new Usuarios();
+$resultados = $mostra->mostraUsuarios();
+
+if (isset($_GET['orderby'])) {
+
+    if ($_GET['orderby'] == 'nome') {
+        $resultados = $mostra->mostraUsuariosPorNome();
+    }
+
+    if ($_GET['orderby'] == 'email') {
+        $resultados = $mostra->mostraUsuariosPorEmail();
+    }
+
+    if ($_GET['orderby'] == 'nivel') {
+        $resultados = $mostra->mostraUsuariosPorNivel();
+    }
+
 }
 ?>
 
@@ -167,9 +169,6 @@ if (isset($_POST['submitInsere'])) {
 
 
 
-    <a href="./" class="btn btn-danger mt-3">
-        <i class="fa-solid fa-rotate-right"></i> Atualizar Página
-    </a>
 
     <a href="javascript: $('#insereModal').modal();" class="btn btn-primary mt-3">
         <i class="fa-solid fa-plus"></i> Inserir Usuário
