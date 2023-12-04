@@ -27,13 +27,30 @@ include_once 'verifica-login.php';
     </h2>
     
     <p class="text-center">Clique para visualizar cada manual.</p>
+    <p class="text-center">Escritos por: Murilo Costa Santos</p>
     
-    <a href="manuais/hardware.pdf" class="alert alert-light d-block">
+    <a href="manuais/hardware.pdf" target="_blank" class="alert alert-light d-block">
         <i class="fa-solid fa-microchip"></i> Hardware <i class="fa-solid fa-note-sticky float-right"></i>
     </a>
     
-    <a href="manuais/HTML e CSS.pdf" class="alert alert-light d-block">
+    <a href="manuais/HTML e CSS.pdf" target="_blank" class="alert alert-light d-block">
         <i class="fa-brands fa-html5"></i> HTML e CSS <i class="fa-solid fa-note-sticky float-right"></i>
+    </a>
+
+    <a href="manuais/JavaScript.pdf" target="_blank" class="alert alert-light d-block">
+        <i class="fa-brands fa-square-js"></i> JavaScript <i class="fa-solid fa-note-sticky float-right"></i>
+    </a>
+
+    <a href="manuais/PHP.pdf" target="_blank" class="alert alert-light d-block">
+        <i class="fa-brands fa-php"></i> PHP <i class="fa-solid fa-note-sticky float-right"></i>
+    </a>
+
+    <a href="manuais/MySQL.pdf" target="_blank" class="alert alert-light d-block">
+        <i class="devicon-mysql-plain"></i> MySQL <i class="fa-solid fa-note-sticky float-right"></i>
+    </a>
+
+    <a href="manuais/csharp.pdf" target="_blank" class="alert alert-light d-block">
+        <i class="devicon-csharp-plain"></i> C# <i class="fa-solid fa-note-sticky float-right"></i>
     </a>
 </main>
 

@@ -62,6 +62,10 @@ if (isset($_POST['submitSearch'])){
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- DevIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+
     <!-- CSS Próprio -->
     <link rel="stylesheet" href="<?php echo $caminho ?>style.css" type="text/css">
 
@@ -114,7 +118,7 @@ if (isset($_POST['submitSearch'])){
 
                     <a class="dropdown-item" href="<?php echo $caminho ?>techs/php/"><i class="fa-brands fa-php"></i> PHP</a>
 
-                    <a class="dropdown-item" href="<?php echo $caminho ?>techs/mysql/"><i class="fa-solid fa-database"></i> MySQL</a>
+                    <a class="dropdown-item" href="<?php echo $caminho ?>techs/mysql/"><i class="devicon-mysql-plain"></i> MySQL</a>
 
                     <!-- <a class="dropdown-item" href="#">SQL Server</a> -->
 
