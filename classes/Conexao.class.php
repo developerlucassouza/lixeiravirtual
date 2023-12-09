@@ -1,8 +1,8 @@
 <?php
-define('HOST', '10.27.44.17');
+define('HOST', 'localhost');
 //define('DB', 'cadastro');
-define('USER', 't19');
-define('PASS', 't19');
+define('USER', 'root');
+define('PASS', '');
 //$dsn = 'mysql:host=' . HOST . ';dbname=' . DB;
 $dsn = 'mysql:host=' . HOST;
 
