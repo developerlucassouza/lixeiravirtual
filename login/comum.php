@@ -24,16 +24,12 @@ include_once 'verifica-login.php';
 
     <p>Bem-vindo de volta! Estamos animados por você ter feito login em nossa plataforma. Agora que está conectado, as possibilidades são infinitas. Explore uma variedade de cursos incríveis, compartilhe suas sugestões para aprimorar ainda mais a sua experiência no site e mergulhe em desafios de exercícios que vão impulsionar o seu aprendizado. Sua jornada aqui está repleta de oportunidades emocionantes. Vamos começar a explorar juntos!</p>
 
-    <a href="manuais.php" class="alert alert-primary d-block mt-3">
-        <i class="fa-solid fa-note-sticky"></i> Manuais de Tecnologia
+    <a href="cursos.php" class="alert alert-primary d-block mt-3">
+        <i class="fa-solid fa-book-bookmark"></i> Cursos
     </a>
 
     <a href="exercicios.php" class="alert alert-primary d-block mt-3">
         <i class="fa-solid fa-check"></i> Exercícios
-    </a>
-
-    <a href="cursos.php" class="alert alert-primary d-block mt-3">
-        <i class="fa-solid fa-book-bookmark"></i> Cursos
     </a>
 
     <a href="sugestoes.php" class="alert alert-primary d-block mt-3">
