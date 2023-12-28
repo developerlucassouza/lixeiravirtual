@@ -1,10 +1,10 @@
 <?php
-//$caminho = 'http://localhost/lixeiravirtual/';
-$url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$pasta = 'lixeiravirtual/';
-$pos = strpos($url, $pasta);
-$num = $pos + strlen($pasta);
-$caminho = substr($url, 0, $num);
+$caminho = 'http://192.168.15.104:8080/lixeiravirtual/';
+// $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+// $pasta = 'lixeiravirtual/';
+// $pos = strpos($url, $pasta);
+// $num = $pos + strlen($pasta);
+// $caminho = substr($url, 0, $num);
 
 if (!isset($_SESSION)) {
     session_start();
@@ -106,6 +106,7 @@ if (isset($_POST['submitSearch'])){
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" id="navbartechs">
                         
                     <!-- <a class="dropdown-item" href="#">   </a> -->
+
                     <!-- <a class="dropdown-item" href="#">Python</a> -->
 
                     <a class="dropdown-item" href="<?php echo $caminho ?>techs/html/"><i class="fa-brands fa-html5"></i> HTML</a>
@@ -166,11 +167,53 @@ if (isset($_POST['submitSearch'])){
                 </li>
 
                 <!-- Sistemas Operacionais -->
-                <li class="nav-item">
-                    <a href="<?php echo $caminho ?>techs/sistemas-operacionais/" class="nav-link">Sistemas Operacionais</a>
-                <li>
+                <!-- <li class="nav-item">
+                    <a href="<?php //echo $caminho ?>techs/sistemas-operacionais/" class="nav-link">Sistemas Operacionais</a>
+                <li> -->
 
-                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sistemas Operacionais
+                    </a>
+
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/win11.php">
+                            <i class="devicon-windows8-original"></i> Windows 11
+                        </a>
+
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/win10.php">
+                            <i class="devicon-windows8-original"></i> Windows 10
+                        </a>
+
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/win8.1.php">
+                            <i class="devicon-windows8-original"></i> Windows 8.1
+                        </a>
+
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/win7.php">
+                            <i class="devicon-windows8-original"></i> Windows 7
+                        </a>
+
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/winxp.php">
+                            <i class="devicon-windows8-original"></i> Windows XP
+                        </a>
+
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/ubuntu.php">
+                            <i class="devicon-linux-plain"></i> Ubuntu
+                        </a>
+
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/linuxmint.php">
+                            <i class="devicon-linux-plain"></i> Linux Mint
+                        </a>
+
+                        <a class="dropdown-item" href="kalilinux.php">
+                            <i class="devicon-linux-plain"></i> Kali Linux
+                        </a>
+
+                        <a class="dropdown-item" href="<?php echo $caminho;?>/techs/sistemas-operacionais/hirensboot.php">
+                            <i class="fa-solid fa-compact-disc"></i> Hiren's BootCD
+                        </a>
+                    </div>
+                </li>
             </ul>
 
         </div>

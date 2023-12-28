@@ -159,7 +159,7 @@
     div#navbartechs a:link,
     div#navbartechs a:visited {
         border-radius: 10px;
-       color: lightgray;
+        color: lightgray;
     }
 
     div#navbartechs a:hover,
@@ -260,6 +260,25 @@
 
     div.code pre {
         color: rgb(0, 150, 200);
+    }
+
+    div.dropdown-menu {
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    div.dropdown-menu a:link,
+    div.dropdown-menu a:visited {
+        border-radius: 10px;
+        color: lightgray;
+    }
+
+    div.dropdown-menu a:hover,
+    div.dropdown-menu a:active {
+        /*background-color: #333333;*/
+        background-color: var(--bverde);
+        /* color: (var(--bpreto));
+        font-weight: bold; */
     }
 
     div.modal {

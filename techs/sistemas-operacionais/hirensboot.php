@@ -3,7 +3,7 @@ include_once '../../header.php';
 ?>
 
 <main id="so">
-        <h1>Hiren's Boot</h1>
+        <h1>Hiren's BootCD</h1>
         <img src="imgs/hirensboot-areadetrabalho.jpg" alt="Área de Trabalho do Hiren's Boot">
 
         <p>Hiren's BootCD, também conhecido como Hiren's Boot, é uma ferramenta de diagnóstico e recuperação muito popular no campo da manutenção de computadores. No entanto, é importante notar que minha última atualização de conhecimento foi em setembro de 2021, e algumas informações podem ter mudado desde então.</p>
