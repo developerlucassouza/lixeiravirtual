@@ -105,16 +105,16 @@
     try {
         // === Deixar URL como ativo === 
         // Obtém a URL atual
-        let url = new URL(window.location.href);
+        // let url = new URL(window.location.href);
 
         // Obtém o pathname da URL
-        let pathname = url.pathname;
+        // let pathname = url.pathname;
 
         // Separa o pathname em partes usando o caractere '/'
-        let partes = pathname.split('/');
+        // let partes = pathname.split('/');
 
         // Obtém a última parte do pathname (parte final da URL)
-        url = partes[partes.length - 1];
+        // url = partes[partes.length - 1];
 
 
 
@@ -135,7 +135,7 @@
             for (let ancora of document.querySelectorAll('div#itens a')) {
                 let href = ancora.getAttribute('href');
                 // Se o href for igual à parte final da URL, adiciona a classe 'ativo'
-                if (href === urlFinal) {
+                if ( (href === urlFinal) || ((urlFinal === '' || urlFinal === 'index.php') && href === './' )) {
                     ancora.classList.add('ativo');
                 }
             }
