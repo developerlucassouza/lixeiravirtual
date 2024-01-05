@@ -9,7 +9,7 @@
 
     <div class="col-md-9">
         <main id="tech">
-            <h1>JS Criando Elementos</h1>
+            <h1>JS Criando Elementos DOM</h1>
 
             <p>Com o comando <code>creatElement()</code> podemos criar novos elementos <a href="oqueedom.php">DOM</a>, colocando dentro dos parênteses qual tag será criada dentro de aspas.</p>
 
@@ -39,6 +39,14 @@ corpo.appendChild(texto);</pre>
                 ntexto.innerHTML = 'Tag criada via JavaScript';
                 let ncorpo = document.querySelector('main');
                 ncorpo.appendChild(ntexto);
+            </script>
+
+            <p id="algo">uifewduiefwhuifewiu</p>
+
+            <script>
+                let teste = document.querySelector('p#algo');
+                teste.innerHTML = 'Alterado';
+                teste.remove();
             </script>
         </main>
     </div>

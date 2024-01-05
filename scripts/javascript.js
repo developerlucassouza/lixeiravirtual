@@ -43,8 +43,8 @@ pages.innerHTML += '<a href="selecionandoelementosdom.php">JS Selecionando Eleme
 pages.innerHTML += '<a href="innerhtml.php">JS .innerHTML</a>';
 //pages.innerHTML += '<a href="#">JS Alterando Elementos</a>';
 pages.innerHTML += '<a href="createelement.php">JS Criando Elementos</a>';
-pages.innerHTML += '<a href="#">JS Excluindo Elementos</a>';
-pages.innerHTML += '<a href="#">JS Eventos DOM</a>';
+pages.innerHTML += '<a href="remove.php">JS Excluindo Elementos</a>';
+pages.innerHTML += '<a href="eventosdom.php">JS Eventos DOM</a>';
 pages.innerHTML += '<a href="#">JS .setAttribute</a>';
 pages.innerHTML += '<a href="#">JS Atualizar a Página</a>';
 pages.innerHTML += '<a href="#">JS Abrir uma nova Página</a>';
