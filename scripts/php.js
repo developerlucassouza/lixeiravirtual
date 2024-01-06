@@ -47,6 +47,7 @@ pages.innerHTML += '<a href="#">PHP Cookies</a>';
 
 // PHP PDO CRUD
 pages.innerHTML += '<p>PHP PDO CRUD</p>';
+pages.innerHTML += '<a href="#">O que é CRUD?</a>';
 pages.innerHTML += '<a href="#">PHP PDO Conexão</a>';
 pages.innerHTML += '<a href="#">PHP PDO INSERT INTO</a>';
 pages.innerHTML += '<a href="#">PHP PDO SELECT</a>';
@@ -55,12 +56,12 @@ pages.innerHTML += '<a href="#">PHP PDO DELETE</a>';
 pages.innerHTML += '<a href="#">PHP PDO Obter Último ID</a>';
 
 // PHP MySQLi OO CRUD
-pages.innerHTML += '<p>PHP MySQLi OO CRUD</p>';
-pages.innerHTML += '<a href="#">PHP MySQLi OO Conexão</a>';
-pages.innerHTML += '<a href="#">PHP MySQLi OO INSERT INTO</a>';
-pages.innerHTML += '<a href="#">PHP MySQLi OO SELECT</a>';
-pages.innerHTML += '<a href="#">PHP MySQLi OO UPDATE</a>';
-pages.innerHTML += '<a href="#">PHP MySQLi OO DELETE</a>';
-pages.innerHTML += '<a href="#">PHP MySQLi OO Obter Último ID</a>';
+// pages.innerHTML += '<p>PHP MySQLi OO CRUD</p>';
+// pages.innerHTML += '<a href="#">PHP MySQLi OO Conexão</a>';
+// pages.innerHTML += '<a href="#">PHP MySQLi OO INSERT INTO</a>';
+// pages.innerHTML += '<a href="#">PHP MySQLi OO SELECT</a>';
+// pages.innerHTML += '<a href="#">PHP MySQLi OO UPDATE</a>';
+// pages.innerHTML += '<a href="#">PHP MySQLi OO DELETE</a>';
+// pages.innerHTML += '<a href="#">PHP MySQLi OO Obter Último ID</a>';
 
 // pages.innerHTML += '<a href="#">PHP </a>';

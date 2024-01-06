@@ -45,17 +45,17 @@ pages.innerHTML += '<a href="innerhtml.php">JS .innerHTML</a>';
 pages.innerHTML += '<a href="createelement.php">JS Criando Elementos</a>';
 pages.innerHTML += '<a href="remove.php">JS Excluindo Elementos</a>';
 pages.innerHTML += '<a href="eventosdom.php">JS Eventos DOM</a>';
-pages.innerHTML += '<a href="#">JS .setAttribute</a>';
-pages.innerHTML += '<a href="#">JS Atualizar a Página</a>';
-pages.innerHTML += '<a href="#">JS Abrir uma nova Página</a>';
-pages.innerHTML += '<a href="#">JS "para cada elemento"</a>';
+pages.innerHTML += '<a href="setattribute.php">JS .setAttribute</a>';
+pages.innerHTML += '<a href="reload.php">JS Atualizar a Página</a>';
+pages.innerHTML += '<a href="open.php">JS Abrir uma nova Página</a>';
+pages.innerHTML += '<a href="queryselectorall.php">JS "para cada elemento"</a>';
 
 // localStorage
 pages.innerHTML += '<p>localStorage</p>';
-pages.innerHTML += '<a href="#">O que é localStorage?</a>';
-pages.innerHTML += '<a href="#">JS Armazenando Valores</a>';
-pages.innerHTML += '<a href="#">JS Recuperando Valores</a>';
-pages.innerHTML += '<a href="#">JS Removendo Valores</a>';
+pages.innerHTML += '<a href="oqueelocalstorage.php">O que é localStorage?</a>';
+pages.innerHTML += '<a href="lssetitem.php">JS Armazenando Valores</a>';
+pages.innerHTML += '<a href="lsgetitem.php">JS Recuperando Valores</a>';
+pages.innerHTML += '<a href="lsremoveitem.php">JS Removendo Valores</a>';
 pages.innerHTML += '<a href="#">JS Quantidade de Itens</a>';
 pages.innerHTML += '<a href="#">JS Mostrando Todos os Dados</a>';
 

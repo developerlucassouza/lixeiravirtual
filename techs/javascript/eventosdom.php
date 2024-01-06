@@ -125,8 +125,73 @@
                 </tr>
 
                 <tr>
+                    <td>dblclik</td>
+                    <td>Ao dar duplo clique no elemento</td>
+                </tr>
+
+                <tr>
+                    <td>contextmenu</td>
+                    <td>Ao clicar com o botão direito no elemento</td>
+                </tr>
+
+                <tr>
                     <td>mouseenter</td>
                     <td>Ao colocar o mouse dentro do elemento</td>
+                </tr>
+
+                <tr>
+                    <td>mouseout</td>
+                    <td>Ao tirar o mouse do elemento</td>
+                </tr>
+
+                <tr>
+                    <td>keydown</td>
+                    <td>Ao apertar uma tecla dentro do elemento</td>
+                </tr>
+
+                <tr>
+                    <td>keyup</td>
+                    <td>Ao soltar uma tecla dentro do elemento</td>
+                </tr>
+
+                <tr>
+                    <td>change</td>
+                    <td>Ao alterar o valor de um elemento de formulário</td>
+                </tr>
+
+                <tr>
+                    <td>submit</td>
+                    <td>Ao enviar um formulário</td>
+                </tr>
+
+                <tr>
+                    <td>focus</td>
+                    <td>Quando um elemento recebe foco</td>
+                </tr>
+
+                <tr>
+                    <td>blur</td>
+                    <td>Quando um elemento perde foco</td>
+                </tr>
+
+                <tr>
+                    <td>scroll</td>
+                    <td>Quando a barra de rolagem do elemento é movida</td>
+                </tr>
+
+                <tr>
+                    <td>resize</td>
+                    <td>Ao redimensionar um elemento</td>
+                </tr>
+
+                <tr>
+                    <td>load</td>
+                    <td>Quando um recurso e todas as suas dependências foram completamente carregados</td>
+                </tr>
+
+                <tr>
+                    <td>unload</td>
+                    <td>Quando a página está prestes a ser descarregada</td>
                 </tr>
             </table>
         </div>
