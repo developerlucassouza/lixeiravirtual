@@ -56,13 +56,13 @@ pages.innerHTML += '<a href="oqueelocalstorage.php">O que é localStorage?</a>';
 pages.innerHTML += '<a href="lssetitem.php">JS Armazenando Valores</a>';
 pages.innerHTML += '<a href="lsgetitem.php">JS Recuperando Valores</a>';
 pages.innerHTML += '<a href="lsremoveitem.php">JS Removendo Valores</a>';
-pages.innerHTML += '<a href="#">JS Quantidade de Itens</a>';
-pages.innerHTML += '<a href="#">JS Mostrando Todos os Dados</a>';
+pages.innerHTML += '<a href="lsqtddeitens.php">JS Quantidade de Itens</a>';
+pages.innerHTML += '<a href="lstodosositens.php">JS Mostrando Todos os Dados</a>';
 
 // Mais
 pages.innerHTML += '<p>Mais</p>'
-pages.innerHTML += '<a href="#">JS Função Fatorial</a>';
-pages.innerHTML += '<a href="#">JS Transformar String em Expressão Aritmética</a>';
-pages.innerHTML += '<a href="#">JS Copiar para Área de Transferência</a>';
+pages.innerHTML += '<a href="fatorial.php">JS Função Fatorial</a>';
+pages.innerHTML += '<a href="eval.php">JS Transformar String em Expressão Aritmética</a>';
+// pages.innerHTML += '<a href="#">JS Copiar para Área de Transferência</a>';
 
 // pages.innerHTML += '<a href="#">JS </a>';
